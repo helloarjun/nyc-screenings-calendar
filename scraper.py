@@ -19,154 +19,183 @@ def get_date_range():
     dates = []
     for i in range(7):
         date = today + timedelta(days=i)
-        dates.append(date.strftime('%Y-%m-%d'))  # Changed to YYYY-MM-DD format
+        dates.append(date.strftime('%Y-%m-%d'))  # Using YYYY-MM-DD format
     return dates
 
 def fetch_screenings_for_date(session, date):
     print(f"\nFetching screenings for date: {date}")
-    url = f'https://www.screenslate.com/nyc/screenings/{date}'
+    url = 'https://www.screenslate.com/screenings'
+    
+    params = {
+        'date': date,
+        'city': 'nyc'
+    }
     
     try:
-        response = session.get(url)
+        response = session.get(url, params=params)
         response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Find all screening blocks
-        screenings = []
-        screening_blocks = soup.find_all('div', class_='screening-block')
-        
-        for block in screening_blocks:
-            venue = block.find('div', class_='venue')
-            if not venue:
-                continue
-                
-            venue_name = venue.get_text(strip=True)
-            if venue_name not in ['Film Forum', 'Metrograph', 'IFC Center', 'Anthology Film Archives']:
-                continue
-                
-            title = block.find('h3', class_='title')
-            if not title:
-                continue
-                
-            time_block = block.find('div', class_='time')
-            if not time_block:
-                continue
-                
-            screening = {
-                'title': title.get_text(strip=True),
-                'venue': venue_name,
-                'datetime': f"{date} {time_block.get_text(strip=True)}",
-                'url': 'https://www.screenslate.com' + block.find('a')['href'] if block.find('a') else None
-            }
-            
-            # Optional fields
-            director = block.find('div', class_='director')
-            if director:
-                screening['director'] = director.get_text(strip=True)
-            
-            year = block.find('div', class_='year')
-            if year:
-                screening['year'] = year.get_text(strip=True)
-                
-            screenings.append(screening)
-            
-        return screenings
+        return response.text
     except requests.RequestException as e:
         print(f"Error fetching screenings for {date}: {e}")
         return None
 
+def parse_screenings(html_content):
+    if not html_content:
+        return []
+        
+    soup = BeautifulSoup(html_content, 'html.parser')
+    parsed_screenings = []
+    
+    # Look for venue sections
+    venue_sections = soup.find_all('div', class_='venue')
+    
+    for venue_section in venue_sections:
+        venue_name = venue_section.find('h3').text.strip()
+        if venue_name not in ['Film Forum', 'Metrograph', 'IFC Center', 'Anthology Film Archives']:
+            continue
+            
+        listings = venue_section.find_all('div', class_='listing')
+        
+        for listing in listings:
+            # Get series info
+            series = listing.find('div', class_='series')
+            series_name = series.text.strip() if series else ''
+            
+            # Get movie info
+            media_title = listing.find('div', class_='media-title')
+            if not media_title:
+                continue
+                
+            title = media_title.find('span', class_='field--name-title').text.strip()
+            
+            # Get director and year
+            info = media_title.find('div', class_='media-title-info')
+            director = ''
+            year = ''
+            if info:
+                info_spans = info.find_all('span')
+                for span in info_spans:
+                    text = span.text.strip()
+                    if text.isdigit() and len(text) == 4:
+                        year = text
+                    elif 'M' not in text and text:
+                        director = text.strip('"')
+            
+            # Get showtimes
+            showtimes = listing.find('div', class_='showtimes')
+            if not showtimes:
+                continue
+                
+            time_spans = showtimes.find_all('span')
+            for time_span in time_spans:
+                time_text = time_span.text.strip()
+                try:
+                    dt = datetime.strptime(f"{date} {time_text}", '%Y-%m-%d %I:%M%p')
+                    parsed_screenings.append({
+                        'title': title,
+                        'director': director,
+                        'year': year,
+                        'series': series_name,
+                        'datetime': dt,
+                        'venue': venue_name,
+                        'url': f'https://www.screenslate.com/screenings/{date}'
+                    })
+                except ValueError as e:
+                    print(f"Error parsing time {time_text}: {e}")
+    
+    return parsed_screenings
+
 def create_event(screening):
     event = Event()
-    
-    try:
-        dt = datetime.strptime(screening['datetime'], '%Y-%m-%d %I:%M %p')
-        timezone = pytz.timezone('America/New_York')
-        dt = timezone.localize(dt)
-    except ValueError as e:
-        print(f"Error parsing datetime: {e}")
-        return None
+    timezone = pytz.timezone('America/New_York')
+    dt = timezone.localize(screening['datetime'])
     
     summary = screening['title']
-    if screening.get('year'):
+    if screening['year']:
         summary += f" ({screening['year']})"
     
     description = []
-    if screening.get('director'):
+    if screening['director']:
         description.append(f"Director: {screening['director']}")
-    if screening.get('url'):
-        description.append(f"More info: {screening['url']}")
+    if screening['series']:
+        description.append(f"Series: {screening['series']}")
+    description.append(f"More info: {screening['url']}")
     
     event.add('summary', f"{summary} at {screening['venue']}")
     event.add('description', '\n'.join(description))
     event.add('dtstart', dt)
     event.add('duration', {'hours': 2})
     event.add('location', screening['venue'])
-    if screening.get('url'):
-        event.add('url', screening['url'])
+    event.add('url', screening['url'])
     
     return event
 
 def generate_html(screenings):
-    template = """<!DOCTYPE html>
+    os.makedirs('_site', exist_ok=True)
+    
+    with open('_site/index.html', 'w', encoding='utf-8') as f:
+        f.write("""<!DOCTYPE html>
 <html>
 <head>
-<title>NYC Indie Cinema Screenings</title>
-<meta charset="utf-8">
-<style>
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-h1 { color: #333; }
-.screening { border-bottom: 1px solid #eee; padding: 10px 0; }
-.venue { color: #666; }
-.time { color: #0066cc; }
-.no-screenings { color: #666; font-style: italic; margin: 20px 0; }
-</style>
+    <title>NYC Indie Cinema Screenings</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .screening {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .venue {
+            color: #666;
+        }
+        .time {
+            color: #0066cc;
+        }
+        .series {
+            color: #9933cc;
+            font-size: 0.9em;
+        }
+        .no-screenings {
+            color: #666;
+            font-style: italic;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-<h1>NYC Indie Cinema Screenings</h1>
-<p>Last updated: {}</p>
-<p>Total screenings found: {}</p>
-{}
-</body>
-</html>"""
-
-    content = ""
-    if not screenings:
-        content = '<p class="no-screenings">No screenings found for the next 7 days.</p>'
-    else:
-        # Sort screenings by datetime
-        sorted_screenings = sorted(screenings, key=lambda x: x['datetime'])
+    <h1>NYC Indie Cinema Screenings</h1>
+    <p>Last updated: """ + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """</p>
+    <p>Total screenings found: """ + str(len(screenings)) + """</p>
+""")
         
-        # Group by date
-        current_date = None
-        for screening in sorted_screenings:
-            date = screening['datetime'].split()[0]
-            if date != current_date:
-                if current_date is not None:
-                    content += "</div>"
-                current_date = date
-                content += f"<h2>{date}</h2><div>"
+        if not screenings:
+            f.write('    <p class="no-screenings">No screenings found for the next 7 days.</p>\n')
+        else:
+            # Sort screenings by datetime
+            sorted_screenings = sorted(screenings, key=lambda x: x['datetime'])
             
-            content += f"""
-<div class="screening">
-<strong>{screening['title']}</strong>
-{f" ({screening['year']})" if screening.get('year') else ""}
-{f" - {screening['director']}" if screening.get('director') else ""}<br>
-<span class="venue">{screening['venue']}</span> - 
-<span class="time">{screening['datetime'].split()[-2:][0]} {screening['datetime'].split()[-2:][1]}</span>
-</div>"""
+            # Group by date
+            for date, group in groupby(sorted_screenings, key=lambda x: x['datetime'].strftime('%Y-%m-%d')):
+                f.write(f"    <h2>{date}</h2>\n")
+                for screening in group:
+                    f.write(f"""    <div class="screening">
+        <strong>{screening['title']}</strong>
+        {f" ({screening['year']})" if screening['year'] else ""}
+        {f" - {screening['director']}" if screening['director'] else ""}<br>
+        {f'<span class="series">{screening["series"]}</span><br>' if screening['series'] else ''}
+        <span class="venue">{screening['venue']}</span> - 
+        <span class="time">{screening['datetime'].strftime('%I:%M %p')}</span>
+    </div>\n""")
         
-        if current_date is not None:
-            content += "</div>"
-
-    html = template.format(
-        datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        len(screenings),
-        content
-    )
-
-    os.makedirs('_site', exist_ok=True)
-    with open('_site/index.html', 'w', encoding='utf-8') as f:
-        f.write(html)
+        f.write("</body>\n</html>")
 
 def generate_calendar():
     cal = create_calendar()
@@ -175,25 +204,16 @@ def generate_calendar():
     session.headers.update({
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Cache-Control': 'no-cache',
-        'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'none',
-        'Sec-Fetch-User': '?1',
-        'Upgrade-Insecure-Requests': '1'
+        'Accept-Language': 'en-US,en;q=0.9'
     })
     
     all_screenings = []
     dates = get_date_range()
     
     for date in dates:
-        screenings = fetch_screenings_for_date(session, date)
-        if screenings:
+        html_content = fetch_screenings_for_date(session, date)
+        if html_content:
+            screenings = parse_screenings(html_content)
             all_screenings.extend(screenings)
     
     os.makedirs('_site', exist_ok=True)
