@@ -5,6 +5,8 @@ from datetime import datetime, timedelta
 import pytz
 import os
 import json
+from itertools import groupby
+from operator import itemgetter
 
 def create_calendar():
     """Initialize a new iCalendar object"""
@@ -37,7 +39,7 @@ def fetch_screenings_for_date(session, date):
         response = session.get(base_url, params=params)
         response.raise_for_status()
         data = response.json()
-        print(f"API Response: {data[:500]}...")  # Print first 500 chars of response
+        print(f"Successfully fetched data for {date}")
         return data
     except requests.RequestException as e:
         print(f"Error fetching screenings for {date}: {e}")
@@ -53,6 +55,9 @@ def parse_screenings(screenings_data):
     """Parse screenings from API response"""
     parsed_screenings = []
     
+    if not screenings_data:
+        return parsed_screenings
+        
     for screening in screenings_data:
         venue_name = parse_venue_name(screening.get('venue', {}))
         if not venue_name:
@@ -113,56 +118,73 @@ def create_event(screening):
 
 def generate_html(screenings):
     """Generate a simple HTML page with the screenings"""
-    html = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>NYC Indie Cinema Screenings</title>
-        <meta charset="utf-8">
-        <style>
-            body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-            h1 { color: #333; }
-            .screening { border-bottom: 1px solid #eee; padding: 10px 0; }
-            .venue { color: #666; }
-            .time { color: #0066cc; }
-        </style>
-    </head>
-    <body>
-        <h1>NYC Indie Cinema Screenings</h1>
-        <p>Last updated: {}</p>
-        <p>Total screenings found: {}</p>
-    """.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'), len(screenings))
+    html = """<!DOCTYPE html>
+<html>
+<head>
+    <title>NYC Indie Cinema Screenings</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .screening {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .venue {
+            color: #666;
+        }
+        .time {
+            color: #0066cc;
+        }
+        .no-screenings {
+            color: #666;
+            font-style: italic;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>NYC Indie Cinema Screenings</h1>
+    <p>Last updated: {}</p>
+    <p>Total screenings found: {}</p>
+""".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'), len(screenings))
 
-    # Group screenings by date
-    from itertools import groupby
-    from operator import itemgetter
-
-    # Sort screenings by datetime
-    sorted_screenings = sorted(screenings, key=lambda x: x['datetime'])
-    
-    # Group by date
-    for date, group in groupby(sorted_screenings, key=lambda x: x['datetime'].strftime('%Y-%m-%d')):
-        html += f"<h2>{date}</h2>"
-        for screening in group:
-            html += f"""
-            <div class="screening">
-                <strong>{screening['title']}</strong>
-                {f" ({screening['year']})" if screening['year'] else ""}
-                {f" - {screening['director']}" if screening['director'] else ""}<br>
-                <span class="venue">{screening['venue']}</span> - 
-                <span class="time">{screening['datetime'].strftime('%I:%M %p')}</span>
-                {f"<br>Series: {screening['series']}" if screening['series'] else ""}
-            </div>
-            """
+    if not screenings:
+        html += '<p class="no-screenings">No screenings found for the next 7 days.</p>'
+    else:
+        # Sort screenings by datetime
+        sorted_screenings = sorted(screenings, key=lambda x: x['datetime'])
+        
+        # Group by date
+        for date, group in groupby(sorted_screenings, key=lambda x: x['datetime'].strftime('%Y-%m-%d')):
+            html += f"<h2>{date}</h2>"
+            for screening in group:
+                html += f"""
+                <div class="screening">
+                    <strong>{screening['title']}</strong>
+                    {f" ({screening['year']})" if screening['year'] else ""}
+                    {f" - {screening['director']}" if screening['director'] else ""}<br>
+                    <span class="venue">{screening['venue']}</span> - 
+                    <span class="time">{screening['datetime'].strftime('%I:%M %p')}</span>
+                    {f"<br>Series: {screening['series']}" if screening['series'] else ""}
+                </div>
+                """
 
     html += """
-        <script>
-            console.log('Calendar file should be available at: nyc-screenings.ics');
-        </script>
     </body>
     </html>
     """
 
+    # Ensure the output directory exists
+    os.makedirs('_site', exist_ok=True)
+    
     # Write the HTML file
     with open('_site/index.html', 'w', encoding='utf-8') as f:
         f.write(html)
@@ -171,10 +193,14 @@ def generate_calendar():
     """Generate the complete iCalendar file and HTML page"""
     cal = create_calendar()
     
+    # Set up session with more browser-like headers
     session = requests.Session()
     session.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'application/json'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Referer': 'https://www.screenslate.com/',
+        'Origin': 'https://www.screenslate.com'
     })
     
     all_screenings = []
@@ -187,12 +213,13 @@ def generate_calendar():
             screenings = parse_screenings(screenings_data)
             all_screenings.extend(screenings)
     
+    # Ensure the output directory exists
+    os.makedirs('_site', exist_ok=True)
+    
+    # Generate calendar file even if no screenings found
     for screening in all_screenings:
         event = create_event(screening)
         cal.add_component(event)
-    
-    # Ensure the output directory exists
-    os.makedirs('_site', exist_ok=True)
     
     # Write the calendar file
     with open('_site/nyc-screenings.ics', 'wb') as f:
