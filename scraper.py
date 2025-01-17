@@ -19,88 +19,68 @@ def get_date_range():
     dates = []
     for i in range(7):
         date = today + timedelta(days=i)
-        dates.append(date.strftime('%Y-%m-%d'))  # Using YYYY-MM-DD format
+        dates.append(date.strftime('%Y%m%d'))  # Using YYYYMMDD format to match API
     return dates
 
 def fetch_screenings_for_date(session, date):
     print(f"\nFetching screenings for date: {date}")
-    url = f'https://www.screenslate.com/listings/date/{date}'
+    url = 'https://www.screenslate.com/date'
+    
+    params = {
+        '_format': 'json',
+        'date': date,
+        'field_city_target_id': '10969'
+    }
+    
+    headers = {
+        'Accept': 'application/json',
+        'Referer': 'https://www.screenslate.com'
+    }
+    session.headers.update(headers)
     
     try:
-        response = session.get(url)
+        response = session.get(url, params=params)
         response.raise_for_status()
+        data = response.json()
         print(f"Successfully fetched data for {date}")
-        return response.text
+        return data
     except requests.RequestException as e:
         print(f"Error fetching screenings for {date}: {e}")
         return None
 
-def parse_screenings(html_content, date):
-    if not html_content:
+def parse_screenings(screenings_data):
+    if not screenings_data:
         return []
-        
-    soup = BeautifulSoup(html_content, 'html.parser')
+    
     parsed_screenings = []
+    target_venues = ['Film Forum', 'Metrograph', 'IFC Center', 'Anthology Film Archives']
     
-    # Find all venue sections
-    venues = soup.find_all('div', class_='venue')
-    
-    for venue in venues:
-        venue_name = venue.find('h3').find('a').text.strip()
-        if venue_name not in ['Film Forum', 'Metrograph', 'IFC Center', 'Anthology Film Archives']:
+    for screening in screenings_data:
+        venue = screening.get('venue', {}).get('name', '')
+        if venue not in target_venues:
             continue
             
-        # Find all listings within this venue
-        listings = venue.find_all('div', class_='listing')
+        title = screening.get('title', '')
+        showtime = screening.get('datetime', '')
+        director = screening.get('director', '')
+        year = screening.get('year', '')
+        series = screening.get('series', {}).get('name', '')
+        screening_id = screening.get('id', '')
         
-        for listing in listings:
-            # Get series information
-            series_div = listing.find('div', class_='series')
-            series = series_div.find('a').text.strip() if series_div and series_div.find('a') else ''
-            
-            # Get movie title and info
-            media_title = listing.find('div', class_='media-title')
-            if not media_title:
-                continue
-                
-            title_span = media_title.find('span', class_='field--name-title')
-            if not title_span:
-                continue
-                
-            title = title_span.text.strip()
-            
-            # Get director and year
-            info_div = media_title.find('div', class_='media-title-info')
-            director = ''
-            year = ''
-            if info_div:
-                spans = info_div.find_all('span')
-                for span in spans:
-                    text = span.text.strip().strip('"')
-                    if text.isdigit() and len(text) == 4:
-                        year = text
-                    elif text and not any(char.isdigit() for char in text) and 'M' not in text:
-                        director = text
-            
-            # Get showtimes
-            showtimes_container = listing.find('div', class_='showtimes-container')
-            if showtimes_container:
-                showtimes = showtimes_container.find_all('span')
-                for time in showtimes:
-                    time_text = time.text.strip()
-                    try:
-                        dt = datetime.strptime(f"{date} {time_text}", '%Y-%m-%d %I:%M%p')
-                        parsed_screenings.append({
-                            'title': title,
-                            'director': director,
-                            'year': year,
-                            'series': series,
-                            'datetime': dt,
-                            'venue': venue_name,
-                            'url': f'https://www.screenslate.com/screenings/{date}'
-                        })
-                    except ValueError as e:
-                        print(f"Error parsing time {time_text}: {e}")
+        if title and showtime:
+            try:
+                dt = datetime.fromisoformat(showtime.replace('Z', '+00:00'))
+                parsed_screenings.append({
+                    'title': title,
+                    'director': director,
+                    'year': year,
+                    'series': series,
+                    'datetime': dt,
+                    'venue': venue,
+                    'url': f'https://www.screenslate.com/screenings/{screening_id}'
+                })
+            except ValueError as e:
+                print(f"Error parsing datetime {showtime}: {e}")
     
     return parsed_screenings
 
@@ -181,7 +161,7 @@ def generate_calendar():
     session = requests.Session()
     session.headers.update({
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept': 'application/json',
         'Accept-Language': 'en-US,en;q=0.9'
     })
     
@@ -189,9 +169,9 @@ def generate_calendar():
     dates = get_date_range()
     
     for date in dates:
-        html_content = fetch_screenings_for_date(session, date)
-        if html_content:
-            screenings = parse_screenings(html_content, date)
+        screenings_data = fetch_screenings_for_date(session, date)
+        if screenings_data:
+            screenings = parse_screenings(screenings_data)
             all_screenings.extend(screenings)
             print(f"Found {len(screenings)} screenings for {date}")
     
