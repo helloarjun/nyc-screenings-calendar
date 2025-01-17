@@ -24,7 +24,7 @@ def get_date_range():
 
 def fetch_screenings_for_date(session, date):
     print(f"\nFetching screenings for date: {date}")
-    url = 'https://www.screenslate.com/'
+    url = f'https://www.screenslate.com/listings/date/{date}'
     
     try:
         response = session.get(url)
@@ -150,7 +150,7 @@ def generate_html(screenings):
 </head>
 <body>
     <h1>NYC Indie Cinema Screenings</h1>
-    <p>Last updated: """ + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """</p>
+    <p>Last updated: """ + datetime.now().strftime('%Y-%m-%d %I:%M%p') + """</p>
     <p>Total screenings found: """ + str(len(screenings)) + """</p>""")
         
         if not screenings:
