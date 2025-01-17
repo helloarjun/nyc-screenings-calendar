@@ -24,6 +24,7 @@ def get_date_range():
 
 def fetch_screenings_for_date(session, date):
     """Fetch screenings for a specific date"""
+    print(f"\nFetching screenings for date: {date}")
     base_url = 'https://www.screenslate.com/listings/date'
     
     params = {
@@ -35,7 +36,9 @@ def fetch_screenings_for_date(session, date):
     try:
         response = session.get(base_url, params=params)
         response.raise_for_status()
-        return response.json()
+        data = response.json()
+        print(f"API Response: {data[:500]}...")  # Print first 500 chars of response
+        return data
     except requests.RequestException as e:
         print(f"Error fetching screenings for {date}: {e}")
         return None
@@ -108,8 +111,64 @@ def create_event(screening):
     
     return event
 
+def generate_html(screenings):
+    """Generate a simple HTML page with the screenings"""
+    html = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>NYC Indie Cinema Screenings</title>
+        <meta charset="utf-8">
+        <style>
+            body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+            h1 { color: #333; }
+            .screening { border-bottom: 1px solid #eee; padding: 10px 0; }
+            .venue { color: #666; }
+            .time { color: #0066cc; }
+        </style>
+    </head>
+    <body>
+        <h1>NYC Indie Cinema Screenings</h1>
+        <p>Last updated: {}</p>
+        <p>Total screenings found: {}</p>
+    """.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'), len(screenings))
+
+    # Group screenings by date
+    from itertools import groupby
+    from operator import itemgetter
+
+    # Sort screenings by datetime
+    sorted_screenings = sorted(screenings, key=lambda x: x['datetime'])
+    
+    # Group by date
+    for date, group in groupby(sorted_screenings, key=lambda x: x['datetime'].strftime('%Y-%m-%d')):
+        html += f"<h2>{date}</h2>"
+        for screening in group:
+            html += f"""
+            <div class="screening">
+                <strong>{screening['title']}</strong>
+                {f" ({screening['year']})" if screening['year'] else ""}
+                {f" - {screening['director']}" if screening['director'] else ""}<br>
+                <span class="venue">{screening['venue']}</span> - 
+                <span class="time">{screening['datetime'].strftime('%I:%M %p')}</span>
+                {f"<br>Series: {screening['series']}" if screening['series'] else ""}
+            </div>
+            """
+
+    html += """
+        <script>
+            console.log('Calendar file should be available at: nyc-screenings.ics');
+        </script>
+    </body>
+    </html>
+    """
+
+    # Write the HTML file
+    with open('_site/index.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+
 def generate_calendar():
-    """Generate the complete iCalendar file"""
+    """Generate the complete iCalendar file and HTML page"""
     cal = create_calendar()
     
     session = requests.Session()
@@ -139,6 +198,8 @@ def generate_calendar():
     with open('_site/nyc-screenings.ics', 'wb') as f:
         f.write(cal.to_ical())
     
+    # Generate HTML page
+    generate_html(all_screenings)
     print(f"Generated calendar with {len(all_screenings)} screenings")
 
 if __name__ == "__main__":
