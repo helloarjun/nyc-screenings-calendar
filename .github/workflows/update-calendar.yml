@@ -1,0 +1,32 @@
+name: Update Screenings Calendar
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:  # Allow manual triggers
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+        
+    - name: Run scraper
+      run: python scraper.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add screenings.ics
+        git commit -m "Update screenings calendar" || exit 0
+        git push
