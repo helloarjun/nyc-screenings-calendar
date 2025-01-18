@@ -5,10 +5,9 @@ from icalendar import Calendar, Event
 import os
 import logging
 from typing import Dict, List
-import re
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.INFO,  # Change to DEBUG if you need more detailed logs during troubleshooting
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -58,23 +57,20 @@ class ScreenSlateAPI:
                 batch_data = response.json()
 
                 # Handle different possible response formats
-                    if isinstance(batch_data, dict):
-                    # If response is dict, update results directly
+                if isinstance(batch_data, dict):
                     all_results.update(batch_data)
                 elif isinstance(batch_data, list):
-                    # If response is a list, convert to dict keyed by 'nid'
                     for item in batch_data:
-                    nid = item.get('nid')
+                        nid = item.get('nid')
                         if nid:
-                            # Ensure the key matches the type used elsewhere (usually string)
                             all_results[str(nid)] = item
-            else:
-                logger.error(f"Unexpected response format for screening details: {type(batch_data)}")
-        except Exception as e:
-            logger.error(f"Error fetching batch: {str(e)}")
-            continue
+                else:
+                    logger.error(f"Unexpected response format for screening details: {type(batch_data)}")
+            except Exception as e:
+                logger.error(f"Error fetching batch: {str(e)}")
+                continue
 
-    return all_results
+        return all_results
 
 def create_calendar_event(screening: Dict) -> Event:
     event = Event()
@@ -125,7 +121,7 @@ def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
     for date in dates:
         logger.info(f"Fetching screenings for {date}...")
         screenings = api_client.fetch_screenings_by_date(date)
-        screening_ids = [screening['nid'] for screening in screenings]
+        screening_ids = [screening['nid'] for screening in screenings if 'nid' in screening]
         details = api_client.fetch_screening_details(screening_ids)
 
         for screening in screenings:
