@@ -30,31 +30,41 @@ class ScreenSlateAPI:
 
     def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
         """Fetch movie details for a list of screening IDs."""
-        if not screening_ids:
-            return {}
-        logger.info(f"Fetching details for {len(screening_ids)} screenings")
+    if not screening_ids:
+        return {}
+    logger.info(f"Fetching details for {len(screening_ids)} screenings")
 
-        batch_size = 20
-        all_results = {}
+    batch_size = 20
+    all_results = {}
 
-        for i in range(0, len(screening_ids), batch_size):
-            batch = screening_ids[i:i + batch_size]
-            ids_param = '+'.join(str(id) for id in batch)
-            url = f"{BASE_URL}/api/screenings/id/{ids_param}"
-            params = {"_format": "json"}
+    for i in range(0, len(screening_ids), batch_size):
+        batch = screening_ids[i:i + batch_size]
+        ids_param = '+'.join(str(id) for id in batch)
+        url = f"{BASE_URL}/api/screenings/id/{ids_param}"
+        params = {"_format": "json"}
 
-            try:
-                response = self.session.get(url, params=params)
-                response.raise_for_status()
-                batch_data = response.json()
-                logger.info(f"Got details for {len(batch_data)} movies")
+        try:
+            response = self.session.get(url, params=params)
+            response.raise_for_status()
+            batch_data = response.json()
+
+            # Debug log for API response
+            logger.info(f"Raw batch data: {batch_data}")
+
+            if isinstance(batch_data, list):
+                for item in batch_data:
+                    if isinstance(item, dict) and "nid" in item:
+                        all_results[item["nid"]] = item
+            elif isinstance(batch_data, dict):
                 all_results.update(batch_data)
-            except Exception as e:
-                logger.error(f"Error fetching batch: {str(e)}")
-                continue
+            else:
+                logger.error("Unexpected data structure in API response.")
+        except Exception as e:
+            logger.error(f"Error fetching batch: {str(e)}")
+            continue
 
-        return all_results
-
+    return all_results
+    
 def create_calendar_event(screening: Dict) -> Event:
     """Create an iCalendar event from screening information."""
     event = Event()
