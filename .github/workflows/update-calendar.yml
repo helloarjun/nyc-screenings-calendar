@@ -1,53 +1,79 @@
 name: Update Calendar
+
 on:
-  workflow_dispatch: null
+  workflow_dispatch: # Allows manual triggering
   schedule:
-    - cron: 0 0 * * *
+    - cron: '0 0 * * *' # Runs daily at midnight
+
 jobs:
   update-calendar:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
-          python-version: "3.10"
+          python-version: '3.10'
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
       - name: Run scraper
         run: python scraper.py
-      - name: Remove existing ICS file
+
+      - name: Check if ICS file exists
         run: |
           if [ -f nyc_indie_cinema.ics ]; then
-            rm nyc_indie_cinema.ics
-          fi
-      - name: Create _site directory
-        run: mkdir -p _site
-      - name: Move generated ICS file
-        run: |
-          if [ -f nyc_indie_cinema.ics ]; then
-            mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+            echo "ICS file successfully created."
           else
-            echo "Error: nyc_indie_cinema.ics not found!"
+            echo "Error: nyc_indie_cinema.ics not found! Debugging..."
+            ls -la
             exit 1
           fi
+
+      - name: Create _site directory
+        run: mkdir -p _site
+
+      - name: Move generated ICS file
+        run: mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+
+      - name: Generate HTML page
+        run: |
+          echo '<!DOCTYPE html>
+          <html>
+          <head>
+            <title>NYC Screenings Calendar</title>
+            <style>
+              body { font-family: Arial, sans-serif; margin: 20px; }
+              h1 { color: #333; }
+            </style>
+          </head>
+          <body>
+            <h1>NYC Screenings Calendar</h1>
+            <p><a href="nyc_indie_cinema.ics">Download the ICS Calendar</a></p>
+          </body>
+          </html>' > _site/index.html
+
+      - name: Debug: List files in _site directory
+        run: |
+          if [ -d _site ]; then
+            ls -la _site
+          else
+            echo "_site directory does not exist"
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
-        run: >
+        run: |
           git fetch origin gh-pages
-
           git checkout gh-pages || git checkout --orphan gh-pages
-
           rm -rf *
-
           cp -r _site/* .
-
           git config user.name "github-actions[bot]"
-
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add -A
-
           git commit -m "Deploy updated calendar"
-
           git push --force origin gh-pages
