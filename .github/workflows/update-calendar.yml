@@ -1,7 +1,7 @@
 name: Test and Deploy Calendar
 
 on:
-  workflow_dispatch:  # Allows manual triggering of the workflow
+  workflow_dispatch:  # Allows manual triggering
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
@@ -9,7 +9,7 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed for pushing to gh-pages
+      contents: write
     
     steps:
     - name: Checkout repository
@@ -25,11 +25,6 @@ jobs:
       
     - name: Run scraper
       run: python scraper.py
-      
-    - name: Prepare deployment directory
-      run: |
-        mkdir -p _site
-        mv nyc-screenings.ics _site/
         
     - name: Deploy to GitHub Pages
       run: |
