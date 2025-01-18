@@ -86,7 +86,12 @@ def create_calendar_event(screening: Dict) -> Event:
     nyc_tz = pytz.timezone('America/New_York')
 
     # Clean up the title
-    title = strip_html(screening.get('title', 'Untitled'))
+    raw_title = strip_html(screening.get('title', 'Untitled'))
+    # Use regex to remove date and venue parts from title (e.g., "Jan 25 Metrograph at ...")
+    month_abbr = r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+    match = re.match(rf'^(.*?)(\s+{month_abbr}\s+\d{{1,2}}).*', raw_title)
+    title = match.group(1) if match else raw_title
+
     # Optionally prepend "EC:" if part of Essential Cinema Collection for AFA
     # if "Essential Cinema" in screening.get('collection', ''):
     #     title = "EC: " + title
