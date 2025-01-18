@@ -13,7 +13,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999002870
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:India Song Jan 25 Metrograph
+SUMMARY:India Song
 DTSTART;TZID=America/New_York:20250118T110000
 DURATION:PT1H55M
 DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
@@ -24,7 +24,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Solaris Jan 25 Metrograph
+SUMMARY:Solaris
 DTSTART;TZID=America/New_York:20250118T131000
 DURATION:PT2H47M
 DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
@@ -33,7 +33,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999002965
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph
+SUMMARY:WR Mysteries of the Organism
 DTSTART;TZID=America/New_York:20250118T133000
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: In Dreams Begin Responsibilities:
@@ -44,7 +44,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Giants and Toys Jan 25 Metrograph
+SUMMARY:Giants and Toys
 DTSTART;TZID=America/New_York:20250118T160000
 DURATION:PT1H35M
 DESCRIPTION:Runtime: 95 minutes\nSeries: In Dreams Begin Responsibilities:
@@ -55,7 +55,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Face of Another Jan 25 Metrograph
+SUMMARY:The Face of Another
 DTSTART;TZID=America/New_York:20250118T162000
 DURATION:PT2H4M
 DESCRIPTION:Runtime: 124 minutes\nSeries: Bye Bye Love: Fujisawa and the J
@@ -66,7 +66,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh Jan 25 Metrograph
+SUMMARY:Santosh
 DTSTART;TZID=America/New_York:20250118T183000
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nSeries: Sandhya Suri Selects\nMore info:
@@ -76,7 +76,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004138&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Bye Bye Love Jan 25 Metrograph
+SUMMARY:Bye Bye Love
 DTSTART;TZID=America/New_York:20250118T184500
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
@@ -87,7 +87,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Felicite Jan 25 Metrograph
+SUMMARY:Felicite
 DTSTART;TZID=America/New_York:20250118T204000
 DURATION:PT2H9M
 DESCRIPTION:Runtime: 129 minutes\nSeries: Sandhya Suri Selects\nMore info:
@@ -97,7 +97,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003638&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Taste of Cherry Jan 25 Metrograph
+SUMMARY:Taste of Cherry
 DTSTART;TZID=America/New_York:20250118T210000
 DURATION:PT1H39M
 DESCRIPTION:Runtime: 99 minutes\nSeries: Raise Ravens and They Will Pick Y
@@ -108,7 +108,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003505&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Under the Skin Jan 25 Metrograph
+SUMMARY:Under the Skin
 DTSTART;TZID=America/New_York:20250118T231000
 DURATION:PT1H48M
 DESCRIPTION:Runtime: 108 minutes\nSeries: Amongst Humans\nMore info: https
@@ -118,7 +118,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux Jan 25 Metrograph
+SUMMARY:Ashes of Time Redux
 DTSTART;TZID=America/New_York:20250118T231500
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
@@ -129,7 +129,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Discreet Charm of the Bourgeoisie Jan 25 Metrograph
+SUMMARY:The Discreet Charm of the Bourgeoisie
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H41M
 DESCRIPTION:Runtime: 101 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
@@ -140,7 +140,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000779&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Farewell Jan 25 Metrograph
+SUMMARY:The Farewell
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H38M
 DESCRIPTION:Runtime: 98 minutes\nSeries: Screen Time at Metrograph\nMore i
@@ -151,7 +151,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002679&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux Jan 25 Metrograph
+SUMMARY:Ashes of Time Redux
 DTSTART;TZID=America/New_York:20250119T131000
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
@@ -162,7 +162,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Giants and Toys Jan 25 Metrograph
+SUMMARY:Giants and Toys
 DTSTART;TZID=America/New_York:20250119T131500
 DURATION:PT1H35M
 DESCRIPTION:Runtime: 95 minutes\nSeries: In Dreams Begin Responsibilities:
@@ -173,7 +173,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Solaris Jan 25 Metrograph
+SUMMARY:Solaris
 DTSTART;TZID=America/New_York:20250119T151500
 DURATION:PT2H47M
 DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
@@ -182,7 +182,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999002965
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Face of Another Jan 25 Metrograph
+SUMMARY:The Face of Another
 DTSTART;TZID=America/New_York:20250119T152000
 DURATION:PT2H4M
 DESCRIPTION:Runtime: 124 minutes\nSeries: Bye Bye Love: Fujisawa and the J
@@ -193,7 +193,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Bye Bye Love Jan 25 Metrograph
+SUMMARY:Bye Bye Love
 DTSTART;TZID=America/New_York:20250119T175000
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
@@ -204,7 +204,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Woman in the Dunes Jan 25 Metrograph
+SUMMARY:Woman in the Dunes
 DTSTART;TZID=America/New_York:20250119T183000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nSeries: Bye Bye Love: Fujisawa and the J
@@ -215,7 +215,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:India Song Jan 25 Metrograph
+SUMMARY:India Song
 DTSTART;TZID=America/New_York:20250119T194000
 DURATION:PT1H55M
 DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
@@ -226,7 +226,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Neon Demon Jan 25 Metrograph
+SUMMARY:The Neon Demon
 DTSTART;TZID=America/New_York:20250119T213000
 DURATION:PT1H58M
 DESCRIPTION:Runtime: 118 minutes\nSeries: 15 Minutes\nMore info: https://m
@@ -236,7 +236,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph
+SUMMARY:WR Mysteries of the Organism
 DTSTART;TZID=America/New_York:20250119T220000
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: In Dreams Begin Responsibilities:
@@ -247,7 +247,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2046 Dec 24 Metrograph
+SUMMARY:2046
 DTSTART;TZID=America/New_York:20250120T172000
 DURATION:PT2H9M
 DESCRIPTION:Runtime: 129 minutes\nSeries: The Holidays at Metrograph\nMore
@@ -258,7 +258,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000518&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Neon Demon Jan 25 Metrograph
+SUMMARY:The Neon Demon
 DTSTART;TZID=America/New_York:20250120T174000
 DURATION:PT1H58M
 DESCRIPTION:Runtime: 118 minutes\nSeries: 15 Minutes\nMore info: https://m
@@ -268,7 +268,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux Jan 25 Metrograph
+SUMMARY:Ashes of Time Redux
 DTSTART;TZID=America/New_York:20250120T200000
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
@@ -279,7 +279,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Bye Bye Love Jan 25 Metrograph
+SUMMARY:Bye Bye Love
 DTSTART;TZID=America/New_York:20250120T201000
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
@@ -299,7 +299,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999001205
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vive L&#039\;amour Dec 24 Metrograph
+SUMMARY:Vive L&#039\;amour
 DTSTART;TZID=America/New_York:20250120T221000
 DURATION:PT1H58M
 DESCRIPTION:Runtime: 118 minutes\nSeries: Urban Ghosts\nMore info: https:/
@@ -318,7 +318,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999003936
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Woman in the Dunes Jan 25 Metrograph
+SUMMARY:Woman in the Dunes
 DTSTART;TZID=America/New_York:20250121T183000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nSeries: Bye Bye Love: Fujisawa and the J
@@ -329,7 +329,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Suzhou River Jan 25 Metrograph
+SUMMARY:Suzhou River
 DTSTART;TZID=America/New_York:20250121T194500
 DURATION:PT1H23M
 DESCRIPTION:Runtime: 83 minutes\nSeries: Raise Ravens and They Will Pick Y
@@ -340,7 +340,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003167&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph
+SUMMARY:WR Mysteries of the Organism
 DTSTART;TZID=America/New_York:20250121T213000
 DURATION:PT1H25M
 DESCRIPTION:Runtime: 85 minutes\nSeries: In Dreams Begin Responsibilities:
@@ -351,7 +351,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Inland Empire Jan 25 Metrograph
+SUMMARY:Inland Empire
 DTSTART;TZID=America/New_York:20250122T182500
 DURATION:PT3H17M
 DESCRIPTION:Runtime: 197 minutes\nSeries: The Many Lives of Laura Dern\nMo
@@ -362,7 +362,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002974&amp;v=55add3d845
  bf
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Solaris Jan 25 Metrograph
+SUMMARY:Solaris
 DTSTART;TZID=America/New_York:20250122T183000
 DURATION:PT2H47M
 DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
@@ -371,7 +371,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999002965
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Lost in Translation Dec 24 Metrograph
+SUMMARY:Lost in Translation
 DTSTART;TZID=America/New_York:20250122T214500
 DURATION:PT1H44M
 DESCRIPTION:Runtime: 104 minutes\nSeries: Urban Ghosts\nMore info: https:/
@@ -381,7 +381,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003098&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux Jan 25 Metrograph
+SUMMARY:Ashes of Time Redux
 DTSTART;TZID=America/New_York:20250122T215000
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
@@ -392,7 +392,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Grandmaster Jan 25 Metrograph
+SUMMARY:The Grandmaster
 DTSTART;TZID=America/New_York:20250124T192000
 DURATION:PT2H10M
 DESCRIPTION:Runtime: 130 minutes\nSeries: Zhang Ziyi in 35mm\nMore info: h
@@ -402,7 +402,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999001260&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Be Pretty and Shut Up Jan 25 Metrograph
+SUMMARY:Be Pretty and Shut Up
 DTSTART;TZID=America/New_York:20250124T193000
 DURATION:PT1H55M
 DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
@@ -413,7 +413,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004143&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Under the Skin Jan 25 Metrograph
+SUMMARY:Under the Skin
 DTSTART;TZID=America/New_York:20250124T215000
 DURATION:PT1H48M
 DESCRIPTION:Runtime: 108 minutes\nSeries: Amongst Humans\nMore info: https
@@ -423,7 +423,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The King of Comedy Jan 25 Metrograph
+SUMMARY:The King of Comedy
 DTSTART;TZID=America/New_York:20250124T220000
 DURATION:PT1H49M
 DESCRIPTION:Runtime: 109 minutes\nSeries: 15 Minutes\nMore info: https://m
