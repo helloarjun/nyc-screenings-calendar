@@ -1,100 +1,53 @@
-name: Test and Deploy Calendar
+name: Update Cinema Calendar
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Allow manual triggering
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 5 * * *'  # Run daily at 5:00 UTC (midnight EST)
 
 jobs:
-  run-script:
+  update-calendar:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     
     steps:
-    - name: Checkout repository
+    - name: Check out repository
       uses: actions/checkout@v3
-    
-    - name: Setup Python
+      
+    - name: Set up Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
         
-    - name: Debug Environment
-      run: |
-        echo "🔍 Checking initial setup..."
-        echo "Current directory: $PWD"
-        echo "Directory contents:"
-        ls -la
-        echo "Python version:"
-        python --version
-        pip --version
-        
     - name: Install dependencies
       run: |
-        echo "📦 Installing dependencies..."
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        echo "Installed packages:"
-        pip freeze
-      
-    - name: Test Python Imports
-      run: |
-        echo "🧪 Testing Python imports..."
-        python -c "
-        try:
-            import requests
-            print('✅ requests import successful')
-            import bs4
-            print('✅ beautifulsoup4 import successful')
-            import icalendar
-            print('✅ icalendar import successful')
-            import pytz
-            print('✅ pytz import successful')
-        except Exception as e:
-            print(f'❌ Import error: {str(e)}')
-            exit(1)
-        "
+        pip install requests
+        pip install beautifulsoup4
+        pip install icalendar
+        pip install pytz
         
-    - name: Create Output Directory
-      run: |
-        echo "📁 Creating output directory..."
-        mkdir -p _site
-        echo "Directory created at: $PWD/_site"
-        ls -la _site
+    - name: Generate calendar
+      run: python scraper.py
         
-    - name: Run Scraper with Debug
+    - name: Deploy to GitHub Pages
       run: |
-        echo "🚀 Running scraper with debug output..."
-        python -u scraper.py  # -u for unbuffered output
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
-    - name: Check Script Output
-      if: always()  # Run even if previous step failed
-      run: |
-        echo "📋 Checking script results..."
-        echo "Current directory structure:"
-        tree .
-        echo "Content of _site directory:"
-        ls -la _site/ || echo "❌ _site directory not found"
-        if [ -f "_site/index.html" ]; then
-          echo "📄 Found index.html - first 20 lines:"
-          head -n 20 _site/index.html
-        else
-          echo "❌ index.html not found"
-        fi
-        if [ -f "_site/nyc-screenings.ics" ]; then
-          echo "📅 Found nyc-screenings.ics - first 20 lines:"
-          head -n 20 _site/nyc-screenings.ics
-        else
-          echo "❌ nyc-screenings.ics not found"
-        fi
+        # Create gh-pages branch if it doesn't exist
+        git fetch origin gh-pages || git checkout --orphan gh-pages
+        git checkout gh-pages || true
         
-    - name: Archive Logs
-      if: always()  # Run even if previous steps failed
-      uses: actions/upload-artifact@v3
-      with:
-        name: debug-logs
-        path: |
-          ./_site/
-          ./scraper.py
-          ./requirements.txt
+        # Remove old files and copy new ones
+        git rm -rf . || true
+        git clean -fdx
+        cp -r _site/* .
+        rm -rf _site
+        
+        # Commit and push
+        git add -A
+        timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+        git commit -m "Update calendar - $timestamp" || true
+        git push origin gh-pages
