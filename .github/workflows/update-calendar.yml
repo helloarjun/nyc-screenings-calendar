@@ -30,8 +30,46 @@ jobs:
           rm nyc_indie_cinema.ics
         fi
 
-    - name: Clean untracked files
-      run: git clean -fdx
+    - name: Create _site directory
+      run: mkdir -p _site
+
+    - name: Move generated ICS file
+      run: |
+        if [ -f nyc_indie_cinema.ics ]; then
+          mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+        else
+          echo "Error: nyc_indie_cinema.ics not found!"
+          exit 1
+        fi
+
+    - name: Generate HTML page
+      run: |
+        echo '<!DOCTYPE html>
+        <html>
+        <head>
+          <title>NYC Screenings Calendar</title>
+          <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #333; }
+          </style>
+        </head>
+        <body>
+          <h1>NYC Screenings Calendar</h1>
+          <p><a href="nyc_indie_cinema.ics">Download the ICS Calendar</a></p>
+        </body>
+        </html>' > _site/index.html
+
+    - name: Debug: List files in the current directory
+      run: ls -la
+
+    - name: Debug: List files in the _site directory
+      run: |
+        if [ -d _site ]; then
+          ls -la _site
+        else
+          echo "_site directory does not exist"
+          exit 1
+        fi
 
     - name: Deploy to GitHub Pages
       run: |
