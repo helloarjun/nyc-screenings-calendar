@@ -4,1695 +4,1465 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Film Forum & IFC Center
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:The Lost Boys at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:The Lost Boys at IFC Center
 DTSTART;TZID=America/New_York:20250118T000500
 DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: <a href="/series/late-night-favor
- ites-winter-2025" hreflang="en">Late Night Favorites: Winter 2025</a>\nMor
- e info: https://www.ifccenter.com/films/the-lost-boys/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+DESCRIPTION:Runtime: 97 minutes\nSeries: Late Night Favorites: Winter 2025
+ \nMore info: https://www.ifccenter.com/films/the-lost-boys/
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-lost-boys/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Buffy the Vampire Slayer at IFC Center at <a href="/venues/ifc-cen
- ter" hreflang="en">IFC Center</a>
+SUMMARY:Buffy the Vampire Slayer at IFC Center
 DTSTART;TZID=America/New_York:20250118T001000
 DURATION:PT1H26M
-DESCRIPTION:Runtime: 86 minutes\nSeries: <a href="/series/donald-sutherlan
- d-never-guy-next-door" hreflang="en">Donald Sutherland: (Never) the Guy Ne
- xt Door</a>\nMore info: https://www.ifccenter.com/films/buffy-the-vampire-
+DESCRIPTION:Runtime: 86 minutes\nSeries: Donald Sutherland: (Never) the Gu
+ y Next Door\nMore info: https://www.ifccenter.com/films/buffy-the-vampire-
  slayer/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/buffy-the-vampire-slayer/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Bibi Files at IFC Center at <a href="/venues/ifc-center" hrefl
- ang="en">IFC Center</a>
+SUMMARY:The Bibi Files at IFC Center
 DTSTART;TZID=America/New_York:20250118T104500
 DURATION:PT1H56M
 DESCRIPTION:Runtime: 116 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-bibi-files/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-bibi-files/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250118T105000
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Oh\, Canada at IFC Center at <a href="/venues/ifc-center" hreflang
- ="en">IFC Center</a>
+SUMMARY:Oh\, Canada at IFC Center
 DTSTART;TZID=America/New_York:20250118T110000
 DURATION:PT1H35M
 DESCRIPTION:Runtime: 95 minutes\nMore info: https://www.ifccenter.com/film
  s/oh-canada/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/oh-canada/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Girl with the Needle at IFC Center at <a href="/venues/ifc-cen
- ter" hreflang="en">IFC Center</a>
+SUMMARY:The Girl with the Needle at IFC Center
 DTSTART;TZID=America/New_York:20250118T112000
 DURATION:PT2H3M
 DESCRIPTION:Runtime: 123 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-girl-with-the-needle/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-girl-with-the-needle/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250118T122000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250118T123000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE STEPFORD WIVES AI FF at <a href="/venues/film-forum" hreflang=
- "en">Film Forum</a>
+SUMMARY:THE STEPFORD WIVES AI FF
 DTSTART;TZID=America/New_York:20250118T123000
 DURATION:PT1H33M
-DESCRIPTION:Runtime: 93 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/the-stepford-wives-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 93 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/the-stepford-wives-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-stepford-wives-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250118T125000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250118T130000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250118T130500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250118T132000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Will &amp\; Harper at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Will &amp\; Harper at IFC Center
 DTSTART;TZID=America/New_York:20250118T132500
 DURATION:PT1H54M
 DESCRIPTION:Runtime: 114 minutes\nMore info: https://www.ifccenter.com/fil
  ms/will-harper/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/will-harper/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250118T141000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE SEED OF THE SACRED FIG at Film Forum at <a href="/venues/film-
- forum" hreflang="en">Film Forum</a>
+SUMMARY:THE SEED OF THE SACRED FIG at Film Forum
 DTSTART;TZID=America/New_York:20250118T144500
 DURATION:PT2H46M
-DESCRIPTION:Runtime: 166 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/the-seed-of
- -the-sacred-fig
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 166 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/the-seed-of-the-sacred-fig
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-seed-of-the-sacred-fig
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250118T145000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250118T150000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:HER AI FF at <a href="/venues/film-forum" hreflang="en">Film Forum
- </a>
+SUMMARY:HER AI FF
 DTSTART;TZID=America/New_York:20250118T150000
 DURATION:PT2H6M
-DESCRIPTION:Runtime: 126 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/her-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 126 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/her-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/her-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Every Little Thing at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Every Little Thing at IFC Center
 DTSTART;TZID=America/New_York:20250118T150500
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nMore info: https://www.ifccenter.com/film
  s/every-little-thing/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/every-little-thing/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250118T155000
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250118T155500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250118T162500
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250118T162500
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250118T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250118T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:DR. STRANGELOVE AI FF at <a href="/venues/film-forum" hreflang="en
- ">Film Forum</a>
+SUMMARY:DR. STRANGELOVE AI FF
 DTSTART;TZID=America/New_York:20250118T173000
 DURATION:PT1H24M
-DESCRIPTION:Runtime: 84 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/dr-strangelove-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 84 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/dr-strangelove-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/dr-strangelove-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250118T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250118T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250118T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250118T183500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250118T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250118T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250118T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250118T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ROBOCOP AI FF at <a href="/venues/film-forum" hreflang="en">Film F
- orum</a>
+SUMMARY:ROBOCOP AI FF
 DTSTART;TZID=America/New_York:20250118T193000
 DURATION:PT1H42M
-DESCRIPTION:Runtime: 102 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/robocop-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 102 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/robocop-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/robocop-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250118T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250118T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250118T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250118T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250118T211500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250118T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250118T214000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250118T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Seven at IFC Center at <a href="/venues/ifc-center" hreflang="en">
- IFC Center</a>
+SUMMARY:Seven at IFC Center
 DTSTART;TZID=America/New_York:20250118T233500
 DURATION:PT2H7M
-DESCRIPTION:Runtime: 127 minutes\nSeries: <a href="/series/late-night-favo
- rites-winter-2025" hreflang="en">Late Night Favorites: Winter 2025</a>\nMo
- re info: https://www.ifccenter.com/films/seven/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+DESCRIPTION:Runtime: 127 minutes\nSeries: Late Night Favorites: Winter 202
+ 5\nMore info: https://www.ifccenter.com/films/seven/
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/seven/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Battle Royale at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Battle Royale at IFC Center
 DTSTART;TZID=America/New_York:20250118T234500
 DURATION:PT1H54M
-DESCRIPTION:Runtime: 114 minutes\nSeries: <a href="/series/waverly-midnigh
- ts-school-sucks" hreflang="en">Waverly Midnights: School Sucks</a>\nMore i
- nfo: https://www.ifccenter.com/films/battle-royale-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+DESCRIPTION:Runtime: 114 minutes\nSeries: Waverly Midnights: School Sucks\
+ nMore info: https://www.ifccenter.com/films/battle-royale-2/
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/battle-royale-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Craft at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:The Craft at IFC Center
 DTSTART;TZID=America/New_York:20250118T235500
 DURATION:PT1H41M
-DESCRIPTION:Runtime: 101 minutes\nSeries: <a href="/series/waverly-midnigh
- ts-late-night-favorites" hreflang="en">Waverly Midnights: Late-Night Favor
- ites</a>\nMore info: https://www.ifccenter.com/films/the-craft/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+DESCRIPTION:Runtime: 101 minutes\nSeries: Waverly Midnights: Late-Night Fa
+ vorites\nMore info: https://www.ifccenter.com/films/the-craft/
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-craft/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Bibi Files at IFC Center at <a href="/venues/ifc-center" hrefl
- ang="en">IFC Center</a>
+SUMMARY:The Bibi Files at IFC Center
 DTSTART;TZID=America/New_York:20250119T104500
 DURATION:PT1H56M
 DESCRIPTION:Runtime: 116 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-bibi-files/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-bibi-files/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250119T105000
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Remarkable Life of Ibelin at IFC Center at <a href="/venues/if
- c-center" hreflang="en">IFC Center</a>
+SUMMARY:The Remarkable Life of Ibelin at IFC Center
 DTSTART;TZID=America/New_York:20250119T105500
 DURATION:PT1H44M
 DESCRIPTION:Runtime: 104 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-remarkable-life-of-ibelin/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-remarkable-life-of-ibelin/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Oh\, Canada at IFC Center at <a href="/venues/ifc-center" hreflang
- ="en">IFC Center</a>
+SUMMARY:Oh\, Canada at IFC Center
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H35M
 DESCRIPTION:Runtime: 95 minutes\nMore info: https://www.ifccenter.com/film
  s/oh-canada/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/oh-canada/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE IRON GIANT FF JR. at <a href="/venues/film-forum" hreflang="en
- ">Film Forum</a>
+SUMMARY:THE IRON GIANT FF JR.
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H27M
-DESCRIPTION:Runtime: 87 minutes\nSeries: <a href="/series/film-forum-jr" h
- reflang="en">Film Forum Jr.</a>\nMore info: https://filmforum.org/film/the
- -iron-giant-ffjr
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 87 minutes\nSeries: Film Forum Jr.\nMore info: https:
+ //filmforum.org/film/the-iron-giant-ffjr
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-iron-giant-ffjr
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Girl with the Needle at IFC Center at <a href="/venues/ifc-cen
- ter" hreflang="en">IFC Center</a>
+SUMMARY:The Girl with the Needle at IFC Center
 DTSTART;TZID=America/New_York:20250119T112000
 DURATION:PT2H3M
 DESCRIPTION:Runtime: 123 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-girl-with-the-needle/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-girl-with-the-needle/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250119T122000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250119T123000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250119T125000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE DAY THE EARTH STOOD STILL AI FF at <a href="/venues/film-forum
- " hreflang="en">Film Forum</a>
+SUMMARY:THE DAY THE EARTH STOOD STILL AI FF
 DTSTART;TZID=America/New_York:20250119T130000
 DURATION:PT1H32M
-DESCRIPTION:Runtime: 92 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/the-day-the-earth-stood-still-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 92 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/the-day-the-earth-stood-still-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-day-the-earth-stood-still-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250119T130000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250119T130500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250119T132000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Will &amp\; Harper at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Will &amp\; Harper at IFC Center
 DTSTART;TZID=America/New_York:20250119T132500
 DURATION:PT1H54M
 DESCRIPTION:Runtime: 114 minutes\nMore info: https://www.ifccenter.com/fil
  ms/will-harper/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/will-harper/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250119T141000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE SEED OF THE SACRED FIG at Film Forum at <a href="/venues/film-
- forum" hreflang="en">Film Forum</a>
+SUMMARY:THE SEED OF THE SACRED FIG at Film Forum
 DTSTART;TZID=America/New_York:20250119T144500
 DURATION:PT2H46M
-DESCRIPTION:Runtime: 166 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/the-seed-of
- -the-sacred-fig
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 166 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/the-seed-of-the-sacred-fig
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-seed-of-the-sacred-fig
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250119T145000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250119T150000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:STAR WARS: EPISODE IV – A NEW HOPE AI FF at <a href="/venues/fil
- m-forum" hreflang="en">Film Forum</a>
+SUMMARY:STAR WARS: EPISODE IV – A NEW HOPE AI FF
 DTSTART;TZID=America/New_York:20250119T150000
 DURATION:PT2H1M
-DESCRIPTION:Runtime: 121 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/star-wars-episode-iv-a-new-hope-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 121 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/star-wars-episode-iv-a-new-hope-
+ ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/star-wars-episode-iv-a-new-hope-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Every Little Thing at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Every Little Thing at IFC Center
 DTSTART;TZID=America/New_York:20250119T150500
 DURATION:PT1H33M
 DESCRIPTION:Runtime: 93 minutes\nMore info: https://www.ifccenter.com/film
  s/every-little-thing/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/every-little-thing/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250119T155000
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250119T155500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250119T162500
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250119T162500
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250119T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250119T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:STAR WARS: EPISODE V – THE EMPIRE STRIKES BACK AI FF at <a href=
- "/venues/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:STAR WARS: EPISODE V – THE EMPIRE STRIKES BACK AI FF
 DTSTART;TZID=America/New_York:20250119T173000
 DURATION:PT2H4M
-DESCRIPTION:Runtime: 124 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/star-wars-episode-v-the-empire-strikes-back-a
- i
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 124 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/star-wars-episode-v-the-empire-s
+ trikes-back-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/star-wars-episode-v-the-empire-strikes-back
  -ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250119T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250119T183500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250119T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250119T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250119T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250119T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THX 1138 AI FF at <a href="/venues/film-forum" hreflang="en">Film 
- Forum</a>
+SUMMARY:THX 1138 AI FF
 DTSTART;TZID=America/New_York:20250119T200000
 DURATION:PT1H26M
-DESCRIPTION:Runtime: 86 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/thx-1138-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 86 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/thx-1138-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/thx-1138-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250119T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250119T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250119T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250119T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250119T211500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250119T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250119T214000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250119T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250120T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250120T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250120T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250120T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:METROPOLIS AI FF at <a href="/venues/film-forum" hreflang="en">Fil
- m Forum</a>
+SUMMARY:METROPOLIS AI FF
 DTSTART;TZID=America/New_York:20250120T181000
 DURATION:PT2H33M
-DESCRIPTION:Runtime: 153 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/metropolis-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 153 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/metropolis-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/metropolis-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250120T183500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250120T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250120T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250120T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250120T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250120T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250120T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250120T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250120T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ROBOCOP AI FF at <a href="/venues/film-forum" hreflang="en">Film F
- orum</a>
+SUMMARY:ROBOCOP AI FF
 DTSTART;TZID=America/New_York:20250120T211000
 DURATION:PT1H42M
-DESCRIPTION:Runtime: 102 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/robocop-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 102 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/robocop-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/robocop-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250120T211500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250120T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250120T214000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250120T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250121T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250121T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250121T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250121T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250121T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250121T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250121T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:BLADE RUNNER AI FF at <a href="/venues/film-forum" hreflang="en">F
- ilm Forum</a>
+SUMMARY:BLADE RUNNER AI FF
 DTSTART;TZID=America/New_York:20250121T191000
 DURATION:PT1H57M
-DESCRIPTION:Runtime: 117 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/blade-runner-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 117 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/blade-runner-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/blade-runner-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250121T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250121T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250121T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250121T204500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250121T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250121T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250121T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250121T214000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250121T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250122T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250122T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250122T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250122T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SHORT CIRCUIT AI FF at <a href="/venues/film-forum" hreflang="en">
- Film Forum</a>
+SUMMARY:SHORT CIRCUIT AI FF
 DTSTART;TZID=America/New_York:20250122T180000
 DURATION:PT1H38M
-DESCRIPTION:Runtime: 98 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/short-circuit-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 98 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/short-circuit-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/short-circuit-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250122T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250122T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250122T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250122T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250122T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2001 AI FF at <a href="/venues/film-forum" hreflang="en">Film Foru
- m</a>
+SUMMARY:2001 AI FF
 DTSTART;TZID=America/New_York:20250122T201000
 DURATION:PT2H29M
-DESCRIPTION:Runtime: 149 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/2001-a-space-odyssey-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 149 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/2001-a-space-odyssey-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/2001-a-space-odyssey-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250122T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250122T204500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250122T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250122T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250122T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250122T214000
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250122T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250123T171500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250123T173000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum at <a href="/venue
- s/film-forum" hreflang="en">Film Forum</a>
+SUMMARY:SOUNDTRACK TO A COUP D&#039\;ETAT at Film Forum
 DTSTART;TZID=America/New_York:20250123T175000
 DURATION:PT2H30M
-DESCRIPTION:Runtime: 150 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/soundtrack-
- to-a-coup-detat
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 150 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/soundtrack-to-a-coup-detat
+LOCATION:Film Forum
 URL:https://filmforum.org/film/soundtrack-to-a-coup-detat
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:VIDEODROME AI FF at <a href="/venues/film-forum" hreflang="en">Fil
- m Forum</a>
+SUMMARY:VIDEODROME AI FF
 DTSTART;TZID=America/New_York:20250123T180000
 DURATION:PT1H27M
-DESCRIPTION:Runtime: 87 minutes\nSeries: <a href="/series/ai-metropolis-ex
- -machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info:
-  https://filmforum.org/film/videodrome-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 87 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHIN
+ A\nMore info: https://filmforum.org/film/videodrome-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/videodrome-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250123T180000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Girls Town at IFC Center at <a href="/venues/ifc-center" hreflang=
- "en">IFC Center</a>
+SUMMARY:Girls Town at IFC Center
 DTSTART;TZID=America/New_York:20250123T184000
 DURATION:PT1H30M
 DESCRIPTION:Runtime: 90 minutes\nMore info: https://www.ifccenter.com/film
  s/girls-town-2/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/girls-town-2/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250123T184500
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dig! XX at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Dig! XX at IFC Center
 DTSTART;TZID=America/New_York:20250123T185000
 DURATION:PT2H27M
 DESCRIPTION:Runtime: 147 minutes\nMore info: https://www.ifccenter.com/fil
  ms/dig-xx/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/dig-xx/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Grand Theft Hamlet at IFC Center at <a href="/venues/ifc-center" h
- reflang="en">IFC Center</a>
+SUMMARY:Grand Theft Hamlet at IFC Center
 DTSTART;TZID=America/New_York:20250123T192500
 DURATION:PT1H31M
 DESCRIPTION:Runtime: 91 minutes\nMore info: https://www.ifccenter.com/film
  s/grand-theft-hamlet/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/grand-theft-hamlet/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:A.I. Artificial FF at <a href="/venues/film-forum" hreflang="en">F
- ilm Forum</a>
+SUMMARY:A.I. Artificial FF
 DTSTART;TZID=America/New_York:20250123T200000
 DURATION:PT2H26M
-DESCRIPTION:Runtime: 146 minutes\nSeries: <a href="/series/ai-metropolis-e
- x-machina" hreflang="en">A.I. FROM METROPOLIS TO EX MACHINA</a>\nMore info
- : https://filmforum.org/film/ai-artificial-intelligence-ai
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 146 minutes\nSeries: A.I. FROM METROPOLIS TO EX MACHI
+ NA\nMore info: https://filmforum.org/film/ai-artificial-intelligence-ai
+LOCATION:Film Forum
 URL:https://filmforum.org/film/ai-artificial-intelligence-ai
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:OCEANS ARE THE REAL CONTINENTS FF at <a href="/venues/film-forum" 
- hreflang="en">Film Forum</a>
+SUMMARY:OCEANS ARE THE REAL CONTINENTS FF
 DTSTART;TZID=America/New_York:20250123T200000
 DURATION:PT1H59M
-DESCRIPTION:Runtime: 119 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/oceans-are-
- the-real-continents
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 119 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/oceans-are-the-real-continents
+LOCATION:Film Forum
 URL:https://filmforum.org/film/oceans-are-the-real-continents
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum at <a href="/venues/film-for
- um" hreflang="en">Film Forum</a>
+SUMMARY:ALL WE IMAGINE AS LIGHT at Film Forum
 DTSTART;TZID=America/New_York:20250123T203000
 DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/first-run" href
- lang="en">First Run</a>\nMore info: https://filmforum.org/film/all-we-imag
- ine-as-light
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 118 minutes\nSeries: First Run\nMore info: https://fi
+ lmforum.org/film/all-we-imagine-as-light
+LOCATION:Film Forum
 URL:https://filmforum.org/film/all-we-imagine-as-light
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vermiglio at IFC Center at <a href="/venues/ifc-center" hreflang="
- en">IFC Center</a>
+SUMMARY:Vermiglio at IFC Center
 DTSTART;TZID=America/New_York:20250123T204500
 DURATION:PT2H
 DESCRIPTION:Runtime: 120 minutes\nMore info: https://www.ifccenter.com/fil
  ms/vermiglio/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/vermiglio/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:THE LAST REPUBLICAN FF at <a href="/venues/film-forum" hreflang="e
- n">Film Forum</a>
+SUMMARY:THE LAST REPUBLICAN FF
 DTSTART;TZID=America/New_York:20250123T205000
 DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: <a href="/series/first-run" hrefl
- ang="en">First Run</a>\nMore info: https://filmforum.org/film/the-last-rep
- ublican
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+DESCRIPTION:Runtime: 90 minutes\nSeries: First Run\nMore info: https://fil
+ mforum.org/film/the-last-republican
+LOCATION:Film Forum
 URL:https://filmforum.org/film/the-last-republican
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Santosh at IFC Center at <a href="/venues/ifc-center" hreflang="en
- ">IFC Center</a>
+SUMMARY:Santosh at IFC Center
 DTSTART;TZID=America/New_York:20250123T205500
 DURATION:PT2H8M
 DESCRIPTION:Runtime: 128 minutes\nMore info: https://www.ifccenter.com/fil
  ms/santosh/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/santosh/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Emilia Perez at IFC Center at <a href="/venues/ifc-center" hreflan
- g="en">IFC Center</a>
+SUMMARY:Emilia Perez at IFC Center
 DTSTART;TZID=America/New_York:20250123T213000
 DURATION:PT2H12M
 DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.ifccenter.com/fil
  ms/emilia-perez/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/emilia-perez/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eat the Night at IFC Center at <a href="/venues/ifc-center" hrefla
- ng="en">IFC Center</a>
+SUMMARY:Eat the Night at IFC Center
 DTSTART;TZID=America/New_York:20250123T215000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://www.ifccenter.com/fil
  ms/eat-the-night/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/eat-the-night/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Remarkable Life of Ibelin at IFC Center at <a href="/venues/if
- c-center" hreflang="en">IFC Center</a>
+SUMMARY:The Remarkable Life of Ibelin at IFC Center
 DTSTART;TZID=America/New_York:20250123T225500
 DURATION:PT1H44M
 DESCRIPTION:Runtime: 104 minutes\nMore info: https://www.ifccenter.com/fil
  ms/the-remarkable-life-of-ibelin/
-LOCATION:<a href="/venues/ifc-center" hreflang="en">IFC Center</a>
+LOCATION:IFC Center
 URL:https://www.ifccenter.com/films/the-remarkable-life-of-ibelin/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:DYING at Film Forum at <a href="/venues/film-forum" hreflang="en">
- Film Forum</a>
+SUMMARY:DYING at Film Forum
 DTSTART;TZID=America/New_York:20250124T183000
 DURATION:PT1H20M
 DESCRIPTION:Runtime: 80 minutes\nMore info: https://filmforum.org/film/dyi
  ng
-LOCATION:<a href="/venues/film-forum" hreflang="en">Film Forum</a>
+LOCATION:Film Forum
 URL:https://filmforum.org/film/dying
 END:VEVENT
 END:VCALENDAR
