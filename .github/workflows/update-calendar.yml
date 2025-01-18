@@ -57,6 +57,9 @@ jobs:
           </body>
           </html>' > _site/index.html
 
+      - name: Debug: List files in the current directory
+        run: ls -la
+
       - name: Debug: List files in _site directory
         run: |
           if [ -d _site ]; then
