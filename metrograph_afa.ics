@@ -1,0 +1,503 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
+X-WR-CALNAME:NYC Indie Cinema - Metrograph & AFA
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+SUMMARY:The Aviator&#039\;s Wife Sept&#039\;24 Metrograph at <a href="/ven
+ ues/metrograph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T110000
+DURATION:PT1H46M
+DESCRIPTION:Runtime: 106 minutes\nMore info: https://metrograph.com/film/?
+ vista_film_id=9999002870
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002870
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:India Song Jan 25 Metrograph at <a href="/venues/metrograph" hrefl
+ ang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T110000
+DURATION:PT1H55M
+DESCRIPTION:Runtime: 115 minutes\nSeries: <a href="/series/delphine-seyrig
+ -rebel-muse" hreflang="en">Delphine Seyrig: Rebel Muse</a>\nMore info: htt
+ ps://metrograph.com/film/?vista_film_id=9999002033&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Solaris Jan 25 Metrograph at <a href="/venues/metrograph" hreflang
+ ="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T131000
+DURATION:PT2H47M
+DESCRIPTION:Runtime: 167 minutes\nSeries: <a href="/series/amongst-humans"
+  hreflang="en">Amongst Humans</a>\nMore info: https://metrograph.com/film/
+ ?vista_film_id=9999002965
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002965
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph at <a href="/venues
+ /metrograph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T133000
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/dreams-begin-res
+ ponsibilities-jonathan-rosenbaum-double-bill" hreflang="en">In Dreams Begi
+ n Responsibilities: A Jonathan Rosenbaum Double-Bill</a>\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002582&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Giants and Toys Jan 25 Metrograph at <a href="/venues/metrograph" 
+ hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T160000
+DURATION:PT1H35M
+DESCRIPTION:Runtime: 95 minutes\nSeries: <a href="/series/dreams-begin-res
+ ponsibilities-jonathan-rosenbaum-double-bill" hreflang="en">In Dreams Begi
+ n Responsibilities: A Jonathan Rosenbaum Double-Bill</a>\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002487&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Face of Another Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T162000
+DURATION:PT2H4M
+DESCRIPTION:Runtime: 124 minutes\nSeries: <a href="/series/bye-bye-love-fu
+ jisawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the
+  Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film
+ _id=9999002068&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Santosh Jan 25 Metrograph at <a href="/venues/metrograph" hreflang
+ ="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T183000
+DURATION:PT2H8M
+DESCRIPTION:Runtime: 128 minutes\nSeries: <a href="/series/sandhya-suri-se
+ lects" hreflang="en">Sandhya Suri Selects</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999004138&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004138&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bye Bye Love Jan 25 Metrograph at <a href="/venues/metrograph" hre
+ flang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T184500
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/bye-bye-love-fuj
+ isawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the 
+ Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film_
+ id=9999004128&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Felicite Jan 25 Metrograph at <a href="/venues/metrograph" hreflan
+ g="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T204000
+DURATION:PT2H9M
+DESCRIPTION:Runtime: 129 minutes\nSeries: <a href="/series/sandhya-suri-se
+ lects" hreflang="en">Sandhya Suri Selects</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999003638&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003638&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Taste of Cherry Jan 25 Metrograph at <a href="/venues/metrograph" 
+ hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T210000
+DURATION:PT1H39M
+DESCRIPTION:Runtime: 99 minutes\nSeries: <a href="/series/raise-ravens-and
+ -they-will-pick-your-eyes-out" hreflang="en">Raise Ravens and They Will Pi
+ ck Your Eyes Out</a>\nMore info: https://metrograph.com/film/?vista_film_i
+ d=9999003505&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003505&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Under the Skin Jan 25 Metrograph at <a href="/venues/metrograph" h
+ reflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T231000
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: <a href="/series/amongst-humans"
+  hreflang="en">Amongst Humans</a>\nMore info: https://metrograph.com/film/
+ ?vista_film_id=9999003246&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ashes of Time Redux Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250118T231500
+DURATION:PT1H33M
+DESCRIPTION:Runtime: 93 minutes\nSeries: <a href="/series/brigitte-lin-scr
+ een" hreflang="en">Brigitte Lin on Screen</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Discreet Charm of the Bourgeoisie Jan 25 Metrograph at <a href
+ ="/venues/metrograph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T110000
+DURATION:PT1H41M
+DESCRIPTION:Runtime: 101 minutes\nSeries: <a href="/series/delphine-seyrig
+ -rebel-muse" hreflang="en">Delphine Seyrig: Rebel Muse</a>\nMore info: htt
+ ps://metrograph.com/film/?vista_film_id=9999000779&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000779&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Farewell Jan 25 Metrograph at <a href="/venues/metrograph" hre
+ flang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T110000
+DURATION:PT1H38M
+DESCRIPTION:Runtime: 98 minutes\nSeries: <a href="/series/screen-time-metr
+ ograph" hreflang="en">Screen Time at Metrograph</a>\nMore info: https://me
+ trograph.com/film/?vista_film_id=9999002679&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002679&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ashes of Time Redux Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T131000
+DURATION:PT1H33M
+DESCRIPTION:Runtime: 93 minutes\nSeries: <a href="/series/brigitte-lin-scr
+ een" hreflang="en">Brigitte Lin on Screen</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Giants and Toys Jan 25 Metrograph at <a href="/venues/metrograph" 
+ hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T131500
+DURATION:PT1H35M
+DESCRIPTION:Runtime: 95 minutes\nSeries: <a href="/series/dreams-begin-res
+ ponsibilities-jonathan-rosenbaum-double-bill" hreflang="en">In Dreams Begi
+ n Responsibilities: A Jonathan Rosenbaum Double-Bill</a>\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002487&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Solaris Jan 25 Metrograph at <a href="/venues/metrograph" hreflang
+ ="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T151500
+DURATION:PT2H47M
+DESCRIPTION:Runtime: 167 minutes\nSeries: <a href="/series/amongst-humans"
+  hreflang="en">Amongst Humans</a>\nMore info: https://metrograph.com/film/
+ ?vista_film_id=9999002965
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002965
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Face of Another Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T152000
+DURATION:PT2H4M
+DESCRIPTION:Runtime: 124 minutes\nSeries: <a href="/series/bye-bye-love-fu
+ jisawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the
+  Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film
+ _id=9999002068&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bye Bye Love Jan 25 Metrograph at <a href="/venues/metrograph" hre
+ flang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T175000
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/bye-bye-love-fuj
+ isawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the 
+ Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film_
+ id=9999004128&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Woman in the Dunes Jan 25 Metrograph at <a href="/venues/metrograp
+ h" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T183000
+DURATION:PT2H27M
+DESCRIPTION:Runtime: 147 minutes\nSeries: <a href="/series/bye-bye-love-fu
+ jisawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the
+  Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film
+ _id=9999001271&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:India Song Jan 25 Metrograph at <a href="/venues/metrograph" hrefl
+ ang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T194000
+DURATION:PT1H55M
+DESCRIPTION:Runtime: 115 minutes\nSeries: <a href="/series/delphine-seyrig
+ -rebel-muse" hreflang="en">Delphine Seyrig: Rebel Muse</a>\nMore info: htt
+ ps://metrograph.com/film/?vista_film_id=9999002033&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Neon Demon Jan 25 Metrograph at <a href="/venues/metrograph" h
+ reflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T213000
+DURATION:PT1H58M
+DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/15-minutes" hre
+ flang="en">15 Minutes</a>\nMore info: https://metrograph.com/film/?vista_f
+ ilm_id=9999004127&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph at <a href="/venues
+ /metrograph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250119T220000
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/dreams-begin-res
+ ponsibilities-jonathan-rosenbaum-double-bill" hreflang="en">In Dreams Begi
+ n Responsibilities: A Jonathan Rosenbaum Double-Bill</a>\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002582&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2046 Dec 24 Metrograph at <a href="/venues/metrograph" hreflang="e
+ n">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T172000
+DURATION:PT2H9M
+DESCRIPTION:Runtime: 129 minutes\nSeries: <a href="/series/holidays-metrog
+ raph-1" hreflang="en">The Holidays at Metrograph</a>\nMore info: https://m
+ etrograph.com/film/?vista_film_id=9999000518&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000518&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Neon Demon Jan 25 Metrograph at <a href="/venues/metrograph" h
+ reflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T174000
+DURATION:PT1H58M
+DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/15-minutes" hre
+ flang="en">15 Minutes</a>\nMore info: https://metrograph.com/film/?vista_f
+ ilm_id=9999004127&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ashes of Time Redux Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T200000
+DURATION:PT1H33M
+DESCRIPTION:Runtime: 93 minutes\nSeries: <a href="/series/brigitte-lin-scr
+ een" hreflang="en">Brigitte Lin on Screen</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bye Bye Love Jan 25 Metrograph at <a href="/venues/metrograph" hre
+ flang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T201000
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/bye-bye-love-fuj
+ isawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the 
+ Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film_
+ id=9999004128&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Possession Sept&#039\;24 Metrograph at <a href="/venues/metrograph
+ " hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T220000
+DURATION:PT2H7M
+DESCRIPTION:Runtime: 127 minutes\nMore info: https://metrograph.com/film/?
+ vista_film_id=9999001205
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999001205
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vive L&#039\;amour Dec 24 Metrograph at <a href="/venues/metrograp
+ h" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250120T221000
+DURATION:PT1H58M
+DESCRIPTION:Runtime: 118 minutes\nSeries: <a href="/series/urban-ghosts" h
+ reflang="en">Urban Ghosts</a>\nMore info: https://metrograph.com/film/?vis
+ ta_film_id=9999002623&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002623&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Downtown 81 Aug&#039\;24 Metrograph at <a href="/venues/metrograph
+ " hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250121T181000
+DURATION:PT1H15M
+DESCRIPTION:Runtime: 75 minutes\nMore info: https://metrograph.com/film/?v
+ ista_film_id=9999003936
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003936
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Woman in the Dunes Jan 25 Metrograph at <a href="/venues/metrograp
+ h" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250121T183000
+DURATION:PT2H27M
+DESCRIPTION:Runtime: 147 minutes\nSeries: <a href="/series/bye-bye-love-fu
+ jisawa-and-japanese-new-wave" hreflang="en">Bye Bye Love: Fujisawa and the
+  Japanese New Wave</a>\nMore info: https://metrograph.com/film/?vista_film
+ _id=9999001271&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Suzhou River Jan 25 Metrograph at <a href="/venues/metrograph" hre
+ flang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250121T194500
+DURATION:PT1H23M
+DESCRIPTION:Runtime: 83 minutes\nSeries: <a href="/series/raise-ravens-and
+ -they-will-pick-your-eyes-out" hreflang="en">Raise Ravens and They Will Pi
+ ck Your Eyes Out</a>\nMore info: https://metrograph.com/film/?vista_film_i
+ d=9999003167&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003167&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WR Mysteries of the Organism Jan 25 Metrograph at <a href="/venues
+ /metrograph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250121T213000
+DURATION:PT1H25M
+DESCRIPTION:Runtime: 85 minutes\nSeries: <a href="/series/dreams-begin-res
+ ponsibilities-jonathan-rosenbaum-double-bill" hreflang="en">In Dreams Begi
+ n Responsibilities: A Jonathan Rosenbaum Double-Bill</a>\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002582&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Inland Empire Jan 25 Metrograph at <a href="/venues/metrograph" hr
+ eflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250122T182500
+DURATION:PT3H17M
+DESCRIPTION:Runtime: 197 minutes\nSeries: <a href="/series/many-lives-laur
+ a-dern" hreflang="en">The Many Lives of Laura Dern</a>\nMore info: https:/
+ /metrograph.com/film/?vista_film_id=9999002974&amp\;v=55add3d845bf
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002974&amp;v=55add3d845
+ bf
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Solaris Jan 25 Metrograph at <a href="/venues/metrograph" hreflang
+ ="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250122T183000
+DURATION:PT2H47M
+DESCRIPTION:Runtime: 167 minutes\nSeries: <a href="/series/amongst-humans"
+  hreflang="en">Amongst Humans</a>\nMore info: https://metrograph.com/film/
+ ?vista_film_id=9999002965
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999002965
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lost in Translation Dec 24 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250122T214500
+DURATION:PT1H44M
+DESCRIPTION:Runtime: 104 minutes\nSeries: <a href="/series/urban-ghosts" h
+ reflang="en">Urban Ghosts</a>\nMore info: https://metrograph.com/film/?vis
+ ta_film_id=9999003098&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003098&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ashes of Time Redux Jan 25 Metrograph at <a href="/venues/metrogra
+ ph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250122T215000
+DURATION:PT1H33M
+DESCRIPTION:Runtime: 93 minutes\nSeries: <a href="/series/brigitte-lin-scr
+ een" hreflang="en">Brigitte Lin on Screen</a>\nMore info: https://metrogra
+ ph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Grandmaster Jan 25 Metrograph at <a href="/venues/metrograph" 
+ hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250124T192000
+DURATION:PT2H10M
+DESCRIPTION:Runtime: 130 minutes\nSeries: <a href="/series/zhang-ziyi-35mm
+ " hreflang="en">Zhang Ziyi in 35mm</a>\nMore info: https://metrograph.com/
+ film/?vista_film_id=9999001260&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999001260&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Be Pretty and Shut Up Jan 25 Metrograph at <a href="/venues/metrog
+ raph" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250124T193000
+DURATION:PT1H55M
+DESCRIPTION:Runtime: 115 minutes\nSeries: <a href="/series/delphine-seyrig
+ -rebel-muse" hreflang="en">Delphine Seyrig: Rebel Muse</a>\nMore info: htt
+ ps://metrograph.com/film/?vista_film_id=9999004143&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999004143&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Under the Skin Jan 25 Metrograph at <a href="/venues/metrograph" h
+ reflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250124T215000
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: <a href="/series/amongst-humans"
+  hreflang="en">Amongst Humans</a>\nMore info: https://metrograph.com/film/
+ ?vista_film_id=9999003246&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The King of Comedy Jan 25 Metrograph at <a href="/venues/metrograp
+ h" hreflang="en">Metrograph</a>
+DTSTART;TZID=America/New_York:20250124T220000
+DURATION:PT1H49M
+DESCRIPTION:Runtime: 109 minutes\nSeries: <a href="/series/15-minutes" hre
+ flang="en">15 Minutes</a>\nMore info: https://metrograph.com/film/?vista_f
+ ilm_id=9999001088&amp\;v=0b3b97fa6688
+LOCATION:<a href="/venues/metrograph" hreflang="en">Metrograph</a>
+URL:https://metrograph.com/film/?vista_film_id=9999001088&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+END:VCALENDAR
