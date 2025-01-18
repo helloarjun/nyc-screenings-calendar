@@ -88,7 +88,9 @@ def create_calendar_event(screening: Dict) -> Event:
 
     # Clean up the title: strip HTML, decode HTML entities, and remove trailing date/venue info.
     raw_title = html.unescape(strip_html(screening.get('title', 'Untitled')))
-    month_abbr = r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+    # Expanded month abbreviations including "Sept"
+    month_abbr = r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)'
+    # Regex to capture text before any occurrence of a month abbreviation followed by possible apostrophe and digits
     match = re.match(rf'^(.*?)(?:\s+{month_abbr}.*)', raw_title)
     title = match.group(1).strip() if match else raw_title.strip()
 
