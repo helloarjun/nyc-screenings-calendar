@@ -39,32 +39,42 @@ class ScreenSlateAPI:
             return []
 
     def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
-        if not screening_ids:
-            return {}
+    if not screening_ids:
+        return {}
 
-        logger.info(f"Fetching details for {len(screening_ids)} screenings")
-        batch_size = 20
-        all_results = {}
+    logger.info(f"Fetching details for {len(screening_ids)} screenings")
+    batch_size = 20
+    all_results = {}
 
-        for i in range(0, len(screening_ids), batch_size):
-            batch = screening_ids[i:i + batch_size]
-            ids_param = '+'.join(str(id) for id in batch)
-            url = f"{BASE_URL}/api/screenings/id/{ids_param}"
-            params = {"_format": "json"}
+    for i in range(0, len(screening_ids), batch_size):
+        batch = screening_ids[i:i + batch_size]
+        ids_param = '+'.join(str(id) for id in batch)
+        url = f"{BASE_URL}/api/screenings/id/{ids_param}"
+        params = {"_format": "json"}
 
-            try:
-                response = self.session.get(url, params=params)
-                response.raise_for_status()
-                batch_data = response.json()
-                if isinstance(batch_data, dict):
-                    all_results.update(batch_data)
-                else:
-                    logger.error("Unexpected response format for screening details")
-            except Exception as e:
-                logger.error(f"Error fetching batch: {str(e)}")
-                continue
+        try:
+            response = self.session.get(url, params=params)
+            response.raise_for_status()
+            batch_data = response.json()
 
-        return all_results
+            # Handle different possible response formats
+            if isinstance(batch_data, dict):
+                # If response is dict, update results directly
+                all_results.update(batch_data)
+            elif isinstance(batch_data, list):
+                # If response is a list, convert to dict keyed by 'nid'
+                for item in batch_data:
+                    nid = item.get('nid')
+                    if nid:
+                        # Ensure the key matches the type used elsewhere (usually string)
+                        all_results[str(nid)] = item
+            else:
+                logger.error(f"Unexpected response format for screening details: {type(batch_data)}")
+        except Exception as e:
+            logger.error(f"Error fetching batch: {str(e)}")
+            continue
+
+    return all_results
 
 def create_calendar_event(screening: Dict) -> Event:
     event = Event()
