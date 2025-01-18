@@ -7,7 +7,7 @@ import logging
 from typing import Dict, List
 
 logging.basicConfig(
-    level=logging.INFO,  # Change to DEBUG if you need more detailed logs during troubleshooting
+    level=logging.INFO,  # Change to DEBUG for more detailed logs if needed
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -65,9 +65,12 @@ class ScreenSlateAPI:
                         if nid:
                             all_results[str(nid)] = item
                 else:
-                    logger.error(f"Unexpected response format for screening details: {type(batch_data)}")
+                    logger.error(
+                        f"Unexpected response format for screening details: {type(batch_data)}. "
+                        f"Data sample: {str(batch_data)[:200]}"
+                    )
             except Exception as e:
-                logger.error(f"Error fetching batch: {str(e)}")
+                logger.error(f"Error fetching batch for IDs {ids_param}: {str(e)}")
                 continue
 
         return all_results
@@ -126,23 +129,24 @@ def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
 
         for screening in screenings:
             movie_id = screening['nid']
-            if movie_id not in details:
+            # Use string form of id for lookup consistency
+            movie_data = details.get(str(movie_id))
+            if not movie_data:
                 continue
 
-            movie = details[movie_id]
             try:
                 start_time_str = screening['field_timestamp']
                 start_time = datetime.strptime(start_time_str, "%Y-%m-%dT%H:%M:%S")
 
                 screening_event = {
-                    'title': movie.get('title', 'Untitled'),
-                    'director': movie.get('field_director', ''),
-                    'year': movie.get('field_year', ''),
-                    'runtime': movie.get('field_runtime', ''),
-                    'series': movie.get('field_series', ''),
-                    'venue': movie.get('venue_title', 'Unknown Venue'),
+                    'title': movie_data.get('title', 'Untitled'),
+                    'director': movie_data.get('field_director', ''),
+                    'year': movie_data.get('field_year', ''),
+                    'runtime': movie_data.get('field_runtime', ''),
+                    'series': movie_data.get('field_series', ''),
+                    'venue': movie_data.get('venue_title', 'Unknown Venue'),
                     'datetime': start_time,
-                    'url': movie.get('field_url', '')
+                    'url': movie_data.get('field_url', '')
                 }
 
                 all_screenings.append(screening_event)
