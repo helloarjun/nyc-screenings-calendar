@@ -63,7 +63,7 @@ class ScreenSlateAPI:
             logger.error(f"Error fetching batch: {str(e)}")
             continue
 
-    return all_results
+        return all_results
     
 def create_calendar_event(screening: Dict) -> Event:
     """Create an iCalendar event from screening information."""
@@ -88,7 +88,7 @@ def create_calendar_event(screening: Dict) -> Event:
     if "url" in screening:
         event.add("url", screening["url"])
     
-    return event
+        return event
 
 def generate_calendar(api_client: ScreenSlateAPI, output_dir="_site"):
     """Generate ICS calendar file for the next 7 days."""
