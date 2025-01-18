@@ -5,6 +5,7 @@ from icalendar import Calendar, Event
 import os
 import logging
 import re
+import html
 from typing import Dict, List
 
 logging.basicConfig(
@@ -15,11 +16,11 @@ logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.screenslate.com"
 
-def strip_html(html: str) -> str:
+def strip_html(html_content: str) -> str:
     """Remove HTML tags from a string."""
-    if not html:
+    if not html_content:
         return ""
-    return re.sub('<[^<]+?>', '', html).strip()
+    return re.sub('<[^<]+?>', '', html_content).strip()
 
 class ScreenSlateAPI:
     def __init__(self):
@@ -85,11 +86,11 @@ def create_calendar_event(screening: Dict) -> Event:
     event = Event()
     nyc_tz = pytz.timezone('America/New_York')
 
-    # Clean up the title
-    title = strip_html(screening.get('title', 'Untitled'))
-    # Optionally prepend "EC:" if part of Essential Cinema Collection for AFA
-    # if "Essential Cinema" in screening.get('collection', ''):
-    #     title = "EC: " + title
+    # Clean up the title: strip HTML, decode HTML entities, and remove trailing date/venue info.
+    raw_title = html.unescape(strip_html(screening.get('title', 'Untitled')))
+    month_abbr = r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)'
+    match = re.match(rf'^(.*?)(?:\s+{month_abbr}.*)', raw_title)
+    title = match.group(1).strip() if match else raw_title.strip()
 
     description_parts = []
     if screening.get('director'):
@@ -109,7 +110,6 @@ def create_calendar_event(screening: Dict) -> Event:
         start_time = nyc_tz.localize(start_time)
     event.add('dtstart', start_time)
 
-    # Safely convert runtime to an integer, defaulting to 120 minutes if not found
     runtime_value = screening.get('runtime')
     try:
         duration_minutes = int(runtime_value) if runtime_value and runtime_value.isdigit() else 120
@@ -117,7 +117,6 @@ def create_calendar_event(screening: Dict) -> Event:
         duration_minutes = 120
     event.add('duration', timedelta(minutes=duration_minutes))
 
-    # Clean up the location
     location = strip_html(screening.get('venue', 'Unknown Venue'))
     event.add('location', location)
 
@@ -128,7 +127,7 @@ def create_calendar_event(screening: Dict) -> Event:
 
 def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
     logger.info("Starting calendar generation")
-    
+
     group1_venues = ["Metrograph", "AFA"]
     group2_venues = ["Film Forum", "IFC Center"]
 
