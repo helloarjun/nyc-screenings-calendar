@@ -4,7 +4,6 @@ import pytz
 from icalendar import Calendar, Event
 import os
 import logging
-import re
 from typing import Dict, List
 
 # Set up logging
@@ -29,70 +28,61 @@ class ScreenSlateAPI:
         response.raise_for_status()
         return response.json()
 
-def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
-    """Fetch movie details for a list of screening IDs."""
-    if not screening_ids:
-        return {}
+    def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
+        """Fetch movie details for a list of screening IDs."""
+        if not screening_ids:
+            return {}
+        logger.info(f"Fetching details for {len(screening_ids)} screenings")
 
-    logger.info(f"🎥 Fetching details for {len(screening_ids)} screenings")
+        batch_size = 20
+        all_results = {}
 
-    # Process in batches of 20
-    batch_size = 20
-    all_results = {}
+        for i in range(0, len(screening_ids), batch_size):
+            batch = screening_ids[i:i + batch_size]
+            ids_param = '+'.join(str(id) for id in batch)
+            url = f"{BASE_URL}/api/screenings/id/{ids_param}"
+            params = {"_format": "json"}
 
-    for i in range(0, len(screening_ids), batch_size):
-        batch = screening_ids[i:i + batch_size]
-        ids_param = '+'.join(str(id) for id in batch)
-        url = f"{self.base_url}/api/screenings/id/{ids_param}"
-        params = {'_format': 'json'}
+            try:
+                response = self.session.get(url, params=params)
+                response.raise_for_status()
+                batch_data = response.json()
+                logger.info(f"Got details for {len(batch_data)} movies")
+                all_results.update(batch_data)
+            except Exception as e:
+                logger.error(f"Error fetching batch: {str(e)}")
+                continue
 
-        self._rate_limit_wait()
-        try:
-            response = self.session.get(url, params=params)
-            response.raise_for_status()
-            batch_data = response.json()
-            logger.info(f"✅ Got details for {len(batch_data)} movies")
-            all_results.update(batch_data)
-
-        except Exception as e:
-            logger.error(f"Error fetching batch: {str(e)}")
-            continue
-
-    return all_results
-
-
-def clean_html(text: str) -> str:
-    """Remove HTML tags from text."""
-    return re.sub(r"<[^>]+>", "", text)
+        return all_results
 
 def create_calendar_event(screening: Dict) -> Event:
-    """Create an iCalendar event from screening data."""
+    """Create an iCalendar event from screening information."""
     event = Event()
     nyc_tz = pytz.timezone("America/New_York")
-
-    # Event details
+    
     title = screening.get("title", "Untitled")
-    venue = clean_html(screening.get("venue_title", "Unknown Location"))
-    start_time = datetime.fromisoformat(screening["datetime"]).astimezone(nyc_tz)
+    venue = screening.get("venue", "Unknown Venue")
+    start_time = nyc_tz.localize(screening.get("datetime", datetime.now()))
 
-    # Event description
-    description_parts = [
+    description = [
         f"Director: {screening.get('director', 'N/A')}",
-        f"Year: {screening.get('year', 'N/A')}",
         f"Runtime: {screening.get('runtime', 'N/A')} minutes",
-        f"More info: {screening.get('url', 'N/A')}",
+        f"More info: {screening.get('url', '')}",
     ]
-
-    # Add fields to event
+    
     event.add("summary", f"{title} at {venue}")
+    event.add("description", "\n".join(description))
     event.add("dtstart", start_time)
-    event.add("description", "\n".join(description_parts))
+    event.add("duration", timedelta(minutes=int(screening.get("runtime", 120))))
     event.add("location", venue)
-
+    if "url" in screening:
+        event.add("url", screening["url"])
+    
     return event
 
-def generate_calendar(api: ScreenSlateAPI, output_path: str = "_site/nyc-screenings.ics"):
-    """Generate an ICS calendar file for the next 7 days."""
+def generate_calendar(api_client: ScreenSlateAPI, output_dir="_site"):
+    """Generate ICS calendar file for the next 7 days."""
+    logger.info("Starting calendar generation...")
     cal = Calendar()
     cal.add("prodid", "-//NYC Indie Cinema Calendar//screenslate.com//")
     cal.add("version", "2.0")
@@ -100,45 +90,41 @@ def generate_calendar(api: ScreenSlateAPI, output_path: str = "_site/nyc-screeni
     cal.add("x-wr-timezone", "America/New_York")
 
     today = datetime.now()
-    screenings = []
+    dates = [(today + timedelta(days=i)).strftime("%Y%m%d") for i in range(7)]
 
-    for i in range(7):  # Next 7 days
-        date_str = (today + timedelta(days=i)).strftime("%Y%m%d")
-        logger.info(f"Fetching screenings for {date_str}...")
-        daily_screenings = api.fetch_screenings_by_date(date_str)
+    all_screenings = []
+    for date in dates:
+        screenings = api_client.fetch_screenings_by_date(date)
+        if not screenings:
+            logger.warning(f"No screenings found for date {date}")
+            continue
 
-        if daily_screenings:
-            ids = [str(s["nid"]) for s in daily_screenings]
-            details = api.fetch_screening_details(ids)
-            for screening in daily_screenings:
-                nid = str(screening["nid"])
-                if nid in details:
-                    movie = details[nid]
-                    screenings.append({
-                        "title": clean_html(movie.get("title", "Untitled")),
-                        "venue_title": movie.get("venue_title", "Unknown Location"),
-                        "datetime": screening["field_timestamp"],
-                        "director": clean_html(movie.get("media_title_info", "").split(",")[0]),
-                        "year": re.search(r"(19|20)\\d{2}", movie.get("media_title_info", "")).group(0) if re.search(r"(19|20)\\d{2}", movie.get("media_title_info", "")) else "",
-                        "runtime": re.search(r"\\b(\\d+)M\\b", movie.get("media_title_info", "")).group(1) if re.search(r"\\b(\\d+)M\\b", movie.get("media_title_info", "")) else "N/A",
-                        "url": movie.get("field_url", ""),
-                    })
+        ids = [screening["nid"] for screening in screenings]
+        details = api_client.fetch_screening_details(ids)
+        for nid, detail in details.items():
+            screening = {
+                "title": detail.get("title", "Untitled"),
+                "venue": detail.get("venue_title", "Unknown Venue"),
+                "datetime": datetime.strptime(detail.get("field_timestamp", ""), "%Y-%m-%dT%H:%M:%S"),
+                "director": detail.get("media_title_info", ""),
+                "runtime": detail.get("field_runtime", "120"),
+                "url": detail.get("field_url", ""),
+            }
+            all_screenings.append(screening)
 
-    if not screenings:
-        logger.warning("No screenings found for the next 7 days.")
+    if not all_screenings:
+        logger.error("No screenings found!")
         return
 
-    for screening in screenings:
-        try:
-            event = create_calendar_event(screening)
-            cal.add_component(event)
-        except Exception as e:
-            logger.error(f"Error adding screening to calendar: {e}")
+    for screening in all_screenings:
+        event = create_calendar_event(screening)
+        cal.add_component(event)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "wb") as f:
+    os.makedirs(output_dir, exist_ok=True)
+    calendar_path = os.path.join(output_dir, "nyc-screenings.ics")
+    with open(calendar_path, "wb") as f:
         f.write(cal.to_ical())
-    logger.info(f"Calendar saved to {output_path}")
+    logger.info(f"Calendar saved at {calendar_path}")
 
 def main():
     api = ScreenSlateAPI()
