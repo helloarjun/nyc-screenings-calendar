@@ -1,5 +1,6 @@
 import requests
 import json
+from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import pytz
@@ -46,11 +47,17 @@ def generate_events(start_date, days):
         screenings = get_date_data(current_date)
 
         for screening in screenings:
+            # Extract runtime and calculate end time
+            runtime_str = screening.get('field_runtime', '')  # Assuming runtime is in field_runtime
+            runtime_minutes = int(runtime_str.replace('M', '')) if 'M' in runtime_str else 0
+            start_time = datetime.fromisoformat(screening['field_timestamp'])
+            end_time = start_time + timedelta(minutes=runtime_minutes) if runtime_minutes else start_time
+
             # Extract event details
             event = {
                 'title': screening.get('field_display_title', f"Screening {screening['nid']}"),
-                'start_time': datetime.fromisoformat(screening['field_timestamp']),
-                'end_time': datetime.fromisoformat(screening['field_timestamp']),  # End time not provided, use start time
+                'start_time': start_time,
+                'end_time': end_time,
                 'location': screening.get('field_location', 'Unknown Location'),
                 'description': screening.get('field_note', ''),
             }
