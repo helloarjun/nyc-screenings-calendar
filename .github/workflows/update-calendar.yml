@@ -1,39 +1,45 @@
-name: Run Scraper and Deploy Calendar
+name: Test and Deploy Calendar
 
 on:
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch:  # Allows manual triggering of the workflow
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight (UTC)
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write  # Needed for pushing to gh-pages
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run scraper
-        run: python scraper.py
-
-      - name: Deploy ICS file
-        run: |
-          mkdir -p _site
-          mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
-          git fetch origin gh-pages
-          git checkout gh-pages || git checkout --orphan gh-pages
-          rm -rf *
-          cp -r _site/* .
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "Deploy updated calendar"
-          git push --force origin gh-pages
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      
+    - name: Run scraper
+      run: python scraper.py
+      
+    - name: Prepare deployment directory
+      run: |
+        mkdir -p _site
+        mv nyc-screenings.ics _site/
+        
+    - name: Deploy to GitHub Pages
+      run: |
+        git fetch origin gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages
+        rm -rf *
+        cp -r _site/* .
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+        git commit -m "Deploy updated calendar - $timestamp"
+        git push origin gh-pages
