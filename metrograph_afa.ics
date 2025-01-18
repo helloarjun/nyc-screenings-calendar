@@ -66,6 +66,27 @@ URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:EC: Georges Méliès Program 2 at AFA
+DTSTART;TZID=America/New_York:20250118T171500
+DURATION:PT2H
+DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
+ ves.org/film_screenings/programs/essential-cinema
+LOCATION:Anthology Film Archives
+URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
+ nema
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:XALA at AFA
+DTSTART;TZID=America/New_York:20250118T174500
+DURATION:PT2H3M
+DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
+ //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
+ nth=01&amp\;year=2025#showing-58799
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58799
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Santosh
 DTSTART;TZID=America/New_York:20250118T183000
 DURATION:PT2H8M
@@ -87,6 +108,18 @@ URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Naomi Levine at AFA
+DTSTART;TZID=America/New_York:20250118T190000
+DURATION:PT24M
+DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
+ 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
+ film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
+ 874
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58874
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Felicite
 DTSTART;TZID=America/New_York:20250118T204000
 DURATION:PT2H9M
@@ -95,6 +128,17 @@ DESCRIPTION:Runtime: 129 minutes\nSeries: Sandhya Suri Selects\nMore info:
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999003638&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WATTSTAX at AFA
+DTSTART;TZID=America/New_York:20250118T204500
+DURATION:PT1H42M
+DESCRIPTION:Runtime: 102 minutes\nSeries: Blackout 1973\nMore info: https:
+ //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
+ nth=01&amp\;year=2025#showing-58782
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58782
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Taste of Cherry
@@ -193,6 +237,16 @@ URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:EC: Georges Méliès Program 3 at AFA
+DTSTART;TZID=America/New_York:20250119T171500
+DURATION:PT2H
+DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
+ ves.org/film_screenings/programs/essential-cinema
+LOCATION:Anthology Film Archives
+URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
+ nema
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Bye Bye Love
 DTSTART;TZID=America/New_York:20250119T175000
 DURATION:PT1H25M
@@ -202,6 +256,17 @@ DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:TOUKI BOUKI at AFA
+DTSTART;TZID=America/New_York:20250119T181500
+DURATION:PT1H29M
+DESCRIPTION:Runtime: 89 minutes\nSeries: Blackout 1973\nMore info: https:/
+ /www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mon
+ th=01&amp\;year=2025#showing-58774
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58774
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Woman in the Dunes
@@ -215,6 +280,18 @@ URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Naomi Levine at AFA
+DTSTART;TZID=America/New_York:20250119T190000
+DURATION:PT24M
+DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
+ 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
+ film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
+ 874
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58874
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:India Song
 DTSTART;TZID=America/New_York:20250119T194000
 DURATION:PT1H55M
@@ -224,6 +301,17 @@ DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:XALA at AFA
+DTSTART;TZID=America/New_York:20250119T203000
+DURATION:PT2H3M
+DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
+ //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
+ nth=01&amp\;year=2025#showing-58799
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58799
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:The Neon Demon
@@ -268,6 +356,17 @@ URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:WATTSTAX at AFA
+DTSTART;TZID=America/New_York:20250120T183000
+DURATION:PT1H42M
+DESCRIPTION:Runtime: 102 minutes\nSeries: Blackout 1973\nMore info: https:
+ //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
+ nth=01&amp\;year=2025#showing-58782
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58782
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Ashes of Time Redux
 DTSTART;TZID=America/New_York:20250120T200000
 DURATION:PT1H33M
@@ -288,6 +387,17 @@ DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:COFFY at AFA
+DTSTART;TZID=America/New_York:20250120T211500
+DURATION:PT1H31M
+DESCRIPTION:Runtime: 91 minutes\nSeries: Blackout 1973\nMore info: https:/
+ /www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mon
+ th=01&amp\;year=2025#showing-58786
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58786
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Possession
@@ -392,6 +502,17 @@ URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:WANDA AT AFA
+DTSTART;TZID=America/New_York:20250124T183000
+DURATION:PT1H45M
+DESCRIPTION:Runtime: 105 minutes\nSeries: Wandering Women\nMore info: http
+ s://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;
+ month=01&amp\;year=2025#showing-58803
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58803
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:The Grandmaster
 DTSTART;TZID=America/New_York:20250124T192000
 DURATION:PT2H10M
@@ -411,6 +532,17 @@ DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999004143&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LA DERIVE at AFA
+DTSTART;TZID=America/New_York:20250124T210000
+DURATION:PT1H30M
+DESCRIPTION:Runtime: 90 minutes\nSeries: Wandering Women\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58807
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58807
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Under the Skin

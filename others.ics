@@ -182,27 +182,6 @@ URL:https://ticketing.uswest.veezi.com/purchase/5817?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:EC: Georges Méliès Program 2 at AFA
-DTSTART;TZID=America/New_York:20250118T171500
-DURATION:PT2H
-DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
- ves.org/film_screenings/programs/essential-cinema
-LOCATION:Anthology Film Archives
-URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
- nema
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:XALA at AFA
-DTSTART;TZID=America/New_York:20250118T174500
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58799
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58799
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Maria at Paris
 DTSTART;TZID=America/New_York:20250118T180000
 DURATION:PT2H3M
@@ -259,18 +238,6 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/hester-street/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Naomi Levine at AFA
-DTSTART;TZID=America/New_York:20250118T190000
-DURATION:PT24M
-DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
- 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
- film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
- 874
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58874
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Heretic at Roxy Cinema
 DTSTART;TZID=America/New_York:20250118T194500
 DURATION:PT1H51M
@@ -297,17 +264,6 @@ DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
  e info: https://www.filmlinc.org/films/the-room-next-door/
 LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:WATTSTAX at AFA
-DTSTART;TZID=America/New_York:20250118T204500
-DURATION:PT1H42M
-DESCRIPTION:Runtime: 102 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58782
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58782
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anora at FLC
@@ -543,16 +499,6 @@ URL:https://ticketing.uswest.veezi.com/purchase/5817?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:EC: Georges Méliès Program 3 at AFA
-DTSTART;TZID=America/New_York:20250119T171500
-DURATION:PT2H
-DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
- ves.org/film_screenings/programs/essential-cinema
-LOCATION:Anthology Film Archives
-URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
- nema
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Lost City at FLC
 DTSTART;TZID=America/New_York:20250119T173000
 DURATION:PT1H31M
@@ -587,29 +533,6 @@ DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
   info: https://www.filmlinc.org/films/hard-truths/
 LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:TOUKI BOUKI at AFA
-DTSTART;TZID=America/New_York:20250119T181500
-DURATION:PT1H29M
-DESCRIPTION:Runtime: 89 minutes\nSeries: Blackout 1973\nMore info: https:/
- /www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mon
- th=01&amp\;year=2025#showing-58774
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58774
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Naomi Levine at AFA
-DTSTART;TZID=America/New_York:20250119T190000
-DURATION:PT24M
-DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
- 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
- film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
- 874
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58874
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Emilia Pérez at Paris (DCP)
@@ -658,17 +581,6 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:XALA at AFA
-DTSTART;TZID=America/New_York:20250119T203000
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58799
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58799
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Anora at FLC
 DTSTART;TZID=America/New_York:20250119T204500
 DURATION:PT2H18M
@@ -695,17 +607,6 @@ DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
   info: https://www.filmlinc.org/films/hard-truths/
 LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:WATTSTAX at AFA
-DTSTART;TZID=America/New_York:20250120T183000
-DURATION:PT1H42M
-DESCRIPTION:Runtime: 102 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58782
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58782
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Blind at Heart at FLC
@@ -800,17 +701,6 @@ DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
  e info: https://www.filmlinc.org/films/the-room-next-door/
 LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:COFFY at AFA
-DTSTART;TZID=America/New_York:20250120T211500
-DURATION:PT1H31M
-DESCRIPTION:Runtime: 91 minutes\nSeries: Blackout 1973\nMore info: https:/
- /www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mon
- th=01&amp\;year=2025#showing-58786
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58786
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Killer Klowns from Outer Space at Nitehawk Prospect Park
@@ -1335,17 +1225,6 @@ LOCATION:Museum of the Moving Image
 URL:https://movingimage.org/event/the-ascent/2025-01-19/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:WANDA AT AFA
-DTSTART;TZID=America/New_York:20250124T183000
-DURATION:PT1H45M
-DESCRIPTION:Runtime: 105 minutes\nSeries: Wandering Women\nMore info: http
- s://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;
- month=01&amp\;year=2025#showing-58803
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58803
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Pastoral at Japan Society
 DTSTART;TZID=America/New_York:20250124T190000
 DURATION:PT1H44M
@@ -1393,17 +1272,6 @@ DESCRIPTION:Runtime: 18 minutes\nSeries: Skate Video Essentials\nMore info
 LOCATION:Museum of the Moving Image
 URL:https://movingimage.org/event/skate-video-essentials-classic-skate-sto
  ries/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:LA DERIVE at AFA
-DTSTART;TZID=America/New_York:20250124T210000
-DURATION:PT1H30M
-DESCRIPTION:Runtime: 90 minutes\nSeries: Wandering Women\nMore info: https
- ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
- onth=01&amp\;year=2025#showing-58807
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58807
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:AF25-the-best-of-annecy-2024/
