@@ -83,6 +83,26 @@ def create_index_page(events):
             f.write(f"<li><strong>{event['title']}</strong> - {event['start_time']} at {event['location']}</li>")
         f.write("</ul></body></html>")
 
+def create_ics_calendar(events):
+    cal = Calendar()
+    cal.add('prodid', '-//NYC Indie Cinema Calendar//mxm.dk//')
+    cal.add('version', '2.0')
+
+    for event in events:
+        cal_event = Event()
+        cal_event.add('summary', event['title'])
+        cal_event.add('dtstart', event['start_time'])
+        cal_event.add('dtend', event['end_time'])
+        cal_event.add('location', event['location'])
+        cal_event.add('description', event['description'])
+        cal.add_component(cal_event)
+
+    # Save the .ics file in the _site directory
+    os.makedirs("_site", exist_ok=True)  # Ensure _site directory exists
+    with open('_site/nyc_indie_cinema.ics', 'wb') as f:
+        f.write(cal.to_ical())
+
+
 # Main script execution
 def main():
     create_site_directory()
