@@ -51,8 +51,10 @@ class ScreenSlateAPI:
                 response = self.session.get(url, params=params)
                 response.raise_for_status()
                 batch_data = response.json()
-                logger.info(f"Got details for {len(batch_data)} movies")
-                all_results.update(batch_data)
+                if isinstance(batch_data, dict):
+                    all_results.update(batch_data)
+                else:
+                    logger.error("Unexpected response format")
             except Exception as e:
                 logger.error(f"Error fetching batch: {str(e)}")
                 continue
