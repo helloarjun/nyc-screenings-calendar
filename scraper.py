@@ -1,87 +1,70 @@
 import requests
 import json
-from bs4 import BeautifulSoup
-from icalendar import Calendar, Event
-from datetime import datetime, timedelta
-import pytz
+from ics import Calendar, Event
+from datetime import datetime
 
-# Base URL and endpoints
-BASE_URL = "https://www.screenslate.com"
-DATE_ENDPOINT = "/api/screenings/date?_format=json&date={date}"
+# Define the API endpoint and parameters
+API_URL = "https://example.com/path-to-endpoint"  # Replace with the actual API URL
+PARAMS = {
+    "date": "20250118",  # Replace with dynamic date generation if needed
+    "_format": "json",
+    "field_city_target_id": "10969",  # Adjust based on requirements
+}
 
-# Function to get data from the DATE endpoint
-def get_date_data(date):
-    formatted_date = date.strftime("%Y%m%d")
-    url = BASE_URL + DATE_ENDPOINT.format(date=formatted_date)
-    print(f"Fetching data from URL: {url}")
-    response = requests.get(url)
-    if response.status_code == 404:
-        print(f"404 Error: URL not found - {url}")
+def fetch_screenings():
+    """Fetch screenings data from the API."""
+    try:
+        response = requests.get(API_URL, params=PARAMS)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data: {e}")
         return []
-    response.raise_for_status()
-    return response.json()
 
-# Function to create an ICS calendar file
-def create_ics_calendar(events):
-    cal = Calendar()
-    cal.add('prodid', '-//NYC Indie Cinema Calendar//mxm.dk//')
-    cal.add('version', '2.0')
+def generate_calendar(screenings):
+    """Generate an ICS calendar from screenings data."""
+    calendar = Calendar()
 
-    for event in events:
-        cal_event = Event()
-        cal_event.add('summary', event['title'])
-        cal_event.add('dtstart', event['start_time'])
-        cal_event.add('dtend', event['end_time'])
-        cal_event.add('location', event['location'])
-        cal_event.add('description', event['description'])
-        cal.add_component(cal_event)
+    for screening in screenings:
+        title = screening.get("title", "Untitled Screening")
+        venue = screening.get("venue_title", "Unknown Location")
+        start_time = screening.get("date")  # Assuming API returns ISO 8601 date
+        description = screening.get("media_title_info", "").strip()
 
-    with open('nyc_indie_cinema.ics', 'wb') as f:
-        print("Writing ICS file to nyc_indie_cinema.ics")
-        f.write(cal.to_ical())
+        if not start_time:
+            print(f"Skipping screening '{title}' due to missing start time.")
+            continue
 
-# Function to generate events from scraped data
-def generate_events(start_date, days):
-    events = []
-    for i in range(days):
-        current_date = start_date + timedelta(days=i)
-        print(f"Fetching screenings for date: {current_date.date()}")
-        screenings = get_date_data(current_date)
+        # Create event
+        event = Event()
+        event.name = title
+        event.begin = start_time
+        event.location = venue
+        event.description = description
 
-        for screening in screenings:
-            runtime_str = screening.get('field_runtime', '')
-            runtime_minutes = int(runtime_str.replace('M', '')) if 'M' in runtime_str else 0
-            start_time = datetime.fromisoformat(screening['field_timestamp'])
-            end_time = start_time + timedelta(minutes=runtime_minutes) if runtime_minutes else start_time
+        calendar.events.add(event)
 
-            # Replace 'Unknown Location' with real location data if available
-            location = screening.get('field_location', 'Location not available')
+    return calendar
 
-            event = {
-                'title': screening.get('field_display_title', f"Screening {screening['nid']}"),
-                'start_time': start_time,
-                'end_time': end_time,
-                'location': location,
-                'description': screening.get('field_note', ''),
-            }
-            print(f"Event created: {event}")
-            events.append(event)
-    print(f"Total events generated: {len(events)}")
-    return events
+def save_calendar(calendar, filename="nyc_indie_cinema.ics"):
+    """Save the ICS calendar to a file."""
+    with open(filename, "w") as f:
+        f.writelines(calendar)
 
-# Main script execution
 def main():
-    start_date = datetime.now(pytz.timezone('America/New_York'))
-    days_to_scrape = 7
+    print("Fetching screenings...")
+    screenings = fetch_screenings()
 
-    print("Scraping data...")
-    events = generate_events(start_date, days_to_scrape)
+    if not screenings:
+        print("No screenings found.")
+        return
 
-    print("Creating ICS calendar...")
-    print(f"Number of events generated: {len(events)}")
-    create_ics_calendar(events)
+    print(f"Fetched {len(screenings)} screenings. Generating calendar...")
+    calendar = generate_calendar(screenings)
 
-    print("Calendar created: nyc_indie_cinema.ics")
+    print("Saving calendar...")
+    save_calendar(calendar)
+    print(f"Calendar saved as 'nyc_indie_cinema.ics'.")
 
 if __name__ == "__main__":
     main()
