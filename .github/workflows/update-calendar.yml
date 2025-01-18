@@ -32,7 +32,7 @@ jobs:
           echo "ICS file found."
         else
           echo "Error: ICS file not found!"
-          exit 1
+        exit 1
         fi
 
     - name: Deploy to GitHub Pages
