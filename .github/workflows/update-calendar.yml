@@ -24,65 +24,23 @@ jobs:
     - name: Run scraper
       run: python scraper.py
 
-    - name: Move generated ICS file
+    - name: Remove existing ICS file
       run: |
-        mkdir -p _site
         if [ -f nyc_indie_cinema.ics ]; then
-          mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
-        else
-          echo "Error: nyc_indie_cinema.ics not found!"
-          ls -la
-          exit 1
+          rm nyc_indie_cinema.ics
         fi
 
-    - name: Generate HTML page
+    - name: Clean untracked files
+      run: git clean -fdx
+
+    - name: Deploy to GitHub Pages
       run: |
-        echo '<!DOCTYPE html>
-        <html>
-        <head>
-          <title>NYC Screenings Calendar</title>
-          <style>
-            body { font-family: Arial, sans-serif; margin: 20px; }
-            h1 { color: #333; }
-            .screening { margin-bottom: 15px; }
-          </style>
-        </head>
-        <body>
-          <h1>NYC Screenings Calendar</h1>
-          <p><a href="nyc_indie_cinema.ics">Download the ICS Calendar</a></p>
-          <div>' > _site/index.html
-
-        # Append screenings to the HTML page
-        python scraper.py | tee screenings.log
-        cat screenings.log | sed 's/\\x1b\\[[0-9;]*m//g' | grep Event | while read -r line; do
-          title=$(echo "$line" | grep -oP "'title': '\K[^']*")
-          start=$(echo "$line" | grep -oP "'start_time': datetime.datetime\(\K[^\)]*")
-          location=$(echo "$line" | grep -oP "'location': '\K[^']*")
-          echo "<div class='screening'><strong>${title}</strong><br>${start}<br>${location}</div>" >> _site/index.html
-        done
-
-        echo '
-          </div>
-        </body>
-        </html>' >> _site/index.html
-
-- name: Remove existing ICS file
-  run: |
-    if [ -f nyc_indie_cinema.ics ]; then
-      rm nyc_indie_cinema.ics
-    fi
-
-- name: Clean untracked files
-  run: git clean -fdx
-
-- name: Deploy to GitHub Pages
-  run: |
-    git fetch origin gh-pages
-    git checkout gh-pages || git checkout --orphan gh-pages
-    rm -rf *
-    cp -r _site/* .
-    git config user.name "github-actions[bot]"
-    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    git add -A
-    git commit -m "Deploy updated calendar"
-    git push --force origin gh-pages
+        git fetch origin gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages
+        rm -rf *
+        cp -r _site/* .
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git commit -m "Deploy updated calendar"
+        git push --force origin gh-pages
