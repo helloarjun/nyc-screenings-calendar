@@ -55,7 +55,7 @@ jobs:
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
         # Create index.html for GitHub Pages
-        echo "<html><head><meta http-equiv='refresh' content='0; url=nyc-screenings-calendar/index.html'></head></html>" > index.html
+        echo "<html><head><meta http-equiv='refresh' content='0; url=nyc-screenings.ics'></head></html>" > index.html
 
         # Commit and push
         git add -A
