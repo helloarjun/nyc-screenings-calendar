@@ -1,42 +1,46 @@
-name: Test and Deploy Calendar
+name: Update Cinema Calendar
 
 on:
-  workflow_dispatch: # Allows manual triggering of the workflow
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  run-script:
+  update-calendar:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
-    - name: Setup Python
-      uses: actions/setup-python@v3
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Run scraper
       run: python scraper.py
 
-    - name: Move generated ICS file
-      run: |
-        mkdir -p _site
-        mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
-
     - name: Deploy to GitHub Pages
-      run: |
-        git fetch origin gh-pages
-        git checkout gh-pages || git checkout --orphan gh-pages
-        rm -rf *
-        cp -r _site/* .
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add -A
-        git commit -m "Deploy updated calendar"
-        git push --force origin gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: gh-pages
+        force_orphan: true
