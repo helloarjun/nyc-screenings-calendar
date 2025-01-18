@@ -66,7 +66,13 @@ jobs:
         </body>
         </html>' >> _site/index.html
 
-  - name: Clean untracked files
+- name: Remove existing ICS file
+  run: |
+    if [ -f nyc_indie_cinema.ics ]; then
+      rm nyc_indie_cinema.ics
+    fi
+
+- name: Clean untracked files
   run: git clean -fdx
 
 - name: Deploy to GitHub Pages
