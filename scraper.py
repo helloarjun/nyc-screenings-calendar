@@ -1,27 +1,22 @@
 import requests
 import json
-from bs4 import BeautifulSoup
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import pytz
 
 # Base URL and endpoints
 BASE_URL = "https://www.screenslate.com"
-DATE_ENDPOINT = "/date?_format=json&date={date}&field_city_target_id=10969"
-SCREENING_ENDPOINT = "/api/screenings/{id}?_format=json"
+DATE_ENDPOINT = "/api/screenings/date?_format=json&date={date}"
 
 # Function to get data from the DATE endpoint
 def get_date_data(date):
     formatted_date = date.strftime("%Y%m%d")
     url = BASE_URL + DATE_ENDPOINT.format(date=formatted_date)
+    print(f"Fetching data from URL: {url}")
     response = requests.get(url)
-    response.raise_for_status()
-    return response.json()
-
-# Function to get screening details by ID
-def get_screening_data(screening_id):
-    url = BASE_URL + SCREENING_ENDPOINT.format(id=screening_id)
-    response = requests.get(url)
+    if response.status_code == 404:
+        print(f"404 Error: URL not found - {url}")
+        return []
     response.raise_for_status()
     return response.json()
 
@@ -48,19 +43,16 @@ def generate_events(start_date, days):
     events = []
     for i in range(days):
         current_date = start_date + timedelta(days=i)
-        date_data = get_date_data(current_date)
+        screenings = get_date_data(current_date)
 
-        for screening in date_data.get('data', []):
-            screening_id = screening['id']
-            screening_data = get_screening_data(screening_id)
-
+        for screening in screenings:
             # Extract event details
             event = {
-                'title': screening_data.get('title', 'Untitled Event'),
-                'start_time': datetime.fromisoformat(screening_data['start_time']),
-                'end_time': datetime.fromisoformat(screening_data.get('end_time', screening_data['start_time'])),
-                'location': screening_data.get('location', {}).get('name', 'Unknown Location'),
-                'description': screening_data.get('description', ''),
+                'title': screening.get('field_display_title', f"Screening {screening['nid']}"),
+                'start_time': datetime.fromisoformat(screening['field_timestamp']),
+                'end_time': datetime.fromisoformat(screening['field_timestamp']),  # End time not provided, use start time
+                'location': screening.get('field_location', 'Unknown Location'),
+                'description': screening.get('field_note', ''),
             }
             events.append(event)
     return events
