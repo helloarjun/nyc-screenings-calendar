@@ -1,7 +1,7 @@
 name: Update Calendar
 
 on:
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # Allows manual triggering of the workflow
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight
 
@@ -24,12 +24,19 @@ jobs:
     - name: Run scraper
       run: python scraper.py
 
-    - name: Generate HTML page
+    - name: Move generated ICS file
       run: |
         mkdir -p _site
-        mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+        if [ -f nyc_indie_cinema.ics ]; then
+          mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+        else
+          echo "Error: nyc_indie_cinema.ics not found!"
+          ls -la
+          exit 1
+        fi
 
-        # Create an HTML page with formatted screenings
+    - name: Generate HTML page
+      run: |
         echo '<!DOCTYPE html>
         <html>
         <head>
@@ -54,7 +61,6 @@ jobs:
           echo "<div class='screening'><strong>${title}</strong><br>${start}<br>${location}</div>" >> _site/index.html
         done
 
-        # Close the HTML page
         echo '
           </div>
         </body>
@@ -69,5 +75,5 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add -A
-        git commit -m "Update calendar and deploy HTML"
+        git commit -m "Deploy updated calendar"
         git push --force origin gh-pages
