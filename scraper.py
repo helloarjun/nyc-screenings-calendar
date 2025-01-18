@@ -31,7 +31,7 @@ class ScreenSlateAPI:
     def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
         """Fetch movie details for a list of screening IDs."""
     if not screening_ids:
-        return {}
+            return {}
     logger.info(f"Fetching details for {len(screening_ids)} screenings")
 
     batch_size = 20
