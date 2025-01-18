@@ -7,7 +7,7 @@ import logging
 from typing import Dict, List
 
 logging.basicConfig(
-    level=logging.INFO,  # Change to DEBUG for more detailed logs if needed
+    level=logging.INFO,  # Use DEBUG for more detailed logs if needed
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -47,6 +47,7 @@ class ScreenSlateAPI:
 
         for i in range(0, len(screening_ids), batch_size):
             batch = screening_ids[i:i + batch_size]
+            # Use plus-separated IDs as indicated by the working example
             ids_param = '+'.join(str(id) for id in batch)
             url = f"{BASE_URL}/api/screenings/id/{ids_param}"
             params = {"_format": "json"}
@@ -67,7 +68,7 @@ class ScreenSlateAPI:
                 else:
                     logger.error(
                         f"Unexpected response format for screening details: {type(batch_data)}. "
-                        f"Data sample: {str(batch_data)[:200]}"
+                        f"Raw response: {response.text[:200]}"
                     )
             except Exception as e:
                 logger.error(f"Error fetching batch for IDs {ids_param}: {str(e)}")
@@ -129,7 +130,6 @@ def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
 
         for screening in screenings:
             movie_id = screening['nid']
-            # Use string form of id for lookup consistency
             movie_data = details.get(str(movie_id))
             if not movie_data:
                 continue
