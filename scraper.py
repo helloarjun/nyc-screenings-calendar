@@ -35,47 +35,136 @@ class ScreenSlateAPI:
             time.sleep(self.rate_limit - elapsed)
         self.last_request_time = time.time()
 
-    def fetch_screenings_for_date(self, date_str: str) -> List[Dict]:
-        """Fetch screenings for a specific date"""
-        logging.info(f"🎬 Fetching screenings for date: {date_str}")
+  def parse_venue_listing(listing):
+    """Parse a single movie listing from HTML"""
+    try:
+        # Get series info (e.g., "First Run")
+        series_elem = listing.find('div', class_='series')
+        series = ''
+        if series_elem and series_elem.find('a'):
+            series = series_elem.find('a').text.strip()
+            
+        # Get movie title and URL
+        media_title = listing.find('div', class_='media-title')
+        if not media_title:
+            return None
+            
+        title_elem = media_title.find('span', class_='field--name-title')
+        if not title_elem:
+            return None
+            
+        title = title_elem.text.strip()
+        url = ''
+        link = media_title.find('a', class_='screening-link')
+        if link:
+            url = link.get('href', '')
+            
+        # Get movie info (director, year, runtime)
+        info = media_title.find('div', class_='media-title-info')
+        director = ''
+        year = ''
+        runtime = ''
         
-        url = f"{self.base_url}/api/screenings/date"
-        params = {
-            '_format': 'json',
-            'date': date_str,
-            'field_city_target_id': '10969'  # NYC
+        if info:
+            # Process each span separately
+            spans = info.find_all('span')
+            for span in spans:
+                text = span.text.strip()
+                # Skip empty spans and pseudo-elements (::after)
+                if not text or '::' in text:
+                    continue
+                    
+                if text.endswith('M'):  # Runtime (e.g., "166M")
+                    runtime = text.rstrip('M')
+                elif text.isdigit() and len(text) == 4:  # Year
+                    year = text
+                else:  # Director
+                    director = text.strip('"')
+        
+        # Get showtimes
+        times = []
+        showtimes_container = listing.find('div', class_='showtimes-container')
+        if showtimes_container:
+            time_spans = showtimes_container.find_all('span')
+            times = [span.text.strip() for span in time_spans if span.text.strip()]
+        
+        return {
+            'title': title,
+            'director': director,
+            'year': year,
+            'runtime': runtime,
+            'series': series,
+            'url': url,
+            'times': times
         }
         
-        self._rate_limit_wait()
-        try:
-            response = self.session.get(url, params=params, timeout=30)
-            response.raise_for_status()
-            screenings = response.json()
-            logging.info(f"✅ Found {len(screenings)} screening slots")
-            
-            # Get movie details for these screenings
-            if screenings:
-                screening_ids = [str(s['nid']) for s in screenings]
-                movie_details = self.fetch_movie_details(screening_ids)
+    except Exception as e:
+        logging.error(f"Error parsing listing: {str(e)}")
+        return None
+
+def fetch_screenings_for_date(self, date_str: str) -> List[Dict]:
+    """Fetch screenings for a specific date"""
+    logging.info(f"🎬 Fetching screenings for date: {date_str}")
+    
+    url = f"{self.base_url}/listings/{date_str}"
+    
+    self._rate_limit_wait()
+    try:
+        response = self.session.get(url, timeout=30)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        screenings = []
+        
+        # Find all venues
+        venues = soup.find_all('div', class_='venue')
+        logging.info(f"Found {len(venues)} venues")
+        
+        for venue in venues:
+            # Get venue name from h3
+            venue_title = venue.find('h3')
+            if not venue_title or not venue_title.find('a'):
+                continue
                 
-                # Combine screening times with movie details
-                combined_screenings = []
-                for screening in screenings:
-                    nid = str(screening['nid'])
-                    if nid in movie_details:
-                        movie = movie_details[nid]
-                        combined_screenings.append({
-                            **self.parse_movie_details(movie),
-                            'datetime': datetime.fromisoformat(screening['field_timestamp'].replace('Z', '+00:00')),
-                            'note': screening.get('field_note', '')
-                        })
-                        
-                return combined_screenings
-            return []
+            venue_name = venue_title.find('a').text.strip()
             
-        except Exception as e:
-            logging.error(f"Error fetching screenings: {str(e)}")
-            return []
+            # Find all listings in this venue
+            listings = venue.find_all('div', class_='listing')
+            for listing in listings:
+                movie = parse_venue_listing(listing)
+                if not movie:
+                    continue
+                    
+                # Create a screening for each showtime
+                for time_str in movie['times']:
+                    try:
+                        # Convert date and time to datetime
+                        date_obj = datetime.strptime(date_str, '%Y%m%d')
+                        time_obj = datetime.strptime(time_str, '%I:%M%p').time()
+                        datetime_obj = datetime.combine(date_obj, time_obj)
+                        
+                        screening = {
+                            'title': movie['title'],
+                            'director': movie['director'],
+                            'year': movie['year'],
+                            'runtime': movie['runtime'],
+                            'series': movie['series'],
+                            'venue': venue_name,
+                            'datetime': datetime_obj,
+                            'url': movie['url']
+                        }
+                        screenings.append(screening)
+                        logging.debug(f"Added: {movie['title']} at {venue_name} ({time_str})")
+                        
+                    except ValueError as e:
+                        logging.error(f"Error parsing time '{time_str}': {str(e)}")
+        
+        logging.info(f"✅ Found {len(screenings)} total screenings")
+        return screenings
+        
+    except Exception as e:
+        logging.error(f"Error fetching screenings: {str(e)}")
+        return []
 
     def fetch_movie_details(self, screening_ids: List[str], batch_size: int = 20) -> Dict:
         """Fetch movie details for multiple screenings"""
