@@ -1,9 +1,9 @@
 name: Test and Deploy Calendar
 
 on:
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
 
 jobs:
   run-script:
@@ -12,96 +12,89 @@ jobs:
       contents: write
     
     steps:
-    - name: Debug Environment
-      run: |
-        echo "🔍 Current directory: $PWD"
-        echo "📦 Python version:"
-        python --version
-        echo "💻 System info:"
-        uname -a
-    
     - name: Checkout repository
       uses: actions/checkout@v3
-    
-    - name: Verify Repository Contents
-      run: |
-        echo "📁 Repository contents:"
-        ls -la
-        echo "📄 Contents of requirements.txt:"
-        cat requirements.txt
     
     - name: Setup Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-    
-    - name: Verify Python Setup
+        
+    - name: Debug Environment
       run: |
-        echo "🐍 Python path: $(which python)"
-        echo "📚 Pip version:"
+        echo "🔍 Checking initial setup..."
+        echo "Current directory: $PWD"
+        echo "Directory contents:"
+        ls -la
+        echo "Python version:"
+        python --version
         pip --version
         
     - name: Install dependencies
       run: |
-        echo "🔧 Installing dependencies..."
+        echo "📦 Installing dependencies..."
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        echo "📦 Installed packages:"
-        pip list
-    
-    - name: Run scraper
+        echo "Installed packages:"
+        pip freeze
+      
+    - name: Test Python Imports
       run: |
-        echo "🚀 Starting scraper..."
+        echo "🧪 Testing Python imports..."
+        python -c "
+        try:
+            import requests
+            print('✅ requests import successful')
+            import bs4
+            print('✅ beautifulsoup4 import successful')
+            import icalendar
+            print('✅ icalendar import successful')
+            import pytz
+            print('✅ pytz import successful')
+        except Exception as e:
+            print(f'❌ Import error: {str(e)}')
+            exit(1)
+        "
+        
+    - name: Create Output Directory
+      run: |
+        echo "📁 Creating output directory..."
         mkdir -p _site
-        echo "📁 Created _site directory"
-        python scraper.py
-        echo "✨ Scraper finished"
+        echo "Directory created at: $PWD/_site"
+        ls -la _site
         
-    - name: Check Generated Files
+    - name: Run Scraper with Debug
       run: |
-        echo "🔍 Checking _site directory contents:"
-        ls -la _site/
-        echo "📊 File sizes:"
-        du -h _site/*
-        echo "📑 Preview of HTML file (first 10 lines):"
-        head -n 10 _site/index.html || echo "No HTML file found"
-        echo "📅 Preview of ICS file (first 10 lines):"
-        head -n 10 _site/nyc-screenings.ics || echo "No ICS file found"
+        echo "🚀 Running scraper with debug output..."
+        python -u scraper.py  # -u for unbuffered output
         
-    - name: Deploy to GitHub Pages
+    - name: Check Script Output
+      if: always()  # Run even if previous step failed
       run: |
-        echo "🚀 Starting deployment..."
+        echo "📋 Checking script results..."
+        echo "Current directory structure:"
+        tree .
+        echo "Content of _site directory:"
+        ls -la _site/ || echo "❌ _site directory not found"
+        if [ -f "_site/index.html" ]; then
+          echo "📄 Found index.html - first 20 lines:"
+          head -n 20 _site/index.html
+        else
+          echo "❌ index.html not found"
+        fi
+        if [ -f "_site/nyc-screenings.ics" ]; then
+          echo "📅 Found nyc-screenings.ics - first 20 lines:"
+          head -n 20 _site/nyc-screenings.ics
+        else
+          echo "❌ nyc-screenings.ics not found"
+        fi
         
-        # Create and check temp directory
-        echo "📁 Creating temporary directory..."
-        mkdir -p /tmp/site-content
-        
-        # Copy and verify files
-        echo "📋 Copying files to temporary location..."
-        cp -rv _site/* /tmp/site-content/
-        echo "📦 Temporary directory contents:"
-        ls -la /tmp/site-content/
-        
-        # Setup git configuration
-        echo "⚙️ Configuring git..."
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        # Switch to gh-pages branch
-        echo "🔄 Switching to gh-pages branch..."
-        git fetch origin gh-pages || true
-        git checkout gh-pages || git checkout --orphan gh-pages
-        
-        # Clean and restore files
-        echo "🧹 Cleaning existing files..."
-        git rm -rf . || true
-        echo "📋 Restoring generated files..."
-        cp -rv /tmp/site-content/* .
-        
-        # Commit and push
-        echo "📝 Committing changes..."
-        git add -A
-        timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
-        git commit -m "Deploy updated calendar - $timestamp" || echo "No changes to commit"
-        echo "🚀 Pushing to GitHub..."
-        git push origin gh-pages
+    - name: Archive Logs
+      if: always()  # Run even if previous steps failed
+      uses: actions/upload-artifact@v3
+      with:
+        name: debug-logs
+        path: |
+          ./_site/
+          ./scraper.py
+          ./requirements.txt
