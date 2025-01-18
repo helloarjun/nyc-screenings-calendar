@@ -4,7 +4,7 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Metrograph & AFA
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:The Aviator&#039\;s Wife Sept&#039\;24 Metrograph
+SUMMARY:The Aviator's Wife
 DTSTART;TZID=America/New_York:20250118T110000
 DURATION:PT1H46M
 DESCRIPTION:Runtime: 106 minutes\nMore info: https://metrograph.com/film/?
@@ -290,7 +290,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Possession Sept&#039\;24 Metrograph
+SUMMARY:Possession
 DTSTART;TZID=America/New_York:20250120T220000
 DURATION:PT2H7M
 DESCRIPTION:Runtime: 127 minutes\nMore info: https://metrograph.com/film/?
@@ -299,7 +299,7 @@ LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999001205
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vive L&#039\;amour
+SUMMARY:Vive L'amour
 DTSTART;TZID=America/New_York:20250120T221000
 DURATION:PT1H58M
 DESCRIPTION:Runtime: 118 minutes\nSeries: Urban Ghosts\nMore info: https:/
@@ -309,7 +309,7 @@ URL:https://metrograph.com/film/?vista_film_id=9999002623&amp;v=0b3b97fa66
  88
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Downtown 81 Aug&#039\;24 Metrograph
+SUMMARY:Downtown 81
 DTSTART;TZID=America/New_York:20250121T181000
 DURATION:PT1H15M
 DESCRIPTION:Runtime: 75 minutes\nMore info: https://metrograph.com/film/?v

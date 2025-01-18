@@ -4,7 +4,7 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Other Venues
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Wallace &amp\; Gromit: Vengeance Most Fowl at Paris
+SUMMARY:Wallace & Gromit: Vengeance Most Fowl at Paris
 DTSTART;TZID=America/New_York:20250118T100000
 DURATION:PT1H19M
 DESCRIPTION:Runtime: 79 minutes\nMore info: https://www.paristheaternyc.co
@@ -356,7 +356,7 @@ LOCATION:Nitehawk Cinema Prospect Park
 URL:https://nitehawkcinema.com/prospectpark/movies/clue/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Wallace &amp\; Gromit: Vengeance Most Fowl at Paris
+SUMMARY:Wallace & Gromit: Vengeance Most Fowl at Paris
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H19M
 DESCRIPTION:Runtime: 79 minutes\nMore info: https://www.paristheaternyc.co
@@ -765,7 +765,7 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Goin&#039\; Across the Mountains at Spectacle
+SUMMARY:Goin' Across the Mountains at Spectacle
 DTSTART;TZID=America/New_York:20250120T193000
 DURATION:PT44M
 DESCRIPTION:Runtime: 44 minutes\nSeries: Best of Spectacle 2024\nMore info
@@ -891,7 +891,7 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:La Plus Précieuse Des Marchandises
+SUMMARY:La Plus Précieuse Des
 DTSTART;TZID=America/New_York:20250121T191500
 DURATION:PT1H21M
 DESCRIPTION:Runtime: 81 minutes\nSeries: Animation First 2025\nMore info: 
@@ -1096,8 +1096,8 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/ada-my-mother-the-architect/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Come Back to the 5 &amp\; Dime Jimmy Dean\, Jimmy Dean at Nitehawk
-  Prospect Park
+SUMMARY:Come Back to the 5 & Dime Jimmy Dean\, Jimmy Dean at Nitehawk Pros
+ pect Park
 DTSTART;TZID=America/New_York:20250122T204500
 DURATION:PT1H49M
 DESCRIPTION:Runtime: 109 minutes\nSeries: All About Altman at Nitehawk Cin
@@ -1426,7 +1426,7 @@ URL:https://ticketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Dead Mountaineer&#039\;s Hotel
+SUMMARY:Dead Mountaineer's Hotel
 DTSTART;TZID=America/New_York:20250124T220000
 DURATION:PT1H20M
 DESCRIPTION:Runtime: 80 minutes\nSeries: Best of Spectacle 2024\nMore info
