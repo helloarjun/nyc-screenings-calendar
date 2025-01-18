@@ -1,12 +1,12 @@
-name: Update Calendar
+name: Test and Deploy Calendar
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering of the workflow
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight
 
 jobs:
-  update-calendar:
+  run-script:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,22 +24,12 @@ jobs:
     - name: Run scraper
       run: python scraper.py
 
-    - name: Prepare deployment
+    - name: Move generated ICS file
       run: |
         mkdir -p _site
         mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
-        echo '<!DOCTYPE html>
-        <html>
-        <head>
-          <title>NYC Screenings Calendar</title>
-        </head>
-        <body>
-          <h1>NYC Screenings Calendar</h1>
-          <p><a href="nyc_indie_cinema.ics">Download Calendar</a></p>
-        </body>
-        </html>' > _site/index.html
 
-    - name: Deploy to gh-pages
+    - name: Deploy to GitHub Pages
       run: |
         git fetch origin gh-pages
         git checkout gh-pages || git checkout --orphan gh-pages
@@ -48,5 +38,5 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git add -A
-        git commit -m "Update calendar"
+        git commit -m "Deploy updated calendar"
         git push --force origin gh-pages
