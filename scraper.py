@@ -130,7 +130,7 @@ def create_calendar_event(screening: Dict) -> Event:
 def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
     logger.info("Starting calendar generation")
 
-    group1_venues = ["Metrograph", "AFA"]
+    group1_venues = ["Metrograph", "Anthology Film Archives"]
     group2_venues = ["Film Forum", "IFC Center"]
 
     today = datetime.now()
