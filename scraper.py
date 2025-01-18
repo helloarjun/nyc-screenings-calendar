@@ -29,17 +29,37 @@ class ScreenSlateAPI:
         response.raise_for_status()
         return response.json()
 
-    def fetch_screening_details(self, ids: List[str]) -> Dict:
-        """Fetch detailed info for a list of screening IDs."""
-        results = {}
-        for batch in [ids[i:i + 20] for i in range(0, len(ids), 20)]:
-            batch_ids = "+".join(batch)
-            url = f"{BASE_URL}/api/screenings/{batch_ids}"
-            params = {"_format": "json"}
+def fetch_screening_details(self, screening_ids: List[str]) -> Dict:
+    """Fetch movie details for a list of screening IDs."""
+    if not screening_ids:
+        return {}
+
+    logger.info(f"🎥 Fetching details for {len(screening_ids)} screenings")
+
+    # Process in batches of 20
+    batch_size = 20
+    all_results = {}
+
+    for i in range(0, len(screening_ids), batch_size):
+        batch = screening_ids[i:i + batch_size]
+        ids_param = '+'.join(str(id) for id in batch)
+        url = f"{self.base_url}/api/screenings/id/{ids_param}"
+        params = {'_format': 'json'}
+
+        self._rate_limit_wait()
+        try:
             response = self.session.get(url, params=params)
             response.raise_for_status()
-            results.update(response.json())
-        return results
+            batch_data = response.json()
+            logger.info(f"✅ Got details for {len(batch_data)} movies")
+            all_results.update(batch_data)
+
+        except Exception as e:
+            logger.error(f"Error fetching batch: {str(e)}")
+            continue
+
+    return all_results
+
 
 def clean_html(text: str) -> str:
     """Remove HTML tags from text."""
