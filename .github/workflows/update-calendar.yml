@@ -37,6 +37,33 @@ jobs:
     - name: Run scraper
       run: python scraper.py
 
+      - name: Generate HTML page
+  run: |
+    echo '<!DOCTYPE html>
+    <html>
+    <head>
+      <title>NYC Screenings Calendar</title>
+      <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .screening { margin-bottom: 15px; }
+      </style>
+    </head>
+    <body>
+      <h1>NYC Screenings Calendar</h1>
+      <p><a href="nyc_indie_cinema.ics">Download the ICS Calendar</a></p>
+      <div>
+    ' > _site/index.html
+
+    python scraper.py > screenings.log
+    cat screenings.log | sed 's/\\x1b\\[[0-9;]*m//g' | grep Event >> _site/index.html
+
+    echo '
+      </div>
+    </body>
+    </html>' >> _site/index.html
+
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -44,3 +71,6 @@ jobs:
         publish_dir: ./_site
         publish_branch: gh-pages
         force_orphan: true
+
+
+        
