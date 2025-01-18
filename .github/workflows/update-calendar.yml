@@ -6,103 +6,56 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
-  build-and-deploy:
+  run-script:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      
+
     - name: Setup Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-        
+
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        
-    - name: Create output directory
-      run: mkdir -p _site
-        
+      run: pip install -r requirements.txt
+
     - name: Run scraper
       run: python scraper.py
-      
-    - name: Create index.html
+
+    - name: Check ICS file exists
       run: |
-        cat > _site/index.html << 'EOL'
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>NYC Independent Cinema Calendar</title>
-            <style>
-                body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 800px; margin: 0 auto; padding: 20px; }
-                .container { margin-top: 40px; }
-                .button { display: inline-block; padding: 10px 20px; background: #0066cc; color: white; text-decoration: none; border-radius: 5px; }
-                .button:hover { background: #0052a3; }
-                .last-updated { color: #666; font-size: 0.9em; margin-top: 20px; }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>NYC Independent Cinema Calendar</h1>
-                <p>This calendar aggregates screenings from various independent cinemas in NYC.</p>
-                <p><a href="nyc-screenings.ics" class="button">Subscribe to Calendar</a></p>
-                <p>To use this calendar:</p>
-                <ol>
-                    <li>Click the "Subscribe to Calendar" button above</li>
-                    <li>Open the .ics file with your calendar application</li>
-                    <li>Your calendar will automatically update with the latest screenings</li>
-                </ol>
-                <div class="last-updated">
-                    Last updated: <span id="timestamp"></span>
-                </div>
-            </div>
-            <script>
-                document.getElementById('timestamp').textContent = new Date().toLocaleString();
-            </script>
-        </body>
-        </html>
-        EOL
-        
-    - name: Verify files exist
-      run: |
-        if [ ! -f "_site/nyc-screenings.ics" ]; then
-          echo "Error: Calendar file not found"
+        if [ -f "_site/nyc-screenings.ics" ]; then
+          echo "ICS file found."
+        else
+          echo "Error: ICS file not found!"
           exit 1
         fi
-        if [ ! -f "_site/index.html" ]; then
-          echo "Error: Index file not found"
-          exit 1
-        fi
-      
+
     - name: Deploy to GitHub Pages
       run: |
-        git config user.name github-actions[bot]
-        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-        
-        # Create gh-pages branch if it doesn't exist
+        # Save the generated files
+        mv _site /tmp/site-content
+
+        # Switch to gh-pages branch
         git fetch origin gh-pages || git checkout --orphan gh-pages
         git checkout gh-pages || true
-        
-        # Remove old files
+
+        # Clear existing files but keep .git
         git rm -rf . || true
-        git clean -fdx
-        
-        # Copy new files
-        cp -r _site/* .
-        rm -rf _site
-        
-        # Add .nojekyll file to bypass Jekyll processing
-        touch .nojekyll
-        
+
+        # Restore generated files
+        cp -r /tmp/site-content/* .
+
+        # Configure git
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
         # Commit and push
         git add -A
         timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
-        git commit -m "Update calendar - $timestamp" || true
+        git commit -m "Deploy updated calendar - $timestamp" || true
         git push origin gh-pages
