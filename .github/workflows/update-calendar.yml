@@ -26,13 +26,18 @@ jobs:
     - name: Run scraper
       run: python scraper.py
 
-    - name: Check ICS file exists
+    - name: Check ICS files exist
       run: |
-        if [ -f "_site/nyc-screenings.ics" ]; then
-          echo "ICS file found."
-        else
-          echo "Error: ICS file not found!"
-        exit 1
+        found=false
+        for file in metrograph_afa.ics filmforum_ifc.ics others.ics; do
+          if [ -f "_site/$file" ]; then
+            echo "$file found."
+            found=true
+          fi
+        done
+        if [ "$found" = false ]; then
+          echo "Error: None of the ICS files found!"
+          exit 1
         fi
 
     - name: Deploy to GitHub Pages
