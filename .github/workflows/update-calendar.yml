@@ -54,6 +54,9 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+        # Create index.html for GitHub Pages
+        echo "<html><head><meta http-equiv='refresh' content='0; url=nyc-screenings-calendar/index.html'></head></html>" > index.html
+
         # Commit and push
         git add -A
         timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
