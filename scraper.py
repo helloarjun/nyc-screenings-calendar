@@ -8,12 +8,18 @@ import re
 from typing import Dict, List
 
 logging.basicConfig(
-    level=logging.INFO,  # Change to DEBUG for more detailed logs if needed
+    level=logging.INFO,  # Use DEBUG for more detailed logs if needed
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.screenslate.com"
+
+def strip_html(html: str) -> str:
+    """Remove HTML tags from a string."""
+    if not html:
+        return ""
+    return re.sub('<[^<]+?>', '', html).strip()
 
 class ScreenSlateAPI:
     def __init__(self):
@@ -78,21 +84,24 @@ class ScreenSlateAPI:
 def create_calendar_event(screening: Dict) -> Event:
     event = Event()
     nyc_tz = pytz.timezone('America/New_York')
-    title = screening['title']
-    if screening.get('year'):
-        title += f" ({screening['year']})"
+
+    # Clean up the title
+    title = strip_html(screening.get('title', 'Untitled'))
+    # Optionally prepend "EC:" if part of Essential Cinema Collection for AFA
+    # if "Essential Cinema" in screening.get('collection', ''):
+    #     title = "EC: " + title
 
     description_parts = []
     if screening.get('director'):
-        description_parts.append(f"Director: {screening['director']}")
+        description_parts.append(f"Director: {strip_html(screening['director'])}")
     if screening.get('runtime'):
-        description_parts.append(f"Runtime: {screening['runtime']} minutes")
+        description_parts.append(f"Runtime: {strip_html(screening['runtime'])} minutes")
     if screening.get('series'):
-        description_parts.append(f"Series: {screening['series']}")
+        description_parts.append(f"Series: {strip_html(screening['series'])}")
     if screening.get('url'):
         description_parts.append(f"More info: {screening['url']}")
 
-    event.add('summary', f"{title} at {screening['venue']}")
+    event.add('summary', title)
     event.add('description', '\n'.join(description_parts))
 
     start_time = screening['datetime']
@@ -108,7 +117,10 @@ def create_calendar_event(screening: Dict) -> Event:
         duration_minutes = 120
     event.add('duration', timedelta(minutes=duration_minutes))
 
-    event.add('location', screening['venue'])
+    # Clean up the location
+    location = strip_html(screening.get('venue', 'Unknown Venue'))
+    event.add('location', location)
+
     if screening.get('url'):
         event.add('url', screening['url'])
 
