@@ -78,6 +78,7 @@ def main():
     events = generate_events(start_date, days_to_scrape)
 
     print("Creating ICS calendar...")
+    print(f"Number of events generated: {len(events)}")
     create_ics_calendar(events)
 
     print("Calendar created: nyc_indie_cinema.ics")
