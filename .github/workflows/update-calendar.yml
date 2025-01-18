@@ -27,7 +27,7 @@ jobs:
     - name: Prepare deployment
       run: |
         mkdir -p _site
-        cp nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
+        mv nyc_indie_cinema.ics _site/nyc_indie_cinema.ics
         echo '<!DOCTYPE html>
         <html>
         <head>
