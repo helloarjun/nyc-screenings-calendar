@@ -12,41 +12,96 @@ jobs:
       contents: write
     
     steps:
+    - name: Debug Environment
+      run: |
+        echo "🔍 Current directory: $PWD"
+        echo "📦 Python version:"
+        python --version
+        echo "💻 System info:"
+        uname -a
+    
     - name: Checkout repository
       uses: actions/checkout@v3
-      
+    
+    - name: Verify Repository Contents
+      run: |
+        echo "📁 Repository contents:"
+        ls -la
+        echo "📄 Contents of requirements.txt:"
+        cat requirements.txt
+    
     - name: Setup Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
+    
+    - name: Verify Python Setup
+      run: |
+        echo "🐍 Python path: $(which python)"
+        echo "📚 Pip version:"
+        pip --version
         
     - name: Install dependencies
-      run: pip install -r requirements.txt
-      
+      run: |
+        echo "🔧 Installing dependencies..."
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        echo "📦 Installed packages:"
+        pip list
+    
     - name: Run scraper
-      run: python scraper.py
+      run: |
+        echo "🚀 Starting scraper..."
+        mkdir -p _site
+        echo "📁 Created _site directory"
+        python scraper.py
+        echo "✨ Scraper finished"
+        
+    - name: Check Generated Files
+      run: |
+        echo "🔍 Checking _site directory contents:"
+        ls -la _site/
+        echo "📊 File sizes:"
+        du -h _site/*
+        echo "📑 Preview of HTML file (first 10 lines):"
+        head -n 10 _site/index.html || echo "No HTML file found"
+        echo "📅 Preview of ICS file (first 10 lines):"
+        head -n 10 _site/nyc-screenings.ics || echo "No ICS file found"
         
     - name: Deploy to GitHub Pages
       run: |
-        # Save the generated files
-        mv _site /tmp/site-content
+        echo "🚀 Starting deployment..."
+        
+        # Create and check temp directory
+        echo "📁 Creating temporary directory..."
+        mkdir -p /tmp/site-content
+        
+        # Copy and verify files
+        echo "📋 Copying files to temporary location..."
+        cp -rv _site/* /tmp/site-content/
+        echo "📦 Temporary directory contents:"
+        ls -la /tmp/site-content/
+        
+        # Setup git configuration
+        echo "⚙️ Configuring git..."
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
         # Switch to gh-pages branch
-        git fetch origin gh-pages
+        echo "🔄 Switching to gh-pages branch..."
+        git fetch origin gh-pages || true
         git checkout gh-pages || git checkout --orphan gh-pages
         
-        # Clear existing files but keep .git
-        git rm -rf .
-        
-        # Restore generated files
-        cp -r /tmp/site-content/* .
-        
-        # Configure git
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        # Clean and restore files
+        echo "🧹 Cleaning existing files..."
+        git rm -rf . || true
+        echo "📋 Restoring generated files..."
+        cp -rv /tmp/site-content/* .
         
         # Commit and push
+        echo "📝 Committing changes..."
         git add -A
         timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
-        git commit -m "Deploy updated calendar - $timestamp"
+        git commit -m "Deploy updated calendar - $timestamp" || echo "No changes to commit"
+        echo "🚀 Pushing to GitHub..."
         git push origin gh-pages
