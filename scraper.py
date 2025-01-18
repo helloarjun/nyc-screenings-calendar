@@ -4,10 +4,11 @@ import pytz
 from icalendar import Calendar, Event
 import os
 import logging
+import re  # For regex operations
 from typing import Dict, List
 
 logging.basicConfig(
-    level=logging.INFO,  # Use DEBUG for more detailed logs if needed
+    level=logging.INFO,  # Change to DEBUG for more detailed logs if needed
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -47,8 +48,7 @@ class ScreenSlateAPI:
 
         for i in range(0, len(screening_ids), batch_size):
             batch = screening_ids[i:i + batch_size]
-            # Use plus-separated IDs as indicated by the working example
-            ids_param = '+'.join(str(id) for id in batch)
+            ids_param = '+'.join(str(id) for id in batch)  # Plus-separated IDs
             url = f"{BASE_URL}/api/screenings/id/{ids_param}"
             params = {"_format": "json"}
 
@@ -57,7 +57,6 @@ class ScreenSlateAPI:
                 response.raise_for_status()
                 batch_data = response.json()
 
-                # Handle different possible response formats
                 if isinstance(batch_data, dict):
                     all_results.update(batch_data)
                 elif isinstance(batch_data, list):
@@ -101,7 +100,12 @@ def create_calendar_event(screening: Dict) -> Event:
         start_time = nyc_tz.localize(start_time)
     event.add('dtstart', start_time)
 
-    duration_minutes = int(screening.get('runtime', 120))
+    # Safely convert runtime to an integer, defaulting to 120 minutes if not found
+    runtime_value = screening.get('runtime')
+    try:
+        duration_minutes = int(runtime_value) if runtime_value and runtime_value.isdigit() else 120
+    except ValueError:
+        duration_minutes = 120
     event.add('duration', timedelta(minutes=duration_minutes))
 
     event.add('location', screening['venue'])
@@ -138,11 +142,19 @@ def generate_calendar(api_client: ScreenSlateAPI, output_dir: str = '_site'):
                 start_time_str = screening['field_timestamp']
                 start_time = datetime.strptime(start_time_str, "%Y-%m-%dT%H:%M:%S")
 
+                # Determine runtime: use field_runtime if available, else extract from media_title_info
+                runtime = movie_data.get('field_runtime', '')
+                if not runtime:
+                    media_info = movie_data.get('media_title_info', '')
+                    match = re.search(r'(\d+)M', media_info)
+                    if match:
+                        runtime = match.group(1)
+
                 screening_event = {
                     'title': movie_data.get('title', 'Untitled'),
                     'director': movie_data.get('field_director', ''),
                     'year': movie_data.get('field_year', ''),
-                    'runtime': movie_data.get('field_runtime', ''),
+                    'runtime': runtime,
                     'series': movie_data.get('field_series', ''),
                     'venue': movie_data.get('venue_title', 'Unknown Venue'),
                     'datetime': start_time,
