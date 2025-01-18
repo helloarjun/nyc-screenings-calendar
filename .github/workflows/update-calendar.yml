@@ -28,12 +28,24 @@ jobs:
         
     - name: Deploy to GitHub Pages
       run: |
+        # Save the generated files
+        mv _site /tmp/site-content
+        
+        # Switch to gh-pages branch
         git fetch origin gh-pages
         git checkout gh-pages || git checkout --orphan gh-pages
-        rm -rf *
-        cp -r _site/* .
+        
+        # Clear existing files but keep .git
+        git rm -rf .
+        
+        # Restore generated files
+        cp -r /tmp/site-content/* .
+        
+        # Configure git
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # Commit and push
         git add -A
         timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
         git commit -m "Deploy updated calendar - $timestamp"
