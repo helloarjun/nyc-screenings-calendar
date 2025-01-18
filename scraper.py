@@ -9,6 +9,33 @@ import pytz
 BASE_URL = "https://www.screenslate.com"
 DATE_ENDPOINT = "/api/screenings/date?_format=json&date={date}"
 
+
+def generate_events(start_date, days):
+    events = []
+    for i in range(days):
+        current_date = start_date + timedelta(days=i)
+        print(f"Fetching screenings for date: {current_date.date()}")
+        screenings = get_date_data(current_date)
+
+        for screening in screenings:
+            print(f"Processing screening: {screening}")
+            runtime_str = screening.get('field_runtime', '')  # Assuming runtime is in field_runtime
+            runtime_minutes = int(runtime_str.replace('M', '')) if 'M' in runtime_str else 0
+            start_time = datetime.fromisoformat(screening['field_timestamp'])
+            end_time = start_time + timedelta(minutes=runtime_minutes) if runtime_minutes else start_time
+
+            event = {
+                'title': screening.get('field_display_title', f"Screening {screening['nid']}"),
+                'start_time': start_time,
+                'end_time': end_time,
+                'location': screening.get('field_location', 'Unknown Location'),
+                'description': screening.get('field_note', ''),
+            }
+            print(f"Event created: {event}")
+            events.append(event)
+    print(f"Total events generated: {len(events)}")
+    return events
+
 # Function to get data from the DATE endpoint
 def get_date_data(date):
     formatted_date = date.strftime("%Y%m%d")
@@ -63,6 +90,9 @@ def generate_events(start_date, days):
             }
             events.append(event)
     return events
+
+
+
 
 # Main script execution
 def main():
