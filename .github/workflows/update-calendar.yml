@@ -66,14 +66,17 @@ jobs:
         </body>
         </html>' >> _site/index.html
 
-    - name: Deploy to GitHub Pages
-      run: |
-        git fetch origin gh-pages
-        git checkout gh-pages || git checkout --orphan gh-pages
-        rm -rf *
-        cp -r _site/* .
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add -A
-        git commit -m "Deploy updated calendar"
-        git push --force origin gh-pages
+  - name: Clean untracked files
+  run: git clean -fdx
+
+- name: Deploy to GitHub Pages
+  run: |
+    git fetch origin gh-pages
+    git checkout gh-pages || git checkout --orphan gh-pages
+    rm -rf *
+    cp -r _site/* .
+    git config user.name "github-actions[bot]"
+    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    git add -A
+    git commit -m "Deploy updated calendar"
+    git push --force origin gh-pages
