@@ -4,175 +4,6 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Metrograph & AFA
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:The Aviator's Wife
-DTSTART;TZID=America/New_York:20250118T110000
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nMore info: https://metrograph.com/film/?
- vista_film_id=9999002870
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002870
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:India Song
-DTSTART;TZID=America/New_York:20250118T110000
-DURATION:PT1H55M
-DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
- e info: https://metrograph.com/film/?vista_film_id=9999002033&amp\;v=0b3b9
- 7fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Solaris
-DTSTART;TZID=America/New_York:20250118T131000
-DURATION:PT2H47M
-DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
- ://metrograph.com/film/?vista_film_id=9999002965
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002965
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:WR Mysteries of the Organism
-DTSTART;TZID=America/New_York:20250118T133000
-DURATION:PT1H25M
-DESCRIPTION:Runtime: 85 minutes\nSeries: In Dreams Begin Responsibilities:
-  A Jonathan Rosenbaum Double-Bill\nMore info: https://metrograph.com/film/
- ?vista_film_id=9999002582&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Giants and Toys
-DTSTART;TZID=America/New_York:20250118T160000
-DURATION:PT1H35M
-DESCRIPTION:Runtime: 95 minutes\nSeries: In Dreams Begin Responsibilities:
-  A Jonathan Rosenbaum Double-Bill\nMore info: https://metrograph.com/film/
- ?vista_film_id=9999002487&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Face of Another
-DTSTART;TZID=America/New_York:20250118T162000
-DURATION:PT2H4M
-DESCRIPTION:Runtime: 124 minutes\nSeries: Bye Bye Love: Fujisawa and the J
- apanese New Wave\nMore info: https://metrograph.com/film/?vista_film_id=99
- 99002068&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:EC: Georges Méliès Program 2 at AFA
-DTSTART;TZID=America/New_York:20250118T171500
-DURATION:PT2H
-DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
- ves.org/film_screenings/programs/essential-cinema
-LOCATION:Anthology Film Archives
-URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
- nema
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:XALA at AFA
-DTSTART;TZID=America/New_York:20250118T174500
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58799
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58799
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Santosh
-DTSTART;TZID=America/New_York:20250118T183000
-DURATION:PT2H8M
-DESCRIPTION:Runtime: 128 minutes\nSeries: Sandhya Suri Selects\nMore info:
-  https://metrograph.com/film/?vista_film_id=9999004138&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999004138&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bye Bye Love
-DTSTART;TZID=America/New_York:20250118T184500
-DURATION:PT1H25M
-DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
- panese New Wave\nMore info: https://metrograph.com/film/?vista_film_id=999
- 9004128&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Naomi Levine at AFA
-DTSTART;TZID=America/New_York:20250118T190000
-DURATION:PT24M
-DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
- 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
- film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
- 874
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58874
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Felicite
-DTSTART;TZID=America/New_York:20250118T204000
-DURATION:PT2H9M
-DESCRIPTION:Runtime: 129 minutes\nSeries: Sandhya Suri Selects\nMore info:
-  https://metrograph.com/film/?vista_film_id=9999003638&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999003638&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:WATTSTAX at AFA
-DTSTART;TZID=America/New_York:20250118T204500
-DURATION:PT1H42M
-DESCRIPTION:Runtime: 102 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58782
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58782
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Taste of Cherry
-DTSTART;TZID=America/New_York:20250118T210000
-DURATION:PT1H39M
-DESCRIPTION:Runtime: 99 minutes\nSeries: Raise Ravens and They Will Pick Y
- our Eyes Out\nMore info: https://metrograph.com/film/?vista_film_id=999900
- 3505&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999003505&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Under the Skin
-DTSTART;TZID=America/New_York:20250118T231000
-DURATION:PT1H48M
-DESCRIPTION:Runtime: 108 minutes\nSeries: Amongst Humans\nMore info: https
- ://metrograph.com/film/?vista_film_id=9999003246&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux
-DTSTART;TZID=America/New_York:20250118T231500
-DURATION:PT1H33M
-DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
- : https://metrograph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa668
- 8
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:The Discreet Charm of the Bourgeoisie
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT1H41M
@@ -563,5 +394,153 @@ DESCRIPTION:Runtime: 109 minutes\nSeries: 15 Minutes\nMore info: https://m
 LOCATION:Metrograph
 URL:https://metrograph.com/film/?vista_film_id=9999001088&amp;v=0b3b97fa66
  88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Crouching Tiger\, Hidden Dragon
+DTSTART;TZID=America/New_York:20250125T110000
+DURATION:PT2H
+DESCRIPTION:Runtime: 120 minutes\nSeries: Zhang Ziyi in 35mm\nMore info: h
+ ttps://metrograph.com/film/?vista_film_id=9999001258&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999001258&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Discreet Charm of the Bourgeoisie
+DTSTART;TZID=America/New_York:20250125T113000
+DURATION:PT1H41M
+DESCRIPTION:Runtime: 101 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
+ e info: https://metrograph.com/film/?vista_film_id=9999000779&amp\;v=0b3b9
+ 7fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999000779&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Housemaid
+DTSTART;TZID=America/New_York:20250125T133000
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: Knock Knock\nMore info: https://
+ metrograph.com/film/?vista_film_id=9999003128&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999003128&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Brother from Another Planet
+DTSTART;TZID=America/New_York:20250125T134500
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: Amongst Humans\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999004144&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004144&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Losing Ground
+DTSTART;TZID=America/New_York:20250125T154500
+DURATION:PT1H26M
+DESCRIPTION:Runtime: 86 minutes\nSeries: One Timers\nMore info: https://me
+ trograph.com/film/?vista_film_id=9999004145&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004145&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maso & Miso Go Boating Preceded by Scum Manifesto
+DTSTART;TZID=America/New_York:20250125T160000
+DURATION:PT29M
+DESCRIPTION:Runtime: 29 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMore
+  info: https://metrograph.com/film/?vista_film_id=9999004146&amp\;v=0b3b97
+ fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004146&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:BLACK GIRL at AFA
+DTSTART;TZID=America/New_York:20250125T170000
+DURATION:PT1H20M
+DESCRIPTION:Runtime: 80 minutes\nSeries: Wandering Women\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58810
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58810
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ACE Presents: The Skeleton Twins
+DTSTART;TZID=America/New_York:20250125T174000
+DURATION:PT1H33M
+DESCRIPTION:Runtime: 93 minutes\nSeries: FILMCRAFT: American Cinema Editor
+ s\nMore info: https://metrograph.com/film/?vista_film_id=9999004147&amp\;v
+ =0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004147&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Be Pretty and Shut Up
+DTSTART;TZID=America/New_York:20250125T180000
+DURATION:PT1H55M
+DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
+ e info: https://metrograph.com/film/?vista_film_id=9999004143&amp\;v=0b3b9
+ 7fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004143&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:POOR COW at AFA
+DTSTART;TZID=America/New_York:20250125T184500
+DURATION:PT1H44M
+DESCRIPTION:Runtime: 104 minutes\nSeries: Wandering Women\nMore info: http
+ s://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;
+ month=01&amp\;year=2025#showing-58814
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58814
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jacob Burkhardt\, PGM 1 at AFA
+DTSTART;TZID=America/New_York:20250125T190000
+DURATION:PT1H18M
+DESCRIPTION:Runtime: 78 minutes\nSeries: Jacob Burkhardt\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58764
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58764
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Bride With White Hair
+DTSTART;TZID=America/New_York:20250125T201500
+DURATION:PT1H29M
+DESCRIPTION:Runtime: 89 minutes\nSeries: Brigitte Lin on Screen\nMore info
+ : https://metrograph.com/film/?vista_film_id=9999003620&amp\;v=0b3b97fa668
+ 8
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999003620&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Solaris
+DTSTART;TZID=America/New_York:20250125T203000
+DURATION:PT2H47M
+DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999002965
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999002965
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:GUSHING PRAYER at AFA
+DTSTART;TZID=America/New_York:20250125T211500
+DURATION:PT1H14M
+DESCRIPTION:Runtime: 74 minutes\nSeries: Wandering Women\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58818
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58818
 END:VEVENT
 END:VCALENDAR

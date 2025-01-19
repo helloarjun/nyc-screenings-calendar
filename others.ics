@@ -4,296 +4,6 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Other Venues
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:Wallace & Gromit: Vengeance Most Fowl at Paris
-DTSTART;TZID=America/New_York:20250118T100000
-DURATION:PT1H19M
-DESCRIPTION:Runtime: 79 minutes\nMore info: https://www.paristheaternyc.co
- m/film/wallace-and-gromit-vengeance-most-fowl-paris
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/wallace-and-gromit-vengeance-most
- -fowl-paris
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Clue at Nitehawk Prospect Park
-DTSTART;TZID=America/New_York:20250118T110000
-DURATION:PT1H29M
-DESCRIPTION:Runtime: 89 minutes\nSeries: The Anniversary Party at Nitehawk
-  Cinema\nMore info: https://nitehawkcinema.com/prospectpark/movies/clue/
-LOCATION:Nitehawk Cinema Prospect Park
-URL:https://nitehawkcinema.com/prospectpark/movies/clue/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Pennies from Heaven at Paris
-DTSTART;TZID=America/New_York:20250118T120000
-DURATION:PT1H48M
-DESCRIPTION:Runtime: 108 minutes\nSeries: Skipped a Beat: &#039\;Emilia P
- érez&#039\; and Musicals on the Edge\nMore info: https://www.paristheater
- nyc.com/film/pennies-from-heaven-paris
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/pennies-from-heaven-paris
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250118T121500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:All We Imagine as Light at FLC
-DTSTART;TZID=America/New_York:20250118T123000
-DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/all-we-imagine-as-light/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/all-we-imagine-as-light/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Youth (Hard Times) at MoMI
-DTSTART;TZID=America/New_York:20250118T123000
-DURATION:PT3H40M
-DESCRIPTION:Runtime: 220 minutes\nSeries: Curators&#039\; Choice 2024\nMor
- e info: https://movingimage.org/event/youth-hard-times/
-LOCATION:Museum of the Moving Image
-URL:https://movingimage.org/event/youth-hard-times/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250118T131500
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:mysonmoma
-DTSTART;TZID=America/New_York:20250118T140000
-DURATION:PT49M
-DESCRIPTION:Runtime: 49 minutes\nSeries: To Save and Project: The 21st MoM
- A International Festival of Film Preservation\nMore info: https://www.moma
- .org/calendar/events/10198
-LOCATION:Museum of Modern Art
-URL:https://www.moma.org/calendar/events/10198
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Teach-in\, Film Screening\, Mutual Aid Event + HAÏTI (QUÉBEC)
-DTSTART;TZID=America/New_York:20250118T140000
-DURATION:PT59M
-DESCRIPTION:Runtime: 59 minutes\nMore info: https://www.maysles.org/calend
- ar/teach-in-film-screening-mutual-aid-event
-LOCATION:Maysles Cinema
-URL:https://www.maysles.org/calendar/teach-in-film-screening-mutual-aid-ev
- ent
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Amadeus at Roxy cinema
-DTSTART;TZID=America/New_York:20250118T140000
-DURATION:PT2H40M
-DESCRIPTION:Runtime: 160 minutes\nMore info: https://ticketing.uswest.veez
- i.com/purchase/5829?siteToken=tt17e5ajy3v48kh5b2kremvnz4
-LOCATION:Roxy Cinema New York
-URL:https://ticketing.uswest.veezi.com/purchase/5829?siteToken=tt17e5ajy3v
- 48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250118T141500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Emilia Pérez at Paris (DCP)
-DTSTART;TZID=America/New_York:20250118T150000
-DURATION:PT2H12M
-DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.paristheaternyc.c
- om/film/emilia-perez
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/emilia-perez
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Lancelot Link at Spectacle
-DTSTART;TZID=America/New_York:20250118T150000
-DURATION:PT8H30M
-DESCRIPTION:Runtime: 510 minutes\nSeries: Best of Spectacle 2024\nMore inf
- o: https://www.spectacletheater.com/best-of-spectacle-2024/#link
-LOCATION:Spectacle
-URL:https://www.spectacletheater.com/best-of-spectacle-2024/#link
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Universal Language at MoMI
-DTSTART;TZID=America/New_York:20250118T153000
-DURATION:PT1H29M
-DESCRIPTION:Runtime: 89 minutes\nSeries: Curators&#039\; Choice 2024\nMore
-  info: https://movingimage.org/event/universal-language/
-LOCATION:Museum of the Moving Image
-URL:https://movingimage.org/event/universal-language/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250118T154500
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mexican casanova moma
-DTSTART;TZID=America/New_York:20250118T160000
-DURATION:PT1H23M
-DESCRIPTION:Runtime: 83 minutes\nSeries: To Save and Project: The 21st MoM
- A International Festival of Film Preservation\nMore info: https://www.moma
- .org/calendar/events/10199
-LOCATION:Museum of Modern Art
-URL:https://www.moma.org/calendar/events/10199
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250118T161500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Pictures of Ghosts at MoMI
-DTSTART;TZID=America/New_York:20250118T163000
-DURATION:PT1H33M
-DESCRIPTION:Runtime: 93 minutes\nSeries: Curators&#039\; Choice 2024\nMore
-  info: https://movingimage.org/event/pictures-of-ghosts/
-LOCATION:Museum of the Moving Image
-URL:https://movingimage.org/event/pictures-of-ghosts/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Queer at Roxy Cinema
-DTSTART;TZID=America/New_York:20250118T170000
-DURATION:PT2H16M
-DESCRIPTION:Runtime: 136 minutes\nMore info: https://ticketing.uswest.veez
- i.com/purchase/5817?siteToken=tt17e5ajy3v48kh5b2kremvnz4
-LOCATION:Roxy Cinema New York
-URL:https://ticketing.uswest.veezi.com/purchase/5817?siteToken=tt17e5ajy3v
- 48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Maria at Paris
-DTSTART;TZID=America/New_York:20250118T180000
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Divas &amp\; Despots: Ten Portra
- its by Pablo Larraín\nMore info: https://www.paristheaternyc.com/film/mar
- ia
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/maria
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250118T180000
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250118T181500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Last Summer at MoMI
-DTSTART;TZID=America/New_York:20250118T183000
-DURATION:PT1H44M
-DESCRIPTION:Runtime: 104 minutes\nSeries: Curators&#039\; Choice 2024\nMor
- e info: https://movingimage.org/event/last-summer/
-LOCATION:Museum of the Moving Image
-URL:https://movingimage.org/event/last-summer/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:gunmanswalkmoma
-DTSTART;TZID=America/New_York:20250118T183000
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: To Save and Project: The 21st MoM
- A International Festival of Film Preservation\nMore info: https://www.moma
- .org/calendar/events/10206
-LOCATION:Museum of Modern Art
-URL:https://www.moma.org/calendar/events/10206
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hester Street at FLC
-DTSTART;TZID=America/New_York:20250118T190000
-DURATION:PT1H32M
-DESCRIPTION:Runtime: 92 minutes\nSeries: New York Jewish Film Festival 202
- 5\nMore info: https://www.filmlinc.org/films/hester-street/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hester-street/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Heretic at Roxy Cinema
-DTSTART;TZID=America/New_York:20250118T194500
-DURATION:PT1H51M
-DESCRIPTION:Runtime: 111 minutes\nMore info: https://ticketing.uswest.veez
- i.com/purchase/5831?siteToken=tt17e5ajy3v48kh5b2kremvnz4
-LOCATION:Roxy Cinema New York
-URL:https://ticketing.uswest.veezi.com/purchase/5831?siteToken=tt17e5ajy3v
- 48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250118T201500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250118T203000
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Anora at FLC
-DTSTART;TZID=America/New_York:20250118T210000
-DURATION:PT2H18M
-DESCRIPTION:Runtime: 138 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/anora/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/anora/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Emilia Pérez at Paris (DCP)
-DTSTART;TZID=America/New_York:20250118T210000
-DURATION:PT2H12M
-DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.paristheaternyc.c
- om/film/emilia-perez
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/emilia-perez
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Rachel Ormont at Roxy Cinema
-DTSTART;TZID=America/New_York:20250118T220000
-DURATION:PT1H23M
-DESCRIPTION:Runtime: 83 minutes\nMore info: https://ticketing.uswest.veezi
- .com/purchase/5832?siteToken=tt17e5ajy3v48kh5b2kremvnz4
-LOCATION:Roxy Cinema New York
-URL:https://ticketing.uswest.veezi.com/purchase/5832?siteToken=tt17e5ajy3v
- 48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:The Player at Nitehawk Williamsburg
 DTSTART;TZID=America/New_York:20250119T110000
 DURATION:PT2H4M
@@ -340,15 +50,6 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/breaking-home-ties/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Hard Truths at FLC
-DTSTART;TZID=America/New_York:20250119T121500
-DURATION:PT1H37M
-DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
-  info: https://www.filmlinc.org/films/hard-truths/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/hard-truths/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Thieves Like Us at Nitehawk Williamsburg
 DTSTART;TZID=America/New_York:20250119T121500
 DURATION:PT2H3M
@@ -357,6 +58,15 @@ DESCRIPTION:Runtime: 123 minutes\nSeries: All About Altman at Nitehawk Cin
  e-us/
 LOCATION:Nitehawk Cinema Williamsburg
 URL:https://nitehawkcinema.com/prospectpark/movies/thieves-like-us/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hard Truths at FLC
+DTSTART;TZID=America/New_York:20250119T121500
+DURATION:PT1H37M
+DESCRIPTION:Runtime: 97 minutes\nSeries: 62nd New York Film Festival\nMore
+  info: https://www.filmlinc.org/films/hard-truths/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/hard-truths/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Youth (Homecoming) at MoMI
@@ -433,15 +143,6 @@ LOCATION:Museum of the Moving Image
 URL:https://movingimage.org/event/the-girl-with-the-needle/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Ascent at MoMI
-DTSTART;TZID=America/New_York:20250119T154500
-DURATION:PT1H51M
-DESCRIPTION:Runtime: 111 minutes\nSeries: See It Big: Let It Snow\nMore in
- fo: https://movingimage.org/event/the-ascent/2025-01-19/
-LOCATION:Museum of the Moving Image
-URL:https://movingimage.org/event/the-ascent/2025-01-19/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:The Room Next Door at FLC
 DTSTART;TZID=America/New_York:20250119T154500
 DURATION:PT1H46M
@@ -449,6 +150,15 @@ DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
  e info: https://www.filmlinc.org/films/the-room-next-door/
 LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/the-room-next-door/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Ascent at MoMI
+DTSTART;TZID=America/New_York:20250119T154500
+DURATION:PT1H51M
+DESCRIPTION:Runtime: 111 minutes\nSeries: See It Big: Let It Snow\nMore in
+ fo: https://movingimage.org/event/the-ascent/2025-01-19/
+LOCATION:Museum of the Moving Image
+URL:https://movingimage.org/event/the-ascent/2025-01-19/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Maria at Paris
@@ -508,15 +218,6 @@ LOCATION:Film at Lincoln Center
 URL:https://www.filmlinc.org/films/lost-city/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250119T180000
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Mambar Pierrette at MoMI
 DTSTART;TZID=America/New_York:20250119T180000
 DURATION:PT1H33M
@@ -524,6 +225,15 @@ DESCRIPTION:Runtime: 93 minutes\nSeries: Curators&#039\; Choice 2024\nMore
   info: https://movingimage.org/event/mambar-pierrette/
 LOCATION:Museum of the Moving Image
 URL:https://movingimage.org/event/mambar-pierrette/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Room Next Door at FLC
+DTSTART;TZID=America/New_York:20250119T180000
+DURATION:PT1H46M
+DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
+ e info: https://www.filmlinc.org/films/the-room-next-door/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Hard Truths at FLC
@@ -628,6 +338,15 @@ LOCATION:Museum of Modern Art
 URL:https://www.moma.org/calendar/events/10209
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Emilia Pérez at Paris (DCP)
+DTSTART;TZID=America/New_York:20250120T184500
+DURATION:PT2H12M
+DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.paristheaternyc.c
+ om/film/emilia-perez
+LOCATION:Paris Theater
+URL:https://www.paristheaternyc.com/film/emilia-perez
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Year One at Nitehawk Prospect Park
 DTSTART;TZID=America/New_York:20250120T184500
 DURATION:PT1H33M
@@ -636,15 +355,6 @@ DESCRIPTION:Runtime: 93 minutes\nSeries: The Future of Film is Female at N
  year-one/
 LOCATION:Nitehawk Cinema Prospect Park
 URL:https://nitehawkcinema.com/prospectpark/movies/year-one/
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Emilia Pérez at Paris (DCP)
-DTSTART;TZID=America/New_York:20250120T184500
-DURATION:PT2H12M
-DESCRIPTION:Runtime: 132 minutes\nMore info: https://www.paristheaternyc.c
- om/film/emilia-perez
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/emilia-perez
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Fat City at Roxy Cinema
@@ -694,15 +404,6 @@ URL:https://ticketing.uswest.veezi.com/purchase/5817?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250120T211500
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Killer Klowns from Outer Space at Nitehawk Prospect Park
 DTSTART;TZID=America/New_York:20250120T211500
 DURATION:PT1H28M
@@ -712,6 +413,15 @@ DESCRIPTION:Runtime: 88 minutes\nSeries: 80s Invaders at Nitehawk Cinema\n
 LOCATION:Nitehawk Cinema Prospect Park
 URL:https://nitehawkcinema.com/prospectpark/movies/killer-klowns-from-oute
  r-space/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Room Next Door at FLC
+DTSTART;TZID=America/New_York:20250120T211500
+DURATION:PT1H46M
+DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
+ e info: https://www.filmlinc.org/films/the-room-next-door/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Maria at Paris
@@ -762,6 +472,15 @@ LOCATION:Paris Theater
 URL:https://www.paristheaternyc.com/film/maria
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:The Room Next Door at FLC
+DTSTART;TZID=America/New_York:20250121T190000
+DURATION:PT1H46M
+DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
+ e info: https://www.filmlinc.org/films/the-room-next-door/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/the-room-next-door/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Bob Mackie: Naked Illusion at Roxy Cinema
 DTSTART;TZID=America/New_York:20250121T190000
 DURATION:PT1H45M
@@ -770,15 +489,6 @@ DESCRIPTION:Runtime: 105 minutes\nMore info: https://ticketing.uswest.veez
 LOCATION:Roxy Cinema New York
 URL:https://ticketing.uswest.veezi.com/purchase/5833?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Room Next Door at FLC
-DTSTART;TZID=America/New_York:20250121T190000
-DURATION:PT1H46M
-DESCRIPTION:Runtime: 106 minutes\nSeries: 62nd New York Film Festival\nMor
- e info: https://www.filmlinc.org/films/the-room-next-door/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-room-next-door/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:La Plus Précieuse Des
@@ -790,15 +500,6 @@ LOCATION:L&#039\;Alliance New York
 URL:https://lallianceny.org/event/the-most-precious-of-cargoes/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The Spoils at FLC
-DTSTART;TZID=America/New_York:20250121T193000
-DURATION:PT1H44M
-DESCRIPTION:Runtime: 104 minutes\nSeries: New York Jewish Film Festival 20
- 25\nMore info: https://www.filmlinc.org/films/the-spoils/
-LOCATION:Film at Lincoln Center
-URL:https://www.filmlinc.org/films/the-spoils/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Rave Macbeth at Spectacle
 DTSTART;TZID=America/New_York:20250121T193000
 DURATION:PT1H27M
@@ -806,6 +507,15 @@ DESCRIPTION:Runtime: 87 minutes\nSeries: Best of Spectacle 2024\nMore info
  : https://www.spectacletheater.com/best-of-spectacle-2024/#rave
 LOCATION:Spectacle
 URL:https://www.spectacletheater.com/best-of-spectacle-2024/#rave
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Spoils at FLC
+DTSTART;TZID=America/New_York:20250121T193000
+DURATION:PT1H44M
+DESCRIPTION:Runtime: 104 minutes\nSeries: New York Jewish Film Festival 20
+ 25\nMore info: https://www.filmlinc.org/films/the-spoils/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/the-spoils/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Hard Truths at FLC
@@ -836,17 +546,6 @@ LOCATION:Nitehawk Cinema Prospect Park
 URL:https://nitehawkcinema.com/prospectpark/movies/evil-dead-2-book/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Brick at Roxy Cinema
-DTSTART;TZID=America/New_York:20250121T213000
-DURATION:PT1H50M
-DESCRIPTION:Runtime: 110 minutes\nSeries: Wild Child\nMore info: https://t
- icketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v48kh5b2kremvn
- z4
-LOCATION:Roxy Cinema New York
-URL:https://ticketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v
- 48kh5b2kremvnz4
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Orphan at Alamo Brooklyn
 DTSTART;TZID=America/New_York:20250121T213000
 DURATION:PT2H3M
@@ -863,6 +562,17 @@ DESCRIPTION:Runtime: 125 minutes\nSeries: All About Altman at Nitehawk Cin
  ema\nMore info: https://nitehawkcinema.com/williamsburg/movies/a-wedding/
 LOCATION:Nitehawk Cinema Williamsburg
 URL:https://nitehawkcinema.com/williamsburg/movies/a-wedding/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Brick at Roxy Cinema
+DTSTART;TZID=America/New_York:20250121T213000
+DURATION:PT1H50M
+DESCRIPTION:Runtime: 110 minutes\nSeries: Wild Child\nMore info: https://t
+ icketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v48kh5b2kremvn
+ z4
+LOCATION:Roxy Cinema New York
+URL:https://ticketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v
+ 48kh5b2kremvnz4
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Emilia Pérez at Paris (DCP)
@@ -1195,16 +905,6 @@ LOCATION:Nitehawk Cinema Williamsburg
 URL:https://nitehawkcinema.com/williamsburg/movies/fungicide/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Maria at Paris
-DTSTART;TZID=America/New_York:20250123T214500
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Divas &amp\; Despots: Ten Portra
- its by Pablo Larraín\nMore info: https://www.paristheaternyc.com/film/mar
- ia
-LOCATION:Paris Theater
-URL:https://www.paristheaternyc.com/film/maria
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Brick at Roxy Cinema
 DTSTART;TZID=America/New_York:20250123T214500
 DURATION:PT1H50M
@@ -1214,6 +914,16 @@ DESCRIPTION:Runtime: 110 minutes\nSeries: Wild Child\nMore info: https://t
 LOCATION:Roxy Cinema New York
 URL:https://ticketing.uswest.veezi.com/purchase/5834?siteToken=tt17e5ajy3v
  48kh5b2kremvnz4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maria at Paris
+DTSTART;TZID=America/New_York:20250123T214500
+DURATION:PT2H3M
+DESCRIPTION:Runtime: 123 minutes\nSeries: Divas &amp\; Despots: Ten Portra
+ its by Pablo Larraín\nMore info: https://www.paristheaternyc.com/film/mar
+ ia
+LOCATION:Paris Theater
+URL:https://www.paristheaternyc.com/film/maria
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:The Ascent at MoMI
@@ -1319,5 +1029,221 @@ DESCRIPTION:Runtime: 103 minutes\nSeries: Best of Spectacle 2024\nMore inf
  o: https://www.spectacletheater.com/best-of-spectacle-2024/#mister
 LOCATION:Spectacle
 URL:https://www.spectacletheater.com/best-of-spectacle-2024/#mister
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Yuku and the Himalayan Flower
+DTSTART;TZID=America/New_York:20250125T101500
+DURATION:PT1H2M
+DESCRIPTION:Runtime: 62 minutes\nSeries: Animation First 2025\nMore info: 
+ https://lallianceny.org/event/yuku-himalayan-flower/
+LOCATION:L&#039\;Alliance New York
+URL:https://lallianceny.org/event/yuku-himalayan-flower/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:North By Northwest at Nitehawk Prospect Park
+DTSTART;TZID=America/New_York:20250125T110000
+DURATION:PT2H8M
+DESCRIPTION:Runtime: 128 minutes\nSeries: Classic Pictures at Nitehawk Cin
+ ema\nMore info: https://nitehawkcinema.com/prospectpark/movies/north-by-no
+ rthwest/
+LOCATION:Nitehawk Cinema Prospect Park
+URL:https://nitehawkcinema.com/prospectpark/movies/north-by-northwest/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3 Women at Nitehawk Williamsburg
+DTSTART;TZID=America/New_York:20250125T110000
+DURATION:PT2H4M
+DESCRIPTION:Runtime: 124 minutes\nSeries: All About Altman at Nitehawk Cin
+ ema\nMore info: https://nitehawkcinema.com/williamsburg/movies/3-women/
+LOCATION:Nitehawk Cinema Williamsburg
+URL:https://nitehawkcinema.com/williamsburg/movies/3-women/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:California Split at Nitehawk Prospect Park
+DTSTART;TZID=America/New_York:20250125T121500
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: All About Altman at Nitehawk Cin
+ ema\nMore info: https://nitehawkcinema.com/prospectpark/movies/california-
+ split/
+LOCATION:Nitehawk Cinema Prospect Park
+URL:https://nitehawkcinema.com/prospectpark/movies/california-split/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Witches at MoMI
+DTSTART;TZID=America/New_York:20250125T130000
+DURATION:PT1H31M
+DESCRIPTION:Runtime: 91 minutes\nSeries: Jim Henson&#039\;s World\nMore in
+ fo: https://movingimage.org/event/the-witches-25th/2025-01-25/
+LOCATION:Museum of the Moving Image
+URL:https://movingimage.org/event/the-witches-25th/2025-01-25/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:rendezvousdocksmoma
+DTSTART;TZID=America/New_York:20250125T133000
+DURATION:PT1H15M
+DESCRIPTION:Runtime: 75 minutes\nSeries: To Save and Project: The 21st MoM
+ A International Festival of Film Preservation
+LOCATION:Museum of Modern Art
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twelve tasks asterix - AF25
+DTSTART;TZID=America/New_York:20250125T141500
+DURATION:PT1H20M
+DESCRIPTION:Runtime: 80 minutes\nSeries: Animation First 2025\nMore info: 
+ https://lallianceny.org/event/the-twelve-tasks-of-asterix/
+LOCATION:L&#039\;Alliance New York
+URL:https://lallianceny.org/event/the-twelve-tasks-of-asterix/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nosferatu at Roxy Cinema
+DTSTART;TZID=America/New_York:20250125T150000
+DURATION:PT2H12M
+DESCRIPTION:Runtime: 132 minutes\nMore info: https://ticketing.uswest.veez
+ i.com/purchase/5854?siteToken=tt17e5ajy3v48kh5b2kremvnz4
+LOCATION:Roxy Cinema New York
+URL:https://ticketing.uswest.veezi.com/purchase/5854?siteToken=tt17e5ajy3v
+ 48kh5b2kremvnz4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alice at Museum of Arts and Design
+DTSTART;TZID=America/New_York:20250125T150000
+DURATION:PT1H26M
+DESCRIPTION:Runtime: 86 minutes\nSeries: Life in Plastic\nMore info: https
+ ://madmuseum.org/events/alice
+LOCATION:Museum of Arts and Design
+URL:https://madmuseum.org/events/alice
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:e-flux Film Award presents: Special Screenings
+DTSTART;TZID=America/New_York:20250125T150000
+DURATION:PT16M
+DESCRIPTION:Runtime: 16 minutes\nMore info: https://www.e-flux.com/events/
+ 647986/e-flux-film-award-presents-special-screenings/
+LOCATION:E-flux Screening Room
+URL:https://www.e-flux.com/events/647986/e-flux-film-award-presents-specia
+ l-screenings/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Do Not Expect Too Much from the End of the World at MoMI
+DTSTART;TZID=America/New_York:20250125T150000
+DURATION:PT2H43M
+DESCRIPTION:Runtime: 163 minutes\nSeries: Curators&#039\; Choice 2024\nMor
+ e info: https://movingimage.org/event/do-not-expect/
+LOCATION:Museum of the Moving Image
+URL:https://movingimage.org/event/do-not-expect/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:broadwaymoma
+DTSTART;TZID=America/New_York:20250125T160000
+DURATION:PT1H45M
+DESCRIPTION:Runtime: 105 minutes\nSeries: To Save and Project: The 21st Mo
+ MA International Festival of Film Preservation\nMore info: https://www.mom
+ a.org/calendar/events/10207
+LOCATION:Museum of Modern Art
+URL:https://www.moma.org/calendar/events/10207
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:caught-in-moving-sand/
+DTSTART;TZID=America/New_York:20250125T163000
+DURATION:PT50M
+DESCRIPTION:Runtime: 50 minutes\nMore info: https://lallianceny.org/event/
+ caught-in-moving-sand/
+LOCATION:L&#039\;Alliance New York
+URL:https://lallianceny.org/event/caught-in-moving-sand/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Twelve at Roxy Cinema
+DTSTART;TZID=America/New_York:20250125T173000
+DURATION:PT1H38M
+DESCRIPTION:Runtime: 98 minutes\nSeries: Wild Child\nMore info: https://ti
+ cketing.uswest.veezi.com/purchase/5815?siteToken=tt17e5ajy3v48kh5b2kremvnz
+ 4
+LOCATION:Roxy Cinema New York
+URL:https://ticketing.uswest.veezi.com/purchase/5815?siteToken=tt17e5ajy3v
+ 48kh5b2kremvnz4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AF25-the-legends-of-paris/
+DTSTART;TZID=America/New_York:20250125T183000
+DURATION:PT52M
+DESCRIPTION:Runtime: 52 minutes\nSeries: Animation First 2025\nMore info: 
+ https://lallianceny.org/event/the-legends-of-paris/
+LOCATION:L&#039\;Alliance New York
+URL:https://lallianceny.org/event/the-legends-of-paris/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:wagesofsin
+DTSTART;TZID=America/New_York:20250125T190000
+DURATION:PT1H16M
+DESCRIPTION:Runtime: 76 minutes\nSeries: To Save and Project: The 21st MoM
+ A International Festival of Film Preservation\nMore info: https://www.moma
+ .org/calendar/events/10212
+LOCATION:Museum of Modern Art
+URL:https://www.moma.org/calendar/events/10212
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:This Is My Mother at FLC
+DTSTART;TZID=America/New_York:20250125T190000
+DURATION:PT1H44M
+DESCRIPTION:Runtime: 104 minutes\nSeries: New York Jewish Film Festival 20
+ 25\nMore info: https://www.filmlinc.org/films/this-is-my-mother/
+LOCATION:Film at Lincoln Center
+URL:https://www.filmlinc.org/films/this-is-my-mother/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Queer at Roxy Cinema
+DTSTART;TZID=America/New_York:20250125T192000
+DURATION:PT2H16M
+DESCRIPTION:Runtime: 136 minutes\nMore info: https://ticketing.uswest.veez
+ i.com/purchase/5817?siteToken=tt17e5ajy3v48kh5b2kremvnz4
+LOCATION:Roxy Cinema New York
+URL:https://ticketing.uswest.veezi.com/purchase/5817?siteToken=tt17e5ajy3v
+ 48kh5b2kremvnz4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Harmony - AF 25
+DTSTART;TZID=America/New_York:20250125T204500
+DURATION:PT1H14M
+DESCRIPTION:Runtime: 74 minutes\nSeries: Animation First 2025\nMore info: 
+ https://lallianceny.org/event/harmony/
+LOCATION:L&#039\;Alliance New York
+URL:https://lallianceny.org/event/harmony/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Spin at Spectacle
+DTSTART;TZID=America/New_York:20250125T220000
+DURATION:PT57M
+DESCRIPTION:Runtime: 57 minutes\nSeries: Best of Spectacle 2024\nMore info
+ : https://www.spectacletheater.com/best-of-spectacle-2024/#spin
+LOCATION:Spectacle
+URL:https://www.spectacletheater.com/best-of-spectacle-2024/#spin
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:City Dudes at Roxy Cinema
+DTSTART;TZID=America/New_York:20250125T220000
+DURATION:PT2H
+DESCRIPTION:Series: City Dudes\nMore info: https://ticketing.uswest.veezi.
+ com/purchase/5844?siteToken=tt17e5ajy3v48kh5b2kremvnz4
+LOCATION:Roxy Cinema New York
+URL:https://ticketing.uswest.veezi.com/purchase/5844?siteToken=tt17e5ajy3v
+ 48kh5b2kremvnz4
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pieces at Nitehawk Williamsburg
+DTSTART;TZID=America/New_York:20250125T235500
+DURATION:PT1H30M
+DESCRIPTION:Runtime: 90 minutes\nMore info: https://nitehawkcinema.com/wil
+ liamsburg/movies/pieces/
+LOCATION:Nitehawk Cinema Williamsburg
+URL:https://nitehawkcinema.com/williamsburg/movies/pieces/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Showgirls 2 at Spectacle
+DTSTART;TZID=America/New_York:20250125T235500
+DURATION:PT1H40M
+DESCRIPTION:Runtime: 100 minutes\nSeries: Best of Spectacle 2024\nMore inf
+ o: https://www.spectacletheater.com/best-of-spectacle-2024/#showgirls
+LOCATION:Spectacle
+URL:https://www.spectacletheater.com/best-of-spectacle-2024/#showgirls
 END:VEVENT
 END:VCALENDAR
