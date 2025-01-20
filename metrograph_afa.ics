@@ -4,168 +4,6 @@ PRODID:-//NYC Indie Cinema Calendar//screenslate.com//
 X-WR-CALNAME:NYC Indie Cinema - Metrograph & AFA
 X-WR-TIMEZONE:America/New_York
 BEGIN:VEVENT
-SUMMARY:The Discreet Charm of the Bourgeoisie
-DTSTART;TZID=America/New_York:20250119T110000
-DURATION:PT1H41M
-DESCRIPTION:Runtime: 101 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
- e info: https://metrograph.com/film/?vista_film_id=9999000779&amp\;v=0b3b9
- 7fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999000779&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Farewell
-DTSTART;TZID=America/New_York:20250119T110000
-DURATION:PT1H38M
-DESCRIPTION:Runtime: 98 minutes\nSeries: Screen Time at Metrograph\nMore i
- nfo: https://metrograph.com/film/?vista_film_id=9999002679&amp\;v=0b3b97fa
- 6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002679&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Ashes of Time Redux
-DTSTART;TZID=America/New_York:20250119T131000
-DURATION:PT1H33M
-DESCRIPTION:Runtime: 93 minutes\nSeries: Brigitte Lin on Screen\nMore info
- : https://metrograph.com/film/?vista_film_id=9999000515&amp\;v=0b3b97fa668
- 8
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999000515&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Giants and Toys
-DTSTART;TZID=America/New_York:20250119T131500
-DURATION:PT1H35M
-DESCRIPTION:Runtime: 95 minutes\nSeries: In Dreams Begin Responsibilities:
-  A Jonathan Rosenbaum Double-Bill\nMore info: https://metrograph.com/film/
- ?vista_film_id=9999002487&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002487&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Solaris
-DTSTART;TZID=America/New_York:20250119T151500
-DURATION:PT2H47M
-DESCRIPTION:Runtime: 167 minutes\nSeries: Amongst Humans\nMore info: https
- ://metrograph.com/film/?vista_film_id=9999002965
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002965
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Face of Another
-DTSTART;TZID=America/New_York:20250119T152000
-DURATION:PT2H4M
-DESCRIPTION:Runtime: 124 minutes\nSeries: Bye Bye Love: Fujisawa and the J
- apanese New Wave\nMore info: https://metrograph.com/film/?vista_film_id=99
- 99002068&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002068&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:EC: Georges Méliès Program 3 at AFA
-DTSTART;TZID=America/New_York:20250119T171500
-DURATION:PT2H
-DESCRIPTION:Series: Essential Cinema\nMore info: http://anthologyfilmarchi
- ves.org/film_screenings/programs/essential-cinema
-LOCATION:Anthology Film Archives
-URL:http://anthologyfilmarchives.org/film_screenings/programs/essential-ci
- nema
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Bye Bye Love
-DTSTART;TZID=America/New_York:20250119T175000
-DURATION:PT1H25M
-DESCRIPTION:Runtime: 85 minutes\nSeries: Bye Bye Love: Fujisawa and the Ja
- panese New Wave\nMore info: https://metrograph.com/film/?vista_film_id=999
- 9004128&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999004128&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:TOUKI BOUKI at AFA
-DTSTART;TZID=America/New_York:20250119T181500
-DURATION:PT1H29M
-DESCRIPTION:Runtime: 89 minutes\nSeries: Blackout 1973\nMore info: https:/
- /www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mon
- th=01&amp\;year=2025#showing-58774
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58774
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Woman in the Dunes
-DTSTART;TZID=America/New_York:20250119T183000
-DURATION:PT2H27M
-DESCRIPTION:Runtime: 147 minutes\nSeries: Bye Bye Love: Fujisawa and the J
- apanese New Wave\nMore info: https://metrograph.com/film/?vista_film_id=99
- 99001271&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999001271&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Naomi Levine at AFA
-DTSTART;TZID=America/New_York:20250119T190000
-DURATION:PT24M
-DESCRIPTION:Runtime: 24 minutes\nSeries: AFA PRESERVATION: Naomi Levine&#0
- 39\;s &#039\;YES&#039\;\nMore info: https://www.anthologyfilmarchives.org/
- film_screenings/calendar?view=list&amp\;month=01&amp\;year=2025#showing-58
- 874
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58874
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:India Song
-DTSTART;TZID=America/New_York:20250119T194000
-DURATION:PT1H55M
-DESCRIPTION:Runtime: 115 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMor
- e info: https://metrograph.com/film/?vista_film_id=9999002033&amp\;v=0b3b9
- 7fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002033&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:XALA at AFA
-DTSTART;TZID=America/New_York:20250119T203000
-DURATION:PT2H3M
-DESCRIPTION:Runtime: 123 minutes\nSeries: Blackout 1973\nMore info: https:
- //www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;mo
- nth=01&amp\;year=2025#showing-58799
-LOCATION:Anthology Film Archives
-URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
- st&amp;month=01&amp;year=2025#showing-58799
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:The Neon Demon
-DTSTART;TZID=America/New_York:20250119T213000
-DURATION:PT1H58M
-DESCRIPTION:Runtime: 118 minutes\nSeries: 15 Minutes\nMore info: https://m
- etrograph.com/film/?vista_film_id=9999004127&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999004127&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:WR Mysteries of the Organism
-DTSTART;TZID=America/New_York:20250119T220000
-DURATION:PT1H25M
-DESCRIPTION:Runtime: 85 minutes\nSeries: In Dreams Begin Responsibilities:
-  A Jonathan Rosenbaum Double-Bill\nMore info: https://metrograph.com/film/
- ?vista_film_id=9999002582&amp\;v=0b3b97fa6688
-LOCATION:Metrograph
-URL:https://metrograph.com/film/?vista_film_id=9999002582&amp;v=0b3b97fa66
- 88
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:2046
 DTSTART;TZID=America/New_York:20250120T172000
 DURATION:PT2H9M
@@ -542,5 +380,164 @@ DESCRIPTION:Runtime: 74 minutes\nSeries: Wandering Women\nMore info: https
 LOCATION:Anthology Film Archives
 URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
  st&amp;month=01&amp;year=2025#showing-58818
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:House of Flying Daggers
+DTSTART;TZID=America/New_York:20250126T113000
+DURATION:PT1H59M
+DESCRIPTION:Runtime: 119 minutes\nSeries: Zhang Ziyi in 35mm\nMore info: h
+ ttps://metrograph.com/film/?vista_film_id=9999004142&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004142&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Maso & Miso Go Boating Preceded by Scum Manifesto
+DTSTART;TZID=America/New_York:20250126T121500
+DURATION:PT29M
+DESCRIPTION:Runtime: 29 minutes\nSeries: Delphine Seyrig: Rebel Muse\nMore
+  info: https://metrograph.com/film/?vista_film_id=9999004146&amp\;v=0b3b97
+ fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004146&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Smooth Talk
+DTSTART;TZID=America/New_York:20250126T140000
+DURATION:PT1H32M
+DESCRIPTION:Runtime: 92 minutes\nSeries: The Many Lives of Laura Dern\nMor
+ e info: https://metrograph.com/film/?vista_film_id=9999000858&amp\;v=0b3b9
+ 7fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999000858&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Grandmaster
+DTSTART;TZID=America/New_York:20250126T140000
+DURATION:PT2H10M
+DESCRIPTION:Runtime: 130 minutes\nSeries: Zhang Ziyi in 35mm\nMore info: h
+ ttps://metrograph.com/film/?vista_film_id=9999001260&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999001260&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Art Cinema for Tots: Food and Friends
+DTSTART;TZID=America/New_York:20250126T160000
+DURATION:PT44M
+DESCRIPTION:Runtime: 44 minutes\nSeries: Screen Time at Metrograph\nMore i
+ nfo: https://metrograph.com/film/?vista_film_id=9999004153&amp\;v=0b3b97fa
+ 6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999004153&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DON'T CRY PRETTY GIRLS! at AFA
+DTSTART;TZID=America/New_York:20250126T164500
+DURATION:PT1H24M
+DESCRIPTION:Runtime: 84 minutes\nSeries: Wandering Women\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58823
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58823
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Master
+DTSTART;TZID=America/New_York:20250126T164500
+DURATION:PT2H24M
+DESCRIPTION:Runtime: 144 minutes\nSeries: The Many Lives of Laura Dern\nMo
+ re info: https://metrograph.com/film/?vista_film_id=9999001514&amp\;v=0b3b
+ 97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999001514&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jacob Burkhardt\, PGM 2 at AFA
+DTSTART;TZID=America/New_York:20250126T171500
+DURATION:PT1H32M
+DESCRIPTION:Runtime: 92 minutes\nSeries: Jacob Burkhardt\nMore info: https
+ ://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;m
+ onth=01&amp\;year=2025#showing-58766
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58766
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Under the Skin
+DTSTART;TZID=America/New_York:20250126T171500
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: Amongst Humans\nMore info: https
+ ://metrograph.com/film/?vista_film_id=9999003246&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999003246&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ANNA at AFA
+DTSTART;TZID=America/New_York:20250126T190000
+DURATION:PT3H45M
+DESCRIPTION:Runtime: 225 minutes\nSeries: Wandering Women\nMore info: http
+ s://www.anthologyfilmarchives.org/film_screenings/calendar?view=list&amp\;
+ month=01&amp\;year=2025#showing-58827
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58827
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The King of Comedy
+DTSTART;TZID=America/New_York:20250126T193000
+DURATION:PT1H49M
+DESCRIPTION:Runtime: 109 minutes\nSeries: 15 Minutes\nMore info: https://m
+ etrograph.com/film/?vista_film_id=9999001088&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999001088&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Bride With White Hair
+DTSTART;TZID=America/New_York:20250126T194000
+DURATION:PT1H29M
+DESCRIPTION:Runtime: 89 minutes\nSeries: Brigitte Lin on Screen\nMore info
+ : https://metrograph.com/film/?vista_film_id=9999003620&amp\;v=0b3b97fa668
+ 8
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999003620&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jacob Burkhardt\, PGM 3 at AFA
+DTSTART;TZID=America/New_York:20250126T200000
+DURATION:PT2H
+DESCRIPTION:Series: Jacob Burkhardt\nMore info: https://www.anthologyfilma
+ rchives.org/film_screenings/calendar?view=list&amp\;month=01&amp\;year=202
+ 5#showing-58768
+LOCATION:Anthology Film Archives
+URL:https://www.anthologyfilmarchives.org/film_screenings/calendar?view=li
+ st&amp;month=01&amp;year=2025#showing-58768
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Housemaid
+DTSTART;TZID=America/New_York:20250126T214000
+DURATION:PT1H48M
+DESCRIPTION:Runtime: 108 minutes\nSeries: Knock Knock\nMore info: https://
+ metrograph.com/film/?vista_film_id=9999003128&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999003128&amp;v=0b3b97fa66
+ 88
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Crouching Tiger\, Hidden Dragon
+DTSTART;TZID=America/New_York:20250126T214500
+DURATION:PT2H
+DESCRIPTION:Runtime: 120 minutes\nSeries: Zhang Ziyi in 35mm\nMore info: h
+ ttps://metrograph.com/film/?vista_film_id=9999001258&amp\;v=0b3b97fa6688
+LOCATION:Metrograph
+URL:https://metrograph.com/film/?vista_film_id=9999001258&amp;v=0b3b97fa66
+ 88
 END:VEVENT
 END:VCALENDAR
